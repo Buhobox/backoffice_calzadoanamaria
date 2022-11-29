@@ -1,0 +1,109 @@
+span.anticon.anticon-close.ant-tag-close-icon {
+  font-size: 19px !important;
+}
+
+.ant-input-affix-wrapper > input.ant-input {
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none !important;
+}
+
+button.ant-btn.ant-btn-primary.ant-btn-round {
+  background-color: #7ab0ab !important;
+  border: none !important;
+  color: white !important;
+  font-weight: bold !important;
+}
+
+.ant-card-meta-title {
+  font-weight: bold;
+  margin-bottom: 0px !important;
+  color: #001f3b !important;
+  display: flex;
+}
+
+.ant-card-meta-description {
+  display: flex;
+}
+
+.ant-table-thead > tr > th {
+  color: white !important;
+  background: #8dbce8 !important;
+}
+
+.ant-card-meta-title {
+  white-space: pre-line !important;
+}
+
+.ant-card-head-title {
+  white-space: pre-line !important;
+}
+
+.ant-result-title {
+  font-weight: 600 !important;
+  font-size: 25px !important;
+}
+
+.ant-result-subtitle {
+  font-size: 20px !important;
+}
+.ant-btn-round.ant-btn-lg {
+  height: 59px !important;
+}
+
+.swal2-popup.swal2-modal.swal2-show {
+  border-radius: 20px !important;
+  width: 22vw !important;
+}
+
+.swal2-footer {
+  padding: 21px !important;
+}
+
+#footerok {
+  text-align: center;
+  /* font: normal normal 700 29px/35px Montserrat; */
+  letter-spacing: 0px;
+  color: #4e4b4b;
+  opacity: 1;
+  font-size: 23px;
+}
+
+.button.ant-btn.ant-btn-primary.ant-btn-round {
+  background-color: "#C7E9E9" !important;
+}
+
+.swal2-header {
+  background: #65d790 !important;
+}
+
+@media (max-width: 800px) {
+  .siderLayout {
+    display: none !important;
+  }
+
+  .filterContent {
+    margin-left: 30% !important;
+  }
+
+  .ant-card.ant-card-bordered {
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    margin: 20px;
+    margin-bottom: 10px !important;
+    border-radius: 22px !important;
+  }
+}
+
+@media (min-width: 800px) {
+  .drawerMobil {
+    display: none;
+  }
+
+  #buttonMenumobil {
+    display: none;
+  }
+}
