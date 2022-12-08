@@ -3,7 +3,7 @@ import { Card, Col, message, Row, Select, Space } from "antd";
 import { Form, Input, Button } from "antd";
 import React from "react";
 import { TypeIva} from "../../api/utils";
-const productStore = 1; //menta oficial
+export const productStore = 1; //menta oficial
 const { Option } = Select;
 
 export const ProductSimple = ({

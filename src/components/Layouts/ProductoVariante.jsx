@@ -1,3 +1,4 @@
+import { PlusCircleFilled } from "@ant-design/icons";
 import { Card, Col, message, Row, Select, Space } from "antd";
 import { Form, Input, Button } from "antd";
 import axios from "axios";
@@ -5,7 +6,7 @@ import Cookies from "js-cookie";
 import React, { useState } from "react";
 import { toast } from "react-toastify";
 import { GetTokenProducto, TypeIva, TypeProduct } from "../../api/utils";
-
+import { productStore } from "./ProductSimple";
 const customerkey = "ck_0bc61f405abea8b7dc12cdbaaaab8e24728fc864";
 const customersecret = "cs_33ea168d0e2238928dc25267805de2ac736b7500";
 const baseurlwc = "https://mentaoficial.com/wp-json/wc/v3";
@@ -44,7 +45,7 @@ export const ProductoVariante = ({
     productS.Descripcion = Cookies.get("productname") + "-" + termselected;
     productS.TipoProducto=1;
     productS.weight = values.weight;
-    const getToken = GetTokenProducto(productS.productstore);
+    const getToken = GetTokenProducto(productStore);
     toast.promise(getToken, {
       pending: "Obteniendo token...",
       success: "Token obtenido 👌",
@@ -81,6 +82,9 @@ export const ProductoVariante = ({
                 manage_stock: true,
                 weight: productotosave.weight,
                 sku: res.data.CodigoBarras,
+                wholesale_price: {
+                  wholesale_customer: productotosave.PrecioVentaConIva2,
+                },
                 attributes: [
                   {
                     id: controlAttT.attributeSelected,
@@ -153,7 +157,7 @@ export const ProductoVariante = ({
                 PorcentajeIva: productSimple.PorcentajeIva,
               }}
             >
-               {!variation && (
+               {/* {!variation && (
                 <Form.Item
                   name="productstore"
                   label="Tipo de tienda"
@@ -190,7 +194,7 @@ export const ProductoVariante = ({
                     ))}
                   </Select>
                 </Form.Item>
-              )}
+              )} */}
 
 
               {variation && (
@@ -412,7 +416,9 @@ export const ProductoVariante = ({
               </Form.Item>
 
               <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
-                <Button type="primary" htmlType="submit" shape="round">
+                <Button icon={
+                  <PlusCircleFilled/>
+                }  type="primary" htmlType="submit" shape="round">
                   {variation ? "Crear variacion" : "Crear producto"}
                 </Button>
               </Form.Item>
