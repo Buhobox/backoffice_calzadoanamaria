@@ -13,6 +13,11 @@ import axios from "axios";
 import Cookies from "js-cookie";
 import { Atributes } from "./Atributes";
 import { toast } from "react-toastify";
+import {
+  ArrowLeftOutlined,
+  ArrowRightOutlined,
+  CheckOutlined,
+} from "@ant-design/icons";
 const { Step } = Steps;
 const { Option } = Select;
 const baseurl =
@@ -106,7 +111,9 @@ export const LayoutProducto = () => {
             sale_price: productotosave.PrecioVentaConIva1,
             stock_quantity: 0,
             stock_status: "outofstock",
-
+            wholesale_price: {
+              wholesale_customer: productotosave.PrecioVentaConIva2,
+            },
             categories: [
               {
                 id: productotosave.IdCategoria,
@@ -169,6 +176,9 @@ export const LayoutProducto = () => {
                   stock_quantity: 0,
                   weight: productotosave.weight,
                   stock_status: "outofstock",
+                  wholesale_price: {
+                    wholesale_customer: productotosave.PrecioVentaConIva2,
+                  },
                   categories: [
                     {
                       id: productotosave.IdCategoria,
@@ -263,8 +273,6 @@ export const LayoutProducto = () => {
   };
 
   const handleselectproductype = (typroduct) => {
-    console.log("type",typeof typroduct);
-    console.log("typroduct",typroduct==="2");
     setselected(typroduct);
   };
 
@@ -420,7 +428,9 @@ export const LayoutProducto = () => {
         <Card
           style={stylecard}
           title={
-            selected === "1"
+            !selected
+              ? "Gestionar Productos"
+              : selected === "1"
               ? "Gestión producto simple"
               : "Gestión producto variable"
           }
@@ -446,9 +456,9 @@ export const LayoutProducto = () => {
           <div className="steps-action">
             {rulesShowButtonNext(selected, current).btnnext && (
               <Button
+                icon={<ArrowRightOutlined />}
                 disabled={controlStatusGeneral.loading}
                 style={{
-                  width: "100px",
                   height: "40px",
                   display: current === 4 && "none",
                 }}
@@ -462,6 +472,7 @@ export const LayoutProducto = () => {
 
             {rulesShowButtonNext(selected, current).btnfinish && (
               <Button
+                icon={<CheckOutlined />}
                 disabled={controlStatusGeneral.loading}
                 style={{
                   width: "100px",
@@ -495,8 +506,8 @@ export const LayoutProducto = () => {
 
             {rulesShowButtonNext(selected, current).btnprev && (
               <Button
+                icon={<ArrowLeftOutlined />}
                 style={{
-                  width: "100px",
                   height: "40px",
                   marginLeft: "10px",
                 }}
@@ -528,7 +539,13 @@ const TipoDeProducto = (props) => {
       {props.selected === null && (
         <Row justify="center" style={{ marginTop: "40px" }}>
           <Space direction="vertical">
-            <Divider />
+            <img
+              src="https://cdn3d.iconscout.com/3d/premium/thumb/product-5806313-4863042.png"
+              style={{
+                width: "100px",
+                height: "100px",
+              }}
+            />
             <Select
               placeholder="Seleccione un tipo de producto"
               onChange={(value) => {
@@ -541,9 +558,7 @@ const TipoDeProducto = (props) => {
                 width: "auto",
                 height: "auto",
                 borderRadius: "12px",
-                margin: "10px",
-                padding: "10px",
-                background: "#fff",
+                backgroundColor: "#C7E9E9",
                 fontFamily: "Roboto",
                 fontSize: "19px",
                 color: "grey",
@@ -556,7 +571,6 @@ const TipoDeProducto = (props) => {
                 Producto Variante
               </Option>
             </Select>
-            <Divider />
           </Space>
         </Row>
       )}
@@ -564,13 +578,21 @@ const TipoDeProducto = (props) => {
       <Row
         justify="center"
         style={{
-          marginTop: "10vh",
+          marginTop: "5vh",
         }}
       >
         {props.selected != null && (
           <Space direction="vertical">
-            <Divider />
-            <Text style={{ fontSize: "21px" }}>Tipo de producto a crear</Text>
+            <Text style={{ fontSize: "20px", fontWeight: "bold" }}>
+              Tipo de producto a crear
+            </Text>
+            <img
+              src="https://cdn3d.iconscout.com/3d/premium/thumb/product-5806313-4863042.png"
+              style={{
+                width: "100px",
+                height: "100px",
+              }}
+            />
             <Tag
               closable
               onClose={() => {
@@ -582,14 +604,15 @@ const TipoDeProducto = (props) => {
               style={{
                 fontFamily: "Roboto",
                 fontSize: "19px",
-                background: "#fff",
+                background: "#C7E9E9",
                 padding: "10px",
+                border: "none",
+                color: "black",
               }}
               color="blue"
             >
               {props.selected === "1" ? "Producto Simple" : "Producto Variante"}
             </Tag>
-            <Divider />
           </Space>
         )}
       </Row>

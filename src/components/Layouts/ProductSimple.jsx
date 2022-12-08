@@ -1,8 +1,9 @@
+import { PlusCircleOutlined } from "@ant-design/icons";
 import { Card, Col, message, Row, Select, Space } from "antd";
 import { Form, Input, Button } from "antd";
 import React from "react";
-import { TypeIva, TypeProduct } from "../../api/utils";
-
+import { TypeIva} from "../../api/utils";
+const productStore = 1; //menta oficial
 const { Option } = Select;
 
 export const ProductSimple = ({
@@ -11,8 +12,9 @@ export const ProductSimple = ({
   categorys,
   addProductSimple,
 }) => {
+
   const onFinish = (values) => {
-    addProductSimple(values.productstore);
+    addProductSimple(productStore);
   };
 
   const onFinishFailed = (errorInfo) => {
@@ -51,7 +53,7 @@ export const ProductSimple = ({
                 PorcentajeIva: productSimple.PorcentajeIva,
               }}
             >
-               <Form.Item
+              {/* <Form.Item
                 name="productstore"
                 label="Tipo de tienda"
                 rules={[
@@ -70,10 +72,14 @@ export const ProductSimple = ({
                   showSearch
                   optionFilterProp="children"
                   filterOption={(input, option) =>
-                    option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
+                    option.children
+                      .toLowerCase()
+                      .indexOf(input.toLowerCase()) >= 0
                   }
                   filterSort={(optionA, optionB) =>
-                    optionA.children.toLowerCase().localeCompare(optionB.children.toLowerCase())
+                    optionA.children
+                      .toLowerCase()
+                      .localeCompare(optionB.children.toLowerCase())
                   }
                 >
                   {TypeProduct.map((productype) => (
@@ -82,7 +88,7 @@ export const ProductSimple = ({
                     </Option>
                   ))}
                 </Select>
-              </Form.Item>
+              </Form.Item> */}
               <Form.Item
                 label="Nombre"
                 name="Descripcion"
@@ -114,10 +120,14 @@ export const ProductSimple = ({
                   showSearch
                   optionFilterProp="children"
                   filterOption={(input, option) =>
-                    option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
+                    option.children
+                      .toLowerCase()
+                      .indexOf(input.toLowerCase()) >= 0
                   }
                   filterSort={(optionA, optionB) =>
-                    optionA.children.toLowerCase().localeCompare(optionB.children.toLowerCase())
+                    optionA.children
+                      .toLowerCase()
+                      .localeCompare(optionB.children.toLowerCase())
                   }
                 >
                   {categorys.map((category) => (
@@ -147,10 +157,14 @@ export const ProductSimple = ({
                   showSearch
                   optionFilterProp="children"
                   filterOption={(input, option) =>
-                    option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
+                    option.children
+                      .toLowerCase()
+                      .indexOf(input.toLowerCase()) >= 0
                   }
                   filterSort={(optionA, optionB) =>
-                    optionA.children.toLowerCase().localeCompare(optionB.children.toLowerCase())
+                    optionA.children
+                      .toLowerCase()
+                      .localeCompare(optionB.children.toLowerCase())
                   }
                 >
                   {categorys.map((category) => (
@@ -199,7 +213,6 @@ export const ProductSimple = ({
                 />
               </Form.Item>
 
-
               <Form.Item
                 label="Peso del producto"
                 name="weight"
@@ -211,10 +224,7 @@ export const ProductSimple = ({
                   placeholder="(1): zapatos | (0.3): otros"
                   type="text"
                   onChange={(value) =>
-                    handleProductSimple(
-                      "weight",
-                      value.target.value
-                    )
+                    handleProductSimple("weight", value.target.value)
                   }
                 />
               </Form.Item>
@@ -245,7 +255,12 @@ export const ProductSimple = ({
               </Form.Item>
 
               <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
-                <Button type="primary" htmlType="submit" shape="round">
+                <Button
+                  type="primary"
+                  htmlType="submit"
+                  shape="round"
+                  icon={<PlusCircleOutlined />}
+                >
                   Crear Producto
                 </Button>
               </Form.Item>

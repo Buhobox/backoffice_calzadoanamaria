@@ -37,6 +37,9 @@ button.ant-btn.ant-btn-primary.ant-btn-round {
 }
 
 .ant-card-head-title {
+  font-size: 22px !important;
+  font-weight: bold !important;
+  color: #808080 !important;
   white-space: pre-line !important;
 }
 
@@ -106,4 +109,14 @@ button.ant-btn.ant-btn-primary.ant-btn-round {
   #buttonMenumobil {
     display: none;
   }
+}
+
+.ant-steps-item-process > .ant-steps-item-container > .ant-steps-item-icon{
+  background-color: #C7E9E9 !important;
+  border: none !important;
+}
+
+.ant-steps-item-process > .ant-steps-item-container > .ant-steps-item-icon .ant-steps-icon {
+  color: #000 !important;
+  font-weight: bold !important;
 }
