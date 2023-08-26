@@ -1,7 +1,7 @@
 import axios from "axios";
 import { toast } from "react-toastify";
-const customerkey = "ck_0bc61f405abea8b7dc12cdbaaaab8e24728fc864";
-const customersecret = "cs_33ea168d0e2238928dc25267805de2ac736b7500";
+const customerkey = "ck_0e37d26500f4832b854f614a80b06c93ee8fe825";
+const customersecret = "cs_ff52b60f771953c9a0e0281f7346ba05253b41ea";
 const baseurl = "https://mentaoficial.com/wp-json/wc/v3";
 let credentials = `consumer_key=${customerkey}&consumer_secret=${customersecret}`;
 const baseurlARI = "https://integwebapimentaoficialbodega20211022.azurewebsites.net/api/GuardarFacturaVenta/api/GuardarFacturaVenta";
