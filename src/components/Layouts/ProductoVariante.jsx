@@ -43,7 +43,7 @@ export const ProductoVariante = ({
   const addVariante = (values) => {
     let productS = productSimple;
     productS.Descripcion = Cookies.get("productname") + "-" + termselected;
-    productS.TipoProducto=1;
+    productS.TipoProducto = 1;
     productS.weight = values.weight;
     const getToken = GetTokenProducto(productStore);
     toast.promise(getToken, {
@@ -105,11 +105,17 @@ export const ProductoVariante = ({
                   { ...producttowc }
                 )
                 .then((res) => {
-                  console.log("🚀 ~ file: ProductoVariante.jsx ~ line 101 ~ .then ~ res", res)
+                  console.log(
+                    "🚀 ~ file: ProductoVariante.jsx ~ line 101 ~ .then ~ res",
+                    res
+                  );
                   if (res.data.id) {
                     toast.success("Producto guardado con exito");
-                  }else{
-                    toast.error("Ocurrio un error al guardar el producto => " + res.data.message);
+                  } else {
+                    toast.error(
+                      "Ocurrio un error al guardar el producto => " +
+                        res.data.message
+                    );
                   }
                 });
             } else {
@@ -132,7 +138,6 @@ export const ProductoVariante = ({
                 ? "Crear Variante (Puedes crear una o mas variantes en este formulario, escogiendo los terminos diferentes para cada producto)"
                 : "Datos del producto"
             }
-            bordered={false}
             style={{
               width: "40vw",
               borderRadius: "12px",
@@ -148,55 +153,51 @@ export const ProductoVariante = ({
               onFinish={onFinish}
               onFinishFailed={onFinishFailed}
               autoComplete="off"
-              initialValues={{
-                IdCategoria: productSimple.IdCategoria,
-                IdSubCategoria: productSimple.IdSubCategoria,
-                Descripcion: productSimple.Descripcion,
-                PrecioVentaConIva1: productSimple.PrecioVentaConIva1,
-                PrecioVentaConIva2: productSimple.PrecioVentaConIva2,
-                PorcentajeIva: productSimple.PorcentajeIva,
-              }}
+              // initialValues={{
+              //   IdCategoria: productSimple.IdCategoria,
+              //   IdSubCategoria: productSimple.IdSubCategoria,
+              //   Descripcion: productSimple.Descripcion,
+              //   PrecioVentaConIva1: productSimple.PrecioVentaConIva1,
+              //   PrecioVentaConIva2: productSimple.PrecioVentaConIva2,
+              //   PorcentajeIva: productSimple.PorcentajeIva,
+              // }}
             >
-               {/* {!variation && (
-                <Form.Item
-                  name="productstore"
-                  label="Tipo de tienda"
-                  rules={[
-                    {
-                      required: true,
-                      message: "Seleccione un tipo de tienda",
-                    },
-                  ]}
+              <Form.Item
+                name="productstore"
+                label="Tipo de tienda"
+                rules={[
+                  {
+                    required: true,
+                    message: "Seleccione un tipo de tienda",
+                  },
+                ]}
+              >
+                <Select
+                  onChange={(value) => {
+                    handleProductSimple("productstore", value);
+                  }}
+                  placeholder="Seleccione tipo de tienda"
+                  allowClear
+                  showSearch
+                  optionFilterProp="children"
+                  filterOption={(input, option) =>
+                    option.children
+                      .toLowerCase()
+                      .indexOf(input.toLowerCase()) >= 0
+                  }
+                  filterSort={(optionA, optionB) =>
+                    optionA.children
+                      .toLowerCase()
+                      .localeCompare(optionB.children.toLowerCase())
+                  }
                 >
-                  <Select
-                    onChange={(value) => {
-                      handleProductSimple("productstore", value);
-                    }}
-                    placeholder="Seleccione tipo de tienda"
-                    allowClear
-                    showSearch
-                    optionFilterProp="children"
-                    filterOption={(input, option) =>
-                      option.children
-                        .toLowerCase()
-                        .indexOf(input.toLowerCase()) >= 0
-                    }
-                    filterSort={(optionA, optionB) =>
-                      optionA.children
-                        .toLowerCase()
-                        .localeCompare(optionB.children.toLowerCase())
-                    }
-                  >
-                    {TypeProduct.map((productype) => (
-                      <Option key={productype.Codigo} value={productype.Codigo}>
-                        {productype.Descripcion}
-                      </Option>
-                    ))}
-                  </Select>
-                </Form.Item>
-              )} */}
-
-
+                  {TypeProduct.map((productype) => (
+                    <Option key={productype.Codigo} value={productype.Codigo}>
+                      {productype.Descripcion}
+                    </Option>
+                  ))}
+                </Select>
+              </Form.Item>
               {variation && (
                 <Form.Item
                   name="termselected"
@@ -236,7 +237,6 @@ export const ProductoVariante = ({
                   </Select>
                 </Form.Item>
               )}
-
               {!variation && (
                 <Form.Item
                   label="Nombre"
@@ -251,7 +251,6 @@ export const ProductoVariante = ({
                   />
                 </Form.Item>
               )}
-
               {!variation && (
                 <Form.Item
                   name="IdCategoria"
@@ -290,7 +289,6 @@ export const ProductoVariante = ({
                   </Select>
                 </Form.Item>
               )}
-
               {!variation && (
                 <Form.Item
                   name="IdSubCategoria"
@@ -329,7 +327,6 @@ export const ProductoVariante = ({
                   </Select>
                 </Form.Item>
               )}
-
               {variation && (
                 <>
                   <Form.Item
@@ -374,17 +371,17 @@ export const ProductoVariante = ({
                     label="Precio del producto"
                     name="weight"
                     rules={[
-                      { required: true, message: "Digite el peso del producto" },
+                      {
+                        required: true,
+                        message: "Digite el peso del producto",
+                      },
                     ]}
                   >
                     <Input
                       placeholder="(1): zapatos | (0.3): otros"
                       type="text"
                       onChange={(value) =>
-                        handleProductSimple(
-                          "weight",
-                          value.target.value
-                        )
+                        handleProductSimple("weight", value.target.value)
                       }
                     />
                   </Form.Item>
@@ -414,11 +411,13 @@ export const ProductoVariante = ({
                   ))}
                 </Select>
               </Form.Item>
-
               <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
-                <Button icon={
-                  <PlusCircleFilled/>
-                }  type="primary" htmlType="submit" shape="round">
+                <Button
+                  icon={<PlusCircleFilled />}
+                  type="primary"
+                  htmlType="submit"
+                  shape="round"
+                >
                   {variation ? "Crear variacion" : "Crear producto"}
                 </Button>
               </Form.Item>

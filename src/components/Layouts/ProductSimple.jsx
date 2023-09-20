@@ -2,7 +2,7 @@ import { PlusCircleOutlined } from "@ant-design/icons";
 import { Card, Col, message, Row, Select, Space } from "antd";
 import { Form, Input, Button } from "antd";
 import React from "react";
-import { TypeIva} from "../../api/utils";
+import { TypeIva, TypeProduct } from "../../api/utils";
 export const productStore = 1; //menta oficial
 const { Option } = Select;
 
@@ -14,6 +14,7 @@ export const ProductSimple = ({
 }) => {
 
   const onFinish = (values) => {
+    console.log("::values",values)
     addProductSimple(productStore);
   };
 
@@ -40,7 +41,6 @@ export const ProductSimple = ({
               name="basic"
               labelCol={{ span: 8 }}
               wrapperCol={{ span: 16 }}
-              initialValues={{ remember: true }}
               onFinish={onFinish}
               onFinishFailed={onFinishFailed}
               autoComplete="off"
@@ -53,7 +53,7 @@ export const ProductSimple = ({
                 PorcentajeIva: productSimple.PorcentajeIva,
               }}
             >
-              {/* <Form.Item
+              <Form.Item
                 name="productstore"
                 label="Tipo de tienda"
                 rules={[
@@ -88,7 +88,7 @@ export const ProductSimple = ({
                     </Option>
                   ))}
                 </Select>
-              </Form.Item> */}
+              </Form.Item>
               <Form.Item
                 label="Nombre"
                 name="Descripcion"
@@ -143,7 +143,7 @@ export const ProductSimple = ({
                 label="SubCategoria"
                 rules={[
                   {
-                    required: true,
+                    required: false,
                     message: "Seleccione una subcategoria",
                   },
                 ]}
