@@ -10,7 +10,7 @@ span.anticon.anticon-close.ant-tag-close-icon {
 }
 
 button.ant-btn.ant-btn-primary.ant-btn-round {
-  background-color: #7ab0ab !important;
+  background-color: #aa2e34 !important;
   border: none !important;
   color: white !important;
   font-weight: bold !important;
@@ -74,7 +74,7 @@ button.ant-btn.ant-btn-primary.ant-btn-round {
 }
 
 .button.ant-btn.ant-btn-primary.ant-btn-round {
-  background-color: "#C7E9E9" !important;
+  background-color: "#ff6767" !important;
 }
 
 .swal2-header {
@@ -112,7 +112,7 @@ button.ant-btn.ant-btn-primary.ant-btn-round {
 }
 
 .ant-steps-item-process > .ant-steps-item-container > .ant-steps-item-icon{
-  background-color: #C7E9E9 !important;
+  background-color: #ff6767 !important;
   border: none !important;
 }
 

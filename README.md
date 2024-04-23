@@ -1,4 +1,4 @@
-# Dashboard menta oficial | Modulos facturación & Gestión de productos
+# Dashboard santandereana de cascos oficial | Modulos facturación & Gestión de productos
 
 Este proyecto fue creado con [Create React App](https://github.com/facebook/create-react-app).
 
@@ -18,7 +18,7 @@ Ejecuta los test programados
 
   
 ### `PREVIEW OR TESTING STAGING`
-https://mentadashboard.vercel.app/
+https://santandereanadashboard.vercel.app/
 
 ### `Tecnologias Utilizadas`
   1. Firebase => https://firebase.google.com/

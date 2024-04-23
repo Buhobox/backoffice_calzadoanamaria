@@ -7,13 +7,14 @@ import {
   FirebaseAppProvider,
 } from "reactfire";
 const firebaseConfig = {
-  apiKey: "AIzaSyDfYlUZXP99suUSkJXHvDjY6bDu46THZdE",
-  authDomain: "menta-8d3d9.firebaseapp.com",
-  projectId: "menta-8d3d9",
-  storageBucket: "menta-8d3d9.appspot.com",
-  messagingSenderId: "384506274545",
-  appId: "1:384506274545:web:6057f6f409bd36cec23f50",
-};
+  apiKey: "AIzaSyDSQf3q8JMMa2UcrymsseuMPaVknhZ_ahg",
+  authDomain: "santandereana-6d1fd.firebaseapp.com",
+  projectId: "santandereana-6d1fd",
+  storageBucket: "santandereana-6d1fd.appspot.com",
+  messagingSenderId: "989521974661",
+  appId: "1:989521974661:web:5de63284915a9b615460ec",
+  measurementId: "G-64V8ZFPJEX"
+}
 
 ReactDOM.render(
   <FirebaseAppProvider firebaseConfig={firebaseConfig}>

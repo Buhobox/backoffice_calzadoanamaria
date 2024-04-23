@@ -360,13 +360,13 @@ export const GenerateFactura = (dataFactura, callback) => {
             SendFactura(FacturaData).then((response) => {
               if (response.data.Exito) {
                 toast.success(
-                  `Factura Menta Oficial #${response.data.NumeroFactura} generada  👌 `,
+                  `Factura santandereana Oficial #${response.data.NumeroFactura} generada  👌 `,
                   {
                     autoClose: false,
                   }
                 );
                 console.log(
-                  "FACTURA GENERADA MENTA OFICIAL ===> ",
+                  "FACTURA GENERADA SANTANDEREANA ===> ",
                   response.data.NumeroFactura
                 );
                 callback(dataFactura.id);

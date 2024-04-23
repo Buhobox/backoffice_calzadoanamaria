@@ -44,11 +44,11 @@ export function TotalOrders(orders) {
   return totals.reduce(reducer);
 }
 
-export const ColorsGeneral = { mentacolor: "#C7E9E9" };
+export const ColorsGeneral = { mentacolor: "#ff6767" };
 
 export const Copyright = () => {
   let date = new Date();
-  return `Menta Oficial  ${date.getFullYear()}`;
+  return `Santandereana de cascos  ${date.getFullYear()}`;
 };
 
 export function AmounTotal(orders) {

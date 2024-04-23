@@ -558,7 +558,7 @@ const TipoDeProducto = (props) => {
                 width: "auto",
                 height: "auto",
                 borderRadius: "12px",
-                backgroundColor: "#C7E9E9",
+                backgroundColor: "#ff6767",
                 fontFamily: "Roboto",
                 fontSize: "19px",
                 color: "grey",
@@ -604,7 +604,7 @@ const TipoDeProducto = (props) => {
               style={{
                 fontFamily: "Roboto",
                 fontSize: "19px",
-                background: "#C7E9E9",
+                background: "#ff6767",
                 padding: "10px",
                 border: "none",
                 color: "black",

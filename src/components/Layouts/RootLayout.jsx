@@ -75,14 +75,14 @@ export default function RootLayout() {
         }}
       >
         <div className="logo">
-          <img src={Logo} alt="Menta Oficial" className="logo-img-dash" />
+          <img src={Logo} alt="Santandereana de cascos" className="logo-img-dash" />
         </div>
         <Menu
           onSelect={(item) => HandleChange(item)}
           mode="inline"
           defaultSelectedKeys={["2"]}
           style={{
-            color: "#7ab0ab",
+            color: "#aa2e34",
             fontWeight: "bold",
           }}
         >
@@ -111,7 +111,7 @@ export default function RootLayout() {
                 onClick={() => onShowdrawer()}
                 icon={<MenuUnfoldOutlined />}
                 type="primary"
-                style={{ backgroundColor: "#7AB0AB !important" }}
+                style={{ backgroundColor: "#aa2e34 !important" }}
               />
             </Col>
 
@@ -123,7 +123,7 @@ export default function RootLayout() {
                   fontWeight: "bold",
                   display: "flex",
                   justifyContent: "center",
-                  color: "#95AFAF",
+                  color: "#aa2e34",
                 }}
               >
                 {titles[contentab]}
@@ -139,14 +139,14 @@ export default function RootLayout() {
             visible={visibledrawer}
           >
             <div className="logo">
-              <img src={Logo} alt="Menta Oficial" className="logo-img-dash" />
+              <img src={Logo} alt="Santandereana de cascos" className="logo-img-dash" />
             </div>
             <Menu
               onSelect={(item) => HandleChange(item)}
               mode="inline"
               defaultSelectedKeys={["1"]}
               style={{
-                color: "#7ab0ab",
+                color: "#aa2e34",
                 fontWeight: "bold",
               }}
             >

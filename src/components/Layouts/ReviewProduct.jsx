@@ -53,7 +53,7 @@ export const ReviewProduct = ({ controlStatusGeneral }) => {
                 )
               )
             }
-            title="Crear Producto Menta"
+            title="Crear Producto"
             description={controlStatusGeneral.messagestep3}
           />
         </Steps>
