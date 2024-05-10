@@ -1,6 +1,5 @@
 import { create } from "apisauce";
-const baseurl =
-  "https://integwebapimentaoficialbodega20211022.azurewebsites.net/api/";
+import { baseurl } from "./api";
 
 let dataexample = {
   Cliente: {

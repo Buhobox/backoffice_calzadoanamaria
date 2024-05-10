@@ -6,7 +6,7 @@ import Text from "antd/lib/typography/Text";
 import { Divider } from "@material-ui/core";
 import { ProductoVariante } from "./ProductoVariante";
 import { ProductSimple } from "./ProductSimple";
-import { GetAllCategorys } from "../../api/api";
+import { GetAllCategorys, baseurl, baseurlwc, credentials } from "../../api/api";
 import { GetTokenProducto } from "../../api/utils";
 import { ReviewProduct } from "./ReviewProduct";
 import axios from "axios";
@@ -18,17 +18,19 @@ import {
   ArrowRightOutlined,
   CheckOutlined,
 } from "@ant-design/icons";
+import { create } from "zustand";
+
 const { Step } = Steps;
 const { Option } = Select;
-const baseurl =
-  "https://integwebapimentaoficialbodega20211022.azurewebsites.net/api/";
 
-const customerkey = "ck_0e37d26500f4832b854f614a80b06c93ee8fe825";
-const customersecret = "cs_ff52b60f771953c9a0e0281f7346ba05253b41ea";
-const baseurlwc = "https://mentaoficial.com/wp-json/wc/v3";
-let credentials = `consumer_key=${customerkey}&consumer_secret=${customersecret}`;
+export const useProductStore = create((set) => ({
+  type: "",
+  setType: (type) => set({ type }),
+}))
 
 export const LayoutProducto = () => {
+  const producto = useProductStore()
+
   const stylecard = {
     width: "70vw",
     borderRadius: "12px",
@@ -331,7 +333,7 @@ export const LayoutProducto = () => {
 
   let steps = [
     {
-      title: "Seleccionar Tipo Producto",
+      title: `Seleccionar Tipo ${producto.type}`,
       content: (
         <TipoDeProducto
           handleselectproductype={handleselectproductype}
@@ -341,7 +343,7 @@ export const LayoutProducto = () => {
       ),
     },
     {
-      title: "Crear Producto",
+      title: `Crear ${producto.type}`,
       content: (
         <RenderTypeProduct
           selected={selected}
@@ -429,10 +431,10 @@ export const LayoutProducto = () => {
           style={stylecard}
           title={
             !selected
-              ? "Gestionar Productos"
+              ? "Gestionar Productos/servicios"
               : selected === "1"
-              ? "Gestión producto simple"
-              : "Gestión producto variable"
+                ? `Gestión ${producto.type} simple`
+                : `Gestión ${producto.type} variable`
           }
         >
           <Steps current={current}>
@@ -526,6 +528,7 @@ export const LayoutProducto = () => {
 };
 
 const TipoDeProducto = (props) => {
+  const producto = useProductStore()
   return (
     <div
       style={{
@@ -547,15 +550,12 @@ const TipoDeProducto = (props) => {
               }}
             />
             <Select
-              placeholder="Seleccione un tipo de producto"
-              onChange={(value) => {
-                props.handleselectproductype(value);
-                props.setcontrolStatusGeneral({
-                  nextDisabled: false,
-                });
-              }}
+              placeholder="Seleccione un producto/servicio"
+              onChange={producto.setType}
+              value={producto.type}
               style={{
                 width: "auto",
+                minWidth: 300,
                 height: "auto",
                 borderRadius: "12px",
                 backgroundColor: "#ff6767",
@@ -564,13 +564,43 @@ const TipoDeProducto = (props) => {
                 color: "grey",
               }}
             >
-              <Option style={{ fontSize: "19px" }} value="1">
-                Producto Simple
+              <Option style={{ fontSize: "19px" }} value="" disabled>
+                Seleccione un producto/servicio
               </Option>
-              <Option style={{ fontSize: "19px" }} value="2">
-                Producto Variante
+              <Option style={{ fontSize: "19px" }} value="Producto">
+                Producto
+              </Option>
+              <Option style={{ fontSize: "19px" }} value="Servicio">
+                Servicio
               </Option>
             </Select>
+            {producto.type ?
+              <Select
+                placeholder={`Seleccione un tipo de ${producto.type}`}
+                onChange={(value) => {
+                  props.handleselectproductype(value);
+                  props.setcontrolStatusGeneral({
+                    nextDisabled: false,
+                  });
+                }}
+                style={{
+                  width: "auto",
+                  height: "auto",
+                  borderRadius: "12px",
+                  backgroundColor: "#ff6767",
+                  fontFamily: "Roboto",
+                  fontSize: "19px",
+                  color: "grey",
+                }}
+              >
+                <Option style={{ fontSize: "19px" }} value="1">
+                  {producto.type} simple
+                </Option>
+                <Option style={{ fontSize: "19px" }} value="2">
+                  {producto.type} variante
+                </Option>
+              </Select>
+              : null}
           </Space>
         </Row>
       )}
@@ -584,7 +614,7 @@ const TipoDeProducto = (props) => {
         {props.selected != null && (
           <Space direction="vertical">
             <Text style={{ fontSize: "20px", fontWeight: "bold" }}>
-              Tipo de producto a crear
+              {`Tipo de ${producto.type} a crear`}
             </Text>
             <img
               src="https://cdn3d.iconscout.com/3d/premium/thumb/product-5806313-4863042.png"
@@ -611,7 +641,7 @@ const TipoDeProducto = (props) => {
               }}
               color="blue"
             >
-              {props.selected === "1" ? "Producto Simple" : "Producto Variante"}
+              {props.selected === "1" ? `${producto.type} Simple` : `${producto.type} variable`}
             </Tag>
           </Space>
         )}

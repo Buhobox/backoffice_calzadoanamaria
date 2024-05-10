@@ -1,11 +1,8 @@
 import axios from "axios";
 import { toast } from "react-toastify";
-const customerkey = "ck_0e37d26500f4832b854f614a80b06c93ee8fe825";
-const customersecret = "cs_ff52b60f771953c9a0e0281f7346ba05253b41ea";
-const baseurl = "https://mentaoficial.com/wp-json/wc/v3";
-let credentials = `consumer_key=${customerkey}&consumer_secret=${customersecret}`;
-const baseurlARI = "https://integwebapimentaoficialbodega20211022.azurewebsites.net/api/GuardarFacturaVenta/api/GuardarFacturaVenta";
-const baseurlAriAuthenticate = "https://integwebapimentaoficialbodega20211022.azurewebsites.net/api/login/authenticate";
+import { baseurl, baseurlwc, credentials } from "./api";
+
+const loginURL = `${baseurl}login/authenticate`;
 
 const MedioDePago = (medioPago) => {
   switch (medioPago) {
@@ -25,7 +22,7 @@ export const GetTokenProducto = async (TypeProduct) => {
   }
 
   return await axios.post(
-    baseurlAriAuthenticate,
+    loginURL,
     {
       IdDocumento: "0",
       Cadena: [`${cadena}`],
@@ -42,12 +39,12 @@ export const GetToken = async (type) => {
   let cadena = "f2/VubqR5w0PQ2j03pfipVDoo22wv8cX9YKHaKk2bPT+3r5GzeYtsfT5mbQ+Kx3kBykdVM53jC0a/m1n0Oxxrg==";
 
   if (type === "accesorios") {
-    cadena =  "znSbP63R5Lp2Bfmh81pATZ25qCpQENHAvPZBPIdqeJL4P+1S+Lm0n0Lgg7ccRsYs8orad9dC4BD40mxuKBw/6Q==";
+    cadena = "znSbP63R5Lp2Bfmh81pATZ25qCpQENHAvPZBPIdqeJL4P+1S+Lm0n0Lgg7ccRsYs8orad9dC4BD40mxuKBw/6Q==";
   }
 
   // console.log("cadena", cadena,type);
   return await axios.post(
-    baseurlAriAuthenticate,
+    loginURL,
     {
       IdDocumento: "0",
       Cadena: [`${cadena}`],
@@ -62,7 +59,7 @@ export const GetToken = async (type) => {
 
 const SendFactura = async (datafactura) => {
   return await axios.post(
-    baseurlARI,
+    `${baseurl}GuardarFacturaVenta/api/GuardarFacturaVenta`,
     datafactura
   );
 };
@@ -70,32 +67,32 @@ const SendFactura = async (datafactura) => {
 const FacturaToChangeStatus = (datafactura, facturaId) => {
   switch (datafactura.status) {
     case "procesadoig":
-      axios.put(`${baseurl}/orders/${datafactura.id}?${credentials}`, {
+      axios.put(`${baseurlwc}/orders/${datafactura.id}?${credentials}`, {
         status: "facturadoig",
       });
       break;
 
     case "procesadowasa":
-      axios.put(`${baseurl}/orders/${datafactura.id}?${credentials}`, {
+      axios.put(`${baseurlwc}/orders/${datafactura.id}?${credentials}`, {
         status: "facturadowasa",
       });
       break;
 
     case "procesadomayo":
-      axios.put(`${baseurl}/orders/${datafactura.id}?${credentials}`, {
+      axios.put(`${baseurlwc}/orders/${datafactura.id}?${credentials}`, {
         status: "facturadomayo",
       });
       break;
 
     case "processing":
-      axios.put(`${baseurl}/orders/${datafactura.id}?${credentials}`, {
+      axios.put(`${baseurlwc}/orders/${datafactura.id}?${credentials}`, {
         status: "facturado",
       });
 
-    break;
+      break;
 
     default:
-      //
+    //
 
   }
 };
@@ -103,7 +100,7 @@ const FacturaToChangeStatus = (datafactura, facturaId) => {
 async function GetProduct(idProduct) {
   return new Promise(async (resolve, reject) => {
     return axios
-      .get(`${baseurl}/products/${idProduct}/?${credentials}`)
+      .get(`${baseurlwc}/products/${idProduct}/?${credentials}`)
       .then((response) => {
         let esAccesorios = false;
         let accesorios = response.data.meta_data.find(
@@ -131,7 +128,7 @@ async function GetProduct(idProduct) {
 
 export const GenerateFactura = (dataFactura, callback) => {
   let MedioDePagoFactura = MedioDePago(dataFactura.payment_method);
-    
+
   let codigoCiudad = "";
   let cedula = 0;
   if (dataFactura.meta_data[2].key === "_billing_cedula") {
@@ -237,7 +234,7 @@ export const GenerateFactura = (dataFactura, callback) => {
               NumeroComprobante: dataFactura.id.toString(),
               TipoTarjetas: 0,
               CodigoFranquiciaTarjetas: 1,
-              CodigoCuentaBancaria:MedioDePagoFactura===8?9:'',
+              CodigoCuentaBancaria: MedioDePagoFactura === 8 ? 9 : '',
             },
           ],
           Producto: response.accesorios,
@@ -255,7 +252,7 @@ export const GenerateFactura = (dataFactura, callback) => {
               NumeroComprobante: dataFactura.id.toString(),
               TipoTarjetas: 0,
               CodigoFranquiciaTarjetas: 1,
-              CodigoCuentaBancaria:MedioDePagoFactura===8?9:'',
+              CodigoCuentaBancaria: MedioDePagoFactura === 8 ? 9 : '',
             },
           ],
           Producto: response.menta,

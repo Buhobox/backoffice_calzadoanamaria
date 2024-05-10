@@ -58,7 +58,7 @@ export default function RootLayout() {
   const titles = [
     "nothing",
     "Reporte de ventas",
-    "Creación de productos",
+    "Creación de productos/servicios",
     "Reporte Diario",
   ];
 
@@ -91,7 +91,7 @@ export default function RootLayout() {
           </Menu.Item>
 
           <Menu.Item key="2" icon={<RocketOutlined />}>
-            PRODUCTOS
+            GESTIÓN
           </Menu.Item>
 
           <Menu.Item key="4" icon={<LogoutOutlined />}>
@@ -99,7 +99,7 @@ export default function RootLayout() {
           </Menu.Item>
         </Menu>
       </Sider>
-      <Layout style={{minHeight:'100vh'}}> 
+      <Layout style={{ minHeight: '100vh' }}>
         <Header
           className="site-layout-background"
           style={{ padding: 0, backgroundColor: ColorsGeneral.mentacolor }}
@@ -155,7 +155,7 @@ export default function RootLayout() {
               </Menu.Item>
 
               <Menu.Item key="2" icon={<RocketOutlined />}>
-                PRODUCTOS
+                GESTIÓN
               </Menu.Item>
 
               <Menu.Item key="4" icon={<LogoutOutlined />}>

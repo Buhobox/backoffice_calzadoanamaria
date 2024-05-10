@@ -78,7 +78,7 @@ export default function Login() {
         History.push("/");
       })
       .catch((error) => {
-        console.log("erorr we", error);
+        console.log("error we", error);
       });
   };
 
