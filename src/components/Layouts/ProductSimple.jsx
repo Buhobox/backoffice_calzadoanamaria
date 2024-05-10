@@ -1,8 +1,8 @@
 import { PlusCircleOutlined } from "@ant-design/icons";
-import { Card, Col, message, Row, Select, Space } from "antd";
-import { Form, Input, Button } from "antd";
+import { Card, Col, message, Row, Select, Space, Form, Input, Button } from "antd";
 import React from "react";
 import { TypeIva, TypeProduct } from "../../api/utils";
+import { ContableItems } from "./ContableItems";
 export const productStore = 1; //menta oficial
 const { Option } = Select;
 
@@ -12,9 +12,8 @@ export const ProductSimple = ({
   categorys,
   addProductSimple,
 }) => {
-
   const onFinish = (values) => {
-    console.log("::values",values)
+    console.log("::values", values)
     addProductSimple(productStore);
   };
 
@@ -174,6 +173,8 @@ export const ProductSimple = ({
                   ))}
                 </Select>
               </Form.Item>
+
+              <ContableItems handleProductSimple={handleProductSimple} />
 
               <Form.Item
                 label="Precio de venta"

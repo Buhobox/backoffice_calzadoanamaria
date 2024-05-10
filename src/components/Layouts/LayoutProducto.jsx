@@ -23,9 +23,25 @@ import { create } from "zustand";
 const { Step } = Steps;
 const { Option } = Select;
 
+const defProductSimple = {
+  TipoProducto: 1,
+  IdIva: 0,
+  ParametrizacionContableProducto: [
+    { NumeroCuenta: "", Tipo: 0 },
+    { NumeroCuenta: "", Tipo: 0 },
+    { NumeroCuenta: "", Tipo: 0 },
+    { NumeroCuenta: "", Tipo: 0 },
+    { NumeroCuenta: "", Tipo: 0 },
+  ]
+}
+
+export const TYPE_PRODUCT = "Producto"
+export const TYPE_SERVICE = "Servicio"
 export const useProductStore = create((set) => ({
   type: "",
-  setType: (type) => set({ type }),
+  isProduct: false,
+  isService: false,
+  setType: (type) => set({ type, isProduct: type === TYPE_PRODUCT, isService: type === TYPE_SERVICE }),
 }))
 
 export const LayoutProducto = () => {
@@ -63,12 +79,10 @@ export const LayoutProducto = () => {
     return name;
   };
 
-  const [productSimple, setproductSimple] = useState({
-    TipoProducto: 1,
-    IdIva: 0,
-  });
+  const [productSimple, setproductSimple] = useState(defProductSimple);
 
   const addProductSimple = (productstore) => {
+    console.log(productSimple);
     const getToken = GetTokenProducto(productstore);
     setcontrolStatusGeneral({
       ...controlStatusGeneral,
@@ -94,7 +108,6 @@ export const LayoutProducto = () => {
           ...productSimple,
           Token: data,
         };
-
         if (selected === "2") {
           setcontrolStatusGeneral({
             ...controlStatusGeneral,
@@ -145,7 +158,7 @@ export const LayoutProducto = () => {
             });
         } else {
           axios
-            .post(baseurl + "GuardarProducto", {
+            .post(baseurl + "GuardarProductoConContabilidad", {
               ...productotosave,
             })
             .then((res) => {
@@ -222,25 +235,43 @@ export const LayoutProducto = () => {
   };
 
   const handleProductSimple = (namefield, value) => {
+    const TipoProducto = producto.isProduct ? 1 : 0;
     if (namefield === "IdCategoria" || namefield === "IdSubCategoria") {
       let name = namefield === "IdCategoria" ? "Categoria" : "SubCategoria";
-
-      setproductSimple({
-        ...productSimple,
+      setproductSimple((old) => ({
+        ...old,
+        TipoProducto,
         [namefield]: value,
         [name]: knowName(value),
-      });
+      }));
     } else if (namefield === "PrecioVentaConIva2") {
-      setproductSimple({
-        ...productSimple,
+      setproductSimple((old) => ({
+        ...old,
+        TipoProducto,
         [namefield]: value,
         PrecioVentaConIva3: value,
+      }));
+    } else if (namefield.includes("catContable") || namefield.includes("typeCat")) {
+      setproductSimple((old) => {
+        const list = old.ParametrizacionContableProducto
+        if (namefield === "catContable1") list[0].NumeroCuenta = value;
+        if (namefield === "typeCat1") list[0].Tipo = parseInt(value);
+        if (namefield === "catContable2") list[1].NumeroCuenta = value;
+        if (namefield === "typeCat2") list[1].Tipo = parseInt(value);
+        if (namefield === "catContable3") list[2].NumeroCuenta = value;
+        if (namefield === "typeCat3") list[2].Tipo = parseInt(value);
+        if (namefield === "catContable4") list[3].NumeroCuenta = value;
+        if (namefield === "typeCat4") list[3].Tipo = parseInt(value);
+        if (namefield === "catContable5") list[4].NumeroCuenta = value;
+        if (namefield === "typeCat5") list[4].Tipo = parseInt(value);
+        return { ...productSimple, TipoProducto, ParametrizacionContableProducto: list }
       });
     } else {
-      setproductSimple({
-        ...productSimple,
+      setproductSimple((old) => ({
+        ...old,
+        TipoProducto,
         [namefield]: value,
-      });
+      }));
     }
   };
 
@@ -484,10 +515,7 @@ export const LayoutProducto = () => {
                 shape="round"
                 onClick={() => {
                   setCurrent(0);
-                  setproductSimple({
-                    TipoProducto: 1,
-                    IdIva: 0,
-                  });
+                  setproductSimple(defProductSimple);
                   setselected(null);
                   setcontrolStatusGeneral({
                     nextDisabled: true,
@@ -567,11 +595,11 @@ const TipoDeProducto = (props) => {
               <Option style={{ fontSize: "19px" }} value="" disabled>
                 Seleccione un producto/servicio
               </Option>
-              <Option style={{ fontSize: "19px" }} value="Producto">
-                Producto
+              <Option style={{ fontSize: "19px" }} value={TYPE_PRODUCT}>
+                {TYPE_PRODUCT}
               </Option>
-              <Option style={{ fontSize: "19px" }} value="Servicio">
-                Servicio
+              <Option style={{ fontSize: "19px" }} value={TYPE_SERVICE}>
+                {TYPE_SERVICE}
               </Option>
             </Select>
             {producto.type ?

@@ -17,10 +17,10 @@ const MedioDePago = (medioPago) => {
 
 export const GetTokenProducto = async (TypeProduct) => {
 
-  let cadena = "f2/VubqR5w0PQ2j03pfipVDoo22wv8cX9YKHaKk2bPT+3r5GzeYtsfT5mbQ+Kx3kBykdVM53jC0a/m1n0Oxxrg==";
-  if (TypeProduct === 2) {
-    cadena = "znSbP63R5Lp2Bfmh81pATZ25qCpQENHAvPZBPIdqeJL4P+1S+Lm0n0Lgg7ccRsYs8orad9dC4BD40mxuKBw/6Q==";
-  }
+  let cadena = "fypoY3mulJAruo2oYS3P6/7ICmrzWAdHIutWvnn9cl8MDKrYtm4XlePe9cpgXwwh";
+  // if (TypeProduct === 2) {
+  //   cadena = "znSbP63R5Lp2Bfmh81pATZ25qCpQENHAvPZBPIdqeJL4P+1S+Lm0n0Lgg7ccRsYs8orad9dC4BD40mxuKBw/6Q==";
+  // }
 
   return await axios.post(
     loginURL,
@@ -37,11 +37,10 @@ export const GetTokenProducto = async (TypeProduct) => {
 };
 
 export const GetToken = async (type) => {
-  let cadena = "f2/VubqR5w0PQ2j03pfipVDoo22wv8cX9YKHaKk2bPT+3r5GzeYtsfT5mbQ+Kx3kBykdVM53jC0a/m1n0Oxxrg==";
-
-  if (type === "accesorios") {
-    cadena = "znSbP63R5Lp2Bfmh81pATZ25qCpQENHAvPZBPIdqeJL4P+1S+Lm0n0Lgg7ccRsYs8orad9dC4BD40mxuKBw/6Q==";
-  }
+  let cadena = "fypoY3mulJAruo2oYS3P6/7ICmrzWAdHIutWvnn9cl8MDKrYtm4XlePe9cpgXwwh";
+  // if (type === "accesorios") {
+  //   cadena = "znSbP63R5Lp2Bfmh81pATZ25qCpQENHAvPZBPIdqeJL4P+1S+Lm0n0Lgg7ccRsYs8orad9dC4BD40mxuKBw/6Q==";
+  // }
 
   // console.log("cadena", cadena,type);
   return await axios.post(

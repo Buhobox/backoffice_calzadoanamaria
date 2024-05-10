@@ -1,0 +1,3486 @@
+[
+  {
+    "SubCuentAuxiliarNumero": "110505",
+    "SubCuentaAuxiliarNombre": "CAJA GENERAL"
+  },
+  {
+    "SubCuentAuxiliarNumero": "110510",
+    "SubCuentaAuxiliarNombre": "CAJAS MENORES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "110520",
+    "SubCuentaAuxiliarNombre": "CAJA POS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "110521",
+    "SubCuentaAuxiliarNombre": "CAJA 2"
+  },
+  {
+    "SubCuentAuxiliarNumero": "11052101",
+    "SubCuentaAuxiliarNombre": "CAJA 22"
+  },
+  {
+    "SubCuentAuxiliarNumero": "111005",
+    "SubCuentaAuxiliarNombre": "MONEDA NACIONAL"
+  },
+  {
+    "SubCuentAuxiliarNumero": "111010",
+    "SubCuentaAuxiliarNombre": "MONEDA EXTRANJERA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "112005",
+    "SubCuentaAuxiliarNombre": "BANCOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "11200501",
+    "SubCuentaAuxiliarNombre": "CTA AHORROS DAVIVIENDA 108-9003476-92"
+  },
+  {
+    "SubCuentAuxiliarNumero": "11200502",
+    "SubCuentaAuxiliarNombre": "CTA AHORROS BANCOLOMBIA 303-000023-58"
+  },
+  {
+    "SubCuentAuxiliarNumero": "112010",
+    "SubCuentaAuxiliarNombre": "CORPORACIONES DE AHORRO Y VIVIENDA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "112015",
+    "SubCuentaAuxiliarNombre": "ORGANISMOS COOPERATIVOS FINANCIEROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "129595",
+    "SubCuentaAuxiliarNombre": "DIVERSAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "130505",
+    "SubCuentaAuxiliarNombre": "NACIONALES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "13050501",
+    "SubCuentaAuxiliarNombre": "CLIENTES NACIONALES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "13050502",
+    "SubCuentaAuxiliarNombre": "SISTECREDITO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "13050503",
+    "SubCuentaAuxiliarNombre": "ADDI"
+  },
+  {
+    "SubCuentAuxiliarNumero": "13050504",
+    "SubCuentaAuxiliarNombre": "ESMIOPCION"
+  },
+  {
+    "SubCuentAuxiliarNumero": "130510",
+    "SubCuentaAuxiliarNombre": "DEL EXTERIOR"
+  },
+  {
+    "SubCuentAuxiliarNumero": "130515",
+    "SubCuentaAuxiliarNombre": "DEUDORES DEL SISTEMA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "132505",
+    "SubCuentaAuxiliarNombre": "A SOCIOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "132510",
+    "SubCuentaAuxiliarNombre": "A ACCIONISTAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "132805",
+    "SubCuentaAuxiliarNombre": "APORTES POR COBRAR"
+  },
+  {
+    "SubCuentAuxiliarNumero": "133005",
+    "SubCuentaAuxiliarNombre": "A PROVEEDORES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "133010",
+    "SubCuentaAuxiliarNombre": "A CONTRATISTAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "133015",
+    "SubCuentaAuxiliarNombre": "A TRABAJADORES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "133020",
+    "SubCuentaAuxiliarNombre": "A AGENTES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "133095",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "133515",
+    "SubCuentaAuxiliarNombre": "PARA CONTRATOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "134505",
+    "SubCuentaAuxiliarNombre": "DIVIDENDOS Y/O PARTICIPACIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "134510",
+    "SubCuentaAuxiliarNombre": "INTERESES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "134515",
+    "SubCuentaAuxiliarNombre": "COMISIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "134520",
+    "SubCuentaAuxiliarNombre": "HONORARIOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "134525",
+    "SubCuentaAuxiliarNombre": "SERVICIOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "134530",
+    "SubCuentaAuxiliarNombre": "ARRENDAMIENTOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "134535",
+    "SubCuentaAuxiliarNombre": "CERT POR COBRAR"
+  },
+  {
+    "SubCuentAuxiliarNumero": "134595",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "135005",
+    "SubCuentaAuxiliarNombre": "DE CONSTRUCCION"
+  },
+  {
+    "SubCuentAuxiliarNumero": "135010",
+    "SubCuentaAuxiliarNombre": "DE PRESTACION DE SERVICIOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "135095",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "135505",
+    "SubCuentaAuxiliarNombre": "ANTICIPO DE IMPUESTOS DE RENTA Y COMPLEMENTARIOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "135510",
+    "SubCuentaAuxiliarNombre": "ANTICIPO DE IMPUESTOS DE INDUSTRIA Y COMERCIO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "135515",
+    "SubCuentaAuxiliarNombre": "RETENCION EN LA FUENTE"
+  },
+  {
+    "SubCuentAuxiliarNumero": "13551501",
+    "SubCuentaAuxiliarNombre": "RFTE 1.5% TARJETAS DE CREDITO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "13551502",
+    "SubCuentaAuxiliarNombre": "RFTE 2.5% COMPRAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "13551503",
+    "SubCuentaAuxiliarNombre": "RFTE 7% RENDIMIENTOS FINANCIEROS CTA AHORROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "13551504",
+    "SubCuentaAuxiliarNombre": "RFTE 7% RENDIMIENTOS FINANCIEROS CDT"
+  },
+  {
+    "SubCuentAuxiliarNumero": "13551505",
+    "SubCuentaAuxiliarNombre": "RFTE 11% COMISIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "13551506",
+    "SubCuentaAuxiliarNombre": "RFTE 4% SERVICIOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "13551520",
+    "SubCuentaAuxiliarNombre": "AUTORRETENCION EN RENTA 0.55%"
+  },
+  {
+    "SubCuentAuxiliarNumero": "135517",
+    "SubCuentaAuxiliarNombre": "IMPUESTO A LAS VENTAS RETENIDO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "13551701",
+    "SubCuentaAuxiliarNombre": "RETEIVA TARJETAS DE CREDITO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "13551702",
+    "SubCuentaAuxiliarNombre": "RETEIVA VENTAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "135518",
+    "SubCuentaAuxiliarNombre": "IMPUESTO DE INDUSTRIA Y COMERCIO RETENIDO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "13551801",
+    "SubCuentaAuxiliarNombre": "RETEICA TARJETAS DE CREDITO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "13551802",
+    "SubCuentaAuxiliarNombre": "RETEICA VENTA "
+  },
+  {
+    "SubCuentAuxiliarNumero": "13551803",
+    "SubCuentaAuxiliarNombre": "RETEICA SOBRE TASA BOMBERIL 10% VENTA "
+  },
+  {
+    "SubCuentAuxiliarNumero": "13551804",
+    "SubCuentaAuxiliarNombre": "RETEICA AVISOS Y TABLEROS 15% VENTA "
+  },
+  {
+    "SubCuentAuxiliarNumero": "13551805",
+    "SubCuentaAuxiliarNombre": "AUTORRETENCION ICA 0,48% BUCARAMANGA "
+  },
+  {
+    "SubCuentAuxiliarNumero": "13551806",
+    "SubCuentaAuxiliarNombre": "AUTORRETENCION ICA 0,54% BUCARAMANGA "
+  },
+  {
+    "SubCuentAuxiliarNumero": "13551807",
+    "SubCuentaAuxiliarNombre": "AUTORRETENCION ICA 0,90% BUCARAMANGA "
+  },
+  {
+    "SubCuentAuxiliarNumero": "13551810",
+    "SubCuentaAuxiliarNombre": "AUTORRETENCION SOBRE TASA BOMBERIL 10%"
+  },
+  {
+    "SubCuentAuxiliarNumero": "13551811",
+    "SubCuentaAuxiliarNombre": "AUTORRETENCION AVISOS Y TABLEROS 15%"
+  },
+  {
+    "SubCuentAuxiliarNumero": "135520",
+    "SubCuentaAuxiliarNombre": "SOBRANTES EN LIQUIDACION PRIVADA DE IMPUESTOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "13552001",
+    "SubCuentaAuxiliarNombre": "SALDO A FAVOR DE IVA "
+  },
+  {
+    "SubCuentAuxiliarNumero": "135525",
+    "SubCuentaAuxiliarNombre": "CONTRIBUCIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "135530",
+    "SubCuentaAuxiliarNombre": "IMPUESTOS DESCONTABLES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "135590",
+    "SubCuentaAuxiliarNombre": "OTRAS RETENCIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "13559001",
+    "SubCuentaAuxiliarNombre": "RETENCION DE AVISOS Y TABLEROS 15% (SOBRE RETEICA)"
+  },
+  {
+    "SubCuentAuxiliarNumero": "13559002",
+    "SubCuentaAuxiliarNombre": "RETENCION SOBRETASA BOMBERIL 10% (SOBRE RETEICA)"
+  },
+  {
+    "SubCuentAuxiliarNumero": "135595",
+    "SubCuentaAuxiliarNombre": "AUTORRETENCIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "135596",
+    "SubCuentaAuxiliarNombre": "RETENCIONES SIN CRUZAR"
+  },
+  {
+    "SubCuentAuxiliarNumero": "136005",
+    "SubCuentaAuxiliarNombre": "A COMPAÃ?IAS ASEGURADORAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "136010",
+    "SubCuentaAuxiliarNombre": "A TRANSPORTADORES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "136015",
+    "SubCuentaAuxiliarNombre": "POR TIQUETES AEREOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "136095",
+    "SubCuentaAuxiliarNombre": "OTRAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "136505",
+    "SubCuentaAuxiliarNombre": "VIVIENDA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "136510",
+    "SubCuentaAuxiliarNombre": "VEHICULOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "136515",
+    "SubCuentaAuxiliarNombre": "EDUCACION"
+  },
+  {
+    "SubCuentAuxiliarNumero": "136520",
+    "SubCuentaAuxiliarNombre": "MEDICOS, ODONTOLOGICOS Y SIMILARES "
+  },
+  {
+    "SubCuentAuxiliarNumero": "136525",
+    "SubCuentaAuxiliarNombre": "CALAMIDAD DOMESTICA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "136530",
+    "SubCuentaAuxiliarNombre": "RESPONSABILIDADES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "136595",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "137010",
+    "SubCuentaAuxiliarNombre": "PRESTAMOS A PARTICULARES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "138006",
+    "SubCuentaAuxiliarNombre": "INCAPACIDADES POR COBRAR"
+  },
+  {
+    "SubCuentAuxiliarNumero": "138007",
+    "SubCuentaAuxiliarNombre": "DISTRIBUIDORES COMERCIALES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "138095",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "139005",
+    "SubCuentaAuxiliarNombre": "DEUDAS DE DIFICIL COBRO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "139905",
+    "SubCuentaAuxiliarNombre": "CLIENTES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "139925",
+    "SubCuentaAuxiliarNombre": "CUENTAS POR COBRAR A SOCIOS Y ACCIONISTAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "139930",
+    "SubCuentaAuxiliarNombre": "ANTICIPOS Y AVANCES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "139935",
+    "SubCuentaAuxiliarNombre": "DEPOSITOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "139945",
+    "SubCuentaAuxiliarNombre": "INGRESOS POR COBRAR"
+  },
+  {
+    "SubCuentAuxiliarNumero": "139950",
+    "SubCuentaAuxiliarNombre": "RETENCION SOBRE CONTRATOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "139955",
+    "SubCuentaAuxiliarNombre": "RECLAMACIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "139960",
+    "SubCuentaAuxiliarNombre": "CUENTAS POR COBRAR A TRABAJADORES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "139965",
+    "SubCuentaAuxiliarNombre": "PRESTAMOS A PARTICULARES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "139975",
+    "SubCuentaAuxiliarNombre": "DEUDORES VARIOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "143501",
+    "SubCuentaAuxiliarNombre": "CASCOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "143502",
+    "SubCuentaAuxiliarNombre": "ACCESORIOS PARA MOTOCICLISTA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "143503",
+    "SubCuentaAuxiliarNombre": "ACCESORIOS PARA MOTOCICLETA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "143504",
+    "SubCuentaAuxiliarNombre": "LLANTAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "143505",
+    "SubCuentaAuxiliarNombre": "REPUESTOS MENORES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "143506",
+    "SubCuentaAuxiliarNombre": "LUJOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "143507",
+    "SubCuentaAuxiliarNombre": "BAULES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "143508",
+    "SubCuentaAuxiliarNombre": "DEFENSA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "143509",
+    "SubCuentaAuxiliarNombre": "PARRILLAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "143510",
+    "SubCuentaAuxiliarNombre": "ACEITES Y LUBRICANTES EXCLUIDOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "143511",
+    "SubCuentaAuxiliarNombre": "SERVICIOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "143512",
+    "SubCuentaAuxiliarNombre": "PRODUCTOS EN FIBRA DE VIDRIO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "143513",
+    "SubCuentaAuxiliarNombre": "COMPRAS NO GRAVADAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "143595",
+    "SubCuentaAuxiliarNombre": "OTROS PRODUCTOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "150405",
+    "SubCuentaAuxiliarNombre": "URBANOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "150410",
+    "SubCuentaAuxiliarNombre": "RURALES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "151605",
+    "SubCuentaAuxiliarNombre": "EDIFICIOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "151610",
+    "SubCuentaAuxiliarNombre": "OFICINAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "151615",
+    "SubCuentaAuxiliarNombre": "ALMACENES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "151625",
+    "SubCuentaAuxiliarNombre": "SALAS DE EXHIBICION Y VENTAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "151630",
+    "SubCuentaAuxiliarNombre": "CAFETERIA Y CASINOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "151670",
+    "SubCuentaAuxiliarNombre": "PARQUEADEROS, GARAJES Y DEPOSITOS "
+  },
+  {
+    "SubCuentAuxiliarNumero": "151680",
+    "SubCuentaAuxiliarNombre": "BODEGAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "151695",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "152001",
+    "SubCuentaAuxiliarNombre": "MAQUINARIA Y EQUIPO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "152405",
+    "SubCuentaAuxiliarNombre": "MUEBLES Y ENSERES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "152410",
+    "SubCuentaAuxiliarNombre": "EQUIPOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "152495",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "152805",
+    "SubCuentaAuxiliarNombre": "EQUIPOS DE PROCESAMIENTO DE DATOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "152810",
+    "SubCuentaAuxiliarNombre": "EQUIPOS DE TELECOMUNICACIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "152815",
+    "SubCuentaAuxiliarNombre": "EQUIPOS DE RADIO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "152825",
+    "SubCuentaAuxiliarNombre": "LINEAS TELEFONICAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "152895",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "154005",
+    "SubCuentaAuxiliarNombre": "AUTOS, CAMIONETAS Y CAMPEROS "
+  },
+  {
+    "SubCuentAuxiliarNumero": "154008",
+    "SubCuentaAuxiliarNombre": "CAMIONES, VOLQUETAS Y FURGONES "
+  },
+  {
+    "SubCuentAuxiliarNumero": "154010",
+    "SubCuentaAuxiliarNombre": "TRACTOMULAS Y REMOLQUES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "154015",
+    "SubCuentaAuxiliarNombre": "BUSES Y BUSETAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "154020",
+    "SubCuentaAuxiliarNombre": "MONTACARGAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "154030",
+    "SubCuentaAuxiliarNombre": "MOTOCICLETAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "154035",
+    "SubCuentaAuxiliarNombre": "BICICLETAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "154095",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "159205",
+    "SubCuentaAuxiliarNombre": "CONSTRUCCIONES Y EDIFICACIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "159210",
+    "SubCuentaAuxiliarNombre": "MAQUINARIA Y EQUIPO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "159215",
+    "SubCuentaAuxiliarNombre": "EQUIPO DE OFICINA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "159220",
+    "SubCuentaAuxiliarNombre": "EQUIPO DE COMPUTACION Y COMUNICACION"
+  },
+  {
+    "SubCuentAuxiliarNumero": "159235",
+    "SubCuentaAuxiliarNombre": "FLOTA Y EQUIPO DE TRANSPORTE"
+  },
+  {
+    "SubCuentAuxiliarNumero": "159270",
+    "SubCuentaAuxiliarNombre": "MUEBLES Y ENSERES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "159605",
+    "SubCuentaAuxiliarNombre": "EXCESO FISCAL SOBRE LA CONTABLE"
+  },
+  {
+    "SubCuentAuxiliarNumero": "159610",
+    "SubCuentaAuxiliarNombre": "DEFECTO FISCAL SOBRE LA CONTABLE (CR)"
+  },
+  {
+    "SubCuentAuxiliarNumero": "162505",
+    "SubCuentaAuxiliarNombre": "DERECHOS DE AUTOR"
+  },
+  {
+    "SubCuentAuxiliarNumero": "163505",
+    "SubCuentaAuxiliarNombre": "LICENCIAS VISUAL STUDIO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "170505",
+    "SubCuentaAuxiliarNombre": "INTERESES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "170510",
+    "SubCuentaAuxiliarNombre": "HONORARIOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "170515",
+    "SubCuentaAuxiliarNombre": "COMISIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "170520",
+    "SubCuentaAuxiliarNombre": "SEGUROS Y FIANZAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "170525",
+    "SubCuentaAuxiliarNombre": "ARRENDAMIENTOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "170530",
+    "SubCuentaAuxiliarNombre": "BODEGAJES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "170535",
+    "SubCuentaAuxiliarNombre": "MANTENIMIENTO EQUIPOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "170540",
+    "SubCuentaAuxiliarNombre": "SERVICIOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "170545",
+    "SubCuentaAuxiliarNombre": "SUSCRIPCIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "170595",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "171004",
+    "SubCuentaAuxiliarNombre": "ORGANIZACION Y PREOPERATIVOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "171008",
+    "SubCuentaAuxiliarNombre": "REMODELACIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "171012",
+    "SubCuentaAuxiliarNombre": "ESTUDIOS, INVESTIGACIONES Y PROYECTOS "
+  },
+  {
+    "SubCuentAuxiliarNumero": "171016",
+    "SubCuentaAuxiliarNombre": "PROGRAMAS PARA COMPUTADOR (SOFTWARE)"
+  },
+  {
+    "SubCuentAuxiliarNumero": "171020",
+    "SubCuentaAuxiliarNombre": "UTILES Y PAPELERIA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "171028",
+    "SubCuentaAuxiliarNombre": "CONTRIBUCIONES Y AFILIACIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "171032",
+    "SubCuentaAuxiliarNombre": "ENTRENAMIENTO DE PERSONAL"
+  },
+  {
+    "SubCuentAuxiliarNumero": "171040",
+    "SubCuentaAuxiliarNombre": "LICENCIAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "171044",
+    "SubCuentaAuxiliarNombre": "PUBLICIDAD, PROPAGANDA Y AVISOS "
+  },
+  {
+    "SubCuentAuxiliarNumero": "171048",
+    "SubCuentaAuxiliarNombre": "ELEMENTOS DE ASEO Y CAFETERIA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "171060",
+    "SubCuentaAuxiliarNombre": "DOTACION Y SUMINISTRO A TRABAJADORES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "171095",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "210501",
+    "SubCuentaAuxiliarNombre": "PRESTAMOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "210502",
+    "SubCuentaAuxiliarNombre": "TARJETAS DE CREDITO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "210503",
+    "SubCuentaAuxiliarNombre": "CREDITOS ROTATIVOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "210505",
+    "SubCuentaAuxiliarNombre": "SOBREGIROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "210510",
+    "SubCuentaAuxiliarNombre": "PAGARES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "210515",
+    "SubCuentaAuxiliarNombre": "CARTAS DE CREDITO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "210520",
+    "SubCuentaAuxiliarNombre": "ACEPTACIONES BANCARIAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "211005",
+    "SubCuentaAuxiliarNombre": "SOBREGIROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "211010",
+    "SubCuentaAuxiliarNombre": "PAGARES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "211015",
+    "SubCuentaAuxiliarNombre": "CARTAS DE CREDITO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "211020",
+    "SubCuentaAuxiliarNombre": "ACEPTACIONES BANCARIAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "211505",
+    "SubCuentaAuxiliarNombre": "PAGARES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "211510",
+    "SubCuentaAuxiliarNombre": "ACEPTACIONES FINANCIERAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "211515",
+    "SubCuentaAuxiliarNombre": "CARTAS DE CREDITO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "211520",
+    "SubCuentaAuxiliarNombre": "CONTRATOS DE ARRENDAMIENTO FINANCIERO (LEASING)"
+  },
+  {
+    "SubCuentAuxiliarNumero": "212005",
+    "SubCuentaAuxiliarNombre": "PAGARES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "212010",
+    "SubCuentaAuxiliarNombre": "ACEPTACIONES FINANCIERAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "212020",
+    "SubCuentaAuxiliarNombre": "CONTRATOS DE ARRENDAMIENTO FINANCIERO (LEASING)"
+  },
+  {
+    "SubCuentAuxiliarNumero": "212505",
+    "SubCuentaAuxiliarNombre": "SOBREGIROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "212510",
+    "SubCuentaAuxiliarNombre": "PAGARES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "212515",
+    "SubCuentaAuxiliarNombre": "HIPOTECARIAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "220505",
+    "SubCuentaAuxiliarNombre": "PROVEEDORES NACIONALES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "233505",
+    "SubCuentaAuxiliarNombre": "GASTOS FINANCIEROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "233510",
+    "SubCuentaAuxiliarNombre": "GASTOS LEGALES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "233515",
+    "SubCuentaAuxiliarNombre": "LIBROS, SUSCRIPCIONES, PERIODICOS Y REVISTAS "
+  },
+  {
+    "SubCuentAuxiliarNumero": "233520",
+    "SubCuentaAuxiliarNombre": "COMISIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "233525",
+    "SubCuentaAuxiliarNombre": "HONORARIOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "233530",
+    "SubCuentaAuxiliarNombre": "SERVICIOS TECNICOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "233535",
+    "SubCuentaAuxiliarNombre": "SERVICIOS DE MANTENIMIENTO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "233540",
+    "SubCuentaAuxiliarNombre": "ARRENDAMIENTOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "233545",
+    "SubCuentaAuxiliarNombre": "TRANSPORTES, FLETES Y ACARREOS "
+  },
+  {
+    "SubCuentAuxiliarNumero": "233550",
+    "SubCuentaAuxiliarNombre": "SERVICIOS PUBLICOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "233555",
+    "SubCuentaAuxiliarNombre": "SEGUROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "233560",
+    "SubCuentaAuxiliarNombre": "GASTOS DE VIAJE"
+  },
+  {
+    "SubCuentAuxiliarNumero": "233565",
+    "SubCuentaAuxiliarNombre": "GASTOS DE REPRESENTACION Y RELACIONES PUBLICAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "233570",
+    "SubCuentaAuxiliarNombre": "SERVICIOS ADUANEROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "233595",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "233596",
+    "SubCuentaAuxiliarNombre": "CUENTAS POR PAGAR A TRABAJADORES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "234501",
+    "SubCuentaAuxiliarNombre": "IVA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "234502",
+    "SubCuentaAuxiliarNombre": "RETENCION EN LA FUENTE"
+  },
+  {
+    "SubCuentAuxiliarNumero": "234503",
+    "SubCuentaAuxiliarNombre": "RETENCION DE ICA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "235505",
+    "SubCuentaAuxiliarNombre": "DEUDAS CON REPRESENTANTE LEGAL"
+  },
+  {
+    "SubCuentAuxiliarNumero": "235510",
+    "SubCuentaAuxiliarNombre": "DEUDAS CON SOCIOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "236005",
+    "SubCuentaAuxiliarNombre": "DIVIDENDOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "236505",
+    "SubCuentaAuxiliarNombre": "SALARIOS Y PAGOS LABORALES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "236510",
+    "SubCuentaAuxiliarNombre": "DIVIDENDOS Y/O PARTICIPACIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "236515",
+    "SubCuentaAuxiliarNombre": "HONORARIOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "23651501",
+    "SubCuentaAuxiliarNombre": "HONORARIOS 10%"
+  },
+  {
+    "SubCuentAuxiliarNumero": "23651502",
+    "SubCuentaAuxiliarNombre": "HONORARIOS 11%"
+  },
+  {
+    "SubCuentAuxiliarNumero": "236520",
+    "SubCuentaAuxiliarNombre": "COMISIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "23652001",
+    "SubCuentaAuxiliarNombre": "COMISIONES 10%"
+  },
+  {
+    "SubCuentAuxiliarNumero": "23652002",
+    "SubCuentaAuxiliarNombre": "COMISIONES 11%"
+  },
+  {
+    "SubCuentAuxiliarNumero": "236525",
+    "SubCuentaAuxiliarNombre": "SERVICIOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "23652501",
+    "SubCuentaAuxiliarNombre": "SERVICIOS TEMPORALES 1%"
+  },
+  {
+    "SubCuentAuxiliarNumero": "23652502",
+    "SubCuentaAuxiliarNombre": "SERVICIOS GENERALES 4%"
+  },
+  {
+    "SubCuentAuxiliarNumero": "23652503",
+    "SubCuentaAuxiliarNombre": "SERVICIOS GENERALES 6%"
+  },
+  {
+    "SubCuentAuxiliarNumero": "23652504",
+    "SubCuentaAuxiliarNombre": "SERVICIOS TRANSPORTE 1%"
+  },
+  {
+    "SubCuentAuxiliarNumero": "236530",
+    "SubCuentaAuxiliarNombre": "ARRENDAMIENTOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "23653001",
+    "SubCuentaAuxiliarNombre": "ARRENDAMIENTOS 3.5%"
+  },
+  {
+    "SubCuentAuxiliarNumero": "23653002",
+    "SubCuentaAuxiliarNombre": "ARRENDAMIENTOS 4%"
+  },
+  {
+    "SubCuentAuxiliarNumero": "236540",
+    "SubCuentaAuxiliarNombre": "COMPRAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "23654001",
+    "SubCuentaAuxiliarNombre": "COMPRAS 2.5%"
+  },
+  {
+    "SubCuentAuxiliarNumero": "236545",
+    "SubCuentaAuxiliarNombre": "LOTERIAS, RIFAS, APUESTAS Y SIMILARES "
+  },
+  {
+    "SubCuentAuxiliarNumero": "236565",
+    "SubCuentaAuxiliarNombre": "POR IMPUESTO DE TIMBRE"
+  },
+  {
+    "SubCuentAuxiliarNumero": "236575",
+    "SubCuentaAuxiliarNombre": "AUTORRETENCIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "23657501",
+    "SubCuentaAuxiliarNombre": "AUTORRETENCION ICA BUCARAMANGA 0.48%"
+  },
+  {
+    "SubCuentAuxiliarNumero": "23657502",
+    "SubCuentaAuxiliarNombre": "AUTORRETENCION ICA BUCARAMANGA 0.54%"
+  },
+  {
+    "SubCuentAuxiliarNumero": "23657520",
+    "SubCuentaAuxiliarNombre": "AUTORRETENCION EN RENTA 0.55%"
+  },
+  {
+    "SubCuentAuxiliarNumero": "236599",
+    "SubCuentaAuxiliarNombre": "RETENCION EN LA FUENTE MENSUAL POR PAGAR"
+  },
+  {
+    "SubCuentAuxiliarNumero": "236705",
+    "SubCuentaAuxiliarNombre": "IMPUESTO A LAS VENTAS RETENIDO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "236801",
+    "SubCuentaAuxiliarNombre": "RTFE ICA 0,48% COMPRAS BUCARAMANGA "
+  },
+  {
+    "SubCuentAuxiliarNumero": "236802",
+    "SubCuentaAuxiliarNombre": "RTFE ICA 0,54% COMPRAS BUCARAMANGA "
+  },
+  {
+    "SubCuentAuxiliarNumero": "236803",
+    "SubCuentaAuxiliarNombre": "RTFE ICA 0,72% ARRENDAMIENTO BUCARAMANGA "
+  },
+  {
+    "SubCuentAuxiliarNumero": "236810",
+    "SubCuentaAuxiliarNombre": "RETENCION SOBRE TASA BOMBERIL 10%"
+  },
+  {
+    "SubCuentAuxiliarNumero": "236811",
+    "SubCuentaAuxiliarNombre": "RETENCION AVISOS Y TABLEROS 15%"
+  },
+  {
+    "SubCuentAuxiliarNumero": "236875",
+    "SubCuentaAuxiliarNombre": "AUTORRETENCIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "23687501",
+    "SubCuentaAuxiliarNombre": "AUTORRETENCION ICA 0,48% BUCARAMANGA "
+  },
+  {
+    "SubCuentAuxiliarNumero": "23687502",
+    "SubCuentaAuxiliarNombre": "AUTORRETENCION ICA 0,54% BUCARAMANGA "
+  },
+  {
+    "SubCuentAuxiliarNumero": "23687503",
+    "SubCuentaAuxiliarNombre": "AUTORRETENCION ICA 0,90% BUCARAMANGA "
+  },
+  {
+    "SubCuentAuxiliarNumero": "23687510",
+    "SubCuentaAuxiliarNombre": "AUTORRETENCION SOBRE TASA BOMBERIL 10%"
+  },
+  {
+    "SubCuentAuxiliarNumero": "23687511",
+    "SubCuentaAuxiliarNombre": "AUTORRETENCION AVISOS Y TABLEROS 15%"
+  },
+  {
+    "SubCuentAuxiliarNumero": "236899",
+    "SubCuentaAuxiliarNombre": "RETENCION ICA MENSUAL POR PAGAR"
+  },
+  {
+    "SubCuentAuxiliarNumero": "237005",
+    "SubCuentaAuxiliarNombre": "APORTES A ENTIDADES PROMOTORAS DE SALUD EPS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "237006",
+    "SubCuentaAuxiliarNombre": "APORTES A ADMINISTRADORAS DE RIESGOS PROFESIONALES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "237010",
+    "SubCuentaAuxiliarNombre": "APORTES AL I.C.B.F., SENA Y CAJAS DE COMPENSACION "
+  },
+  {
+    "SubCuentAuxiliarNumero": "237015",
+    "SubCuentaAuxiliarNombre": "APORTES AL F.I.C."
+  },
+  {
+    "SubCuentAuxiliarNumero": "237025",
+    "SubCuentaAuxiliarNombre": "EMBARGOS JUDICIALES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "237030",
+    "SubCuentaAuxiliarNombre": "LIBRANZAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "237035",
+    "SubCuentaAuxiliarNombre": "SINDICATOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "237040",
+    "SubCuentaAuxiliarNombre": "COOPERATIVAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "237045",
+    "SubCuentaAuxiliarNombre": "FONDOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "237095",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "237501",
+    "SubCuentaAuxiliarNombre": "CUOTAS POR DEVOLVER"
+  },
+  {
+    "SubCuentAuxiliarNumero": "238020",
+    "SubCuentaAuxiliarNombre": "REINTEGROS POR PAGAR"
+  },
+  {
+    "SubCuentAuxiliarNumero": "238025",
+    "SubCuentaAuxiliarNombre": "FONDO DE PERSEVERANCIA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "238030",
+    "SubCuentaAuxiliarNombre": "FONDOS DE CESANTIAS Y/O PENSIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "238035",
+    "SubCuentaAuxiliarNombre": "DONACIONES ASIGNADAS POR PAGAR"
+  },
+  {
+    "SubCuentAuxiliarNumero": "238095",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "240405",
+    "SubCuentaAuxiliarNombre": "VIGENCIA FISCAL CORRIENTE"
+  },
+  {
+    "SubCuentAuxiliarNumero": "240801",
+    "SubCuentaAuxiliarNombre": "IVA GENERADO EN VENTAS 19%"
+  },
+  {
+    "SubCuentAuxiliarNumero": "240802",
+    "SubCuentaAuxiliarNombre": "IVA GENERADO SERVICIOS 19%"
+  },
+  {
+    "SubCuentAuxiliarNumero": "24080201",
+    "SubCuentaAuxiliarNombre": "INSTALACIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "24080202",
+    "SubCuentaAuxiliarNombre": "LAVADOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "240803",
+    "SubCuentaAuxiliarNombre": "COMISIONES 19%"
+  },
+  {
+    "SubCuentAuxiliarNumero": "24080302",
+    "SubCuentaAuxiliarNombre": "COMISIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "240804",
+    "SubCuentaAuxiliarNombre": "ARRENDAMIENTOS 19%"
+  },
+  {
+    "SubCuentAuxiliarNumero": "24080401",
+    "SubCuentaAuxiliarNombre": "BIENES MUEBLES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "24080402",
+    "SubCuentaAuxiliarNombre": "BIENES INMUEBLES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "240805",
+    "SubCuentaAuxiliarNombre": "IVA GENERADO EN FIBRA DE VIDRIO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "240806",
+    "SubCuentaAuxiliarNombre": "DEVOLUCIONES EN COMPRAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "24080601",
+    "SubCuentaAuxiliarNombre": "DEVOLUCIONES EN COMPRAS 19%"
+  },
+  {
+    "SubCuentAuxiliarNumero": "24080602",
+    "SubCuentaAuxiliarNombre": "DEVOLUCION EN SERVICIOS 19%"
+  },
+  {
+    "SubCuentAuxiliarNumero": "240807",
+    "SubCuentaAuxiliarNombre": "IVA DESCONTABLE"
+  },
+  {
+    "SubCuentAuxiliarNumero": "24080701",
+    "SubCuentaAuxiliarNombre": "COMPRAS 19%"
+  },
+  {
+    "SubCuentAuxiliarNumero": "24080702",
+    "SubCuentaAuxiliarNombre": "SERVICIOS 19%"
+  },
+  {
+    "SubCuentAuxiliarNumero": "24080703",
+    "SubCuentaAuxiliarNombre": "SERVICIO DE VIGILANCIA 19%"
+  },
+  {
+    "SubCuentAuxiliarNumero": "24080704",
+    "SubCuentaAuxiliarNombre": "COMISIONES 19%"
+  },
+  {
+    "SubCuentAuxiliarNumero": "240808",
+    "SubCuentaAuxiliarNombre": "DEVOLUCIONES EN VENTAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "24080801",
+    "SubCuentaAuxiliarNombre": "DEVOLUCIONES EN VENTAS 19%"
+  },
+  {
+    "SubCuentAuxiliarNumero": "240899",
+    "SubCuentaAuxiliarNombre": "IVA POR PAGAR"
+  },
+  {
+    "SubCuentAuxiliarNumero": "241205",
+    "SubCuentaAuxiliarNombre": "IMPUESTO DE INDUSTRIA Y COMERCIO ICA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "241601",
+    "SubCuentaAuxiliarNombre": "A LA PROPIEDAD RAIZ"
+  },
+  {
+    "SubCuentAuxiliarNumero": "241602",
+    "SubCuentaAuxiliarNombre": "INDUSTRIA Y COMERCIO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "242001",
+    "SubCuentaAuxiliarNombre": "DERECHOS SOBRE INSTRUMENTOS PUBLICOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "249501",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "250505",
+    "SubCuentaAuxiliarNombre": "SALARIOS X PAGAR A TRABAJADORES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "250506",
+    "SubCuentaAuxiliarNombre": "AUXILIO DE TRANSPORTE"
+  },
+  {
+    "SubCuentAuxiliarNumero": "251005",
+    "SubCuentaAuxiliarNombre": "LEY LABORAL ANTERIOR"
+  },
+  {
+    "SubCuentAuxiliarNumero": "251010",
+    "SubCuentaAuxiliarNombre": "LEY 50 DE 1990 Y NORMAS POSTERIORES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "251505",
+    "SubCuentaAuxiliarNombre": "INTERESES SOBRE CESANTIAS "
+  },
+  {
+    "SubCuentAuxiliarNumero": "252005",
+    "SubCuentaAuxiliarNombre": "PRIMA DE SERVICIOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "252505",
+    "SubCuentaAuxiliarNombre": "VACACIONES CONSOLIDADAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "253005",
+    "SubCuentaAuxiliarNombre": "PRIMAS EXTARLEGALES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "253010",
+    "SubCuentaAuxiliarNombre": "AUXILIOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "253015",
+    "SubCuentaAuxiliarNombre": "DOTACION Y SUMINISTRO A TRABAJADORES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "253020",
+    "SubCuentaAuxiliarNombre": "BONIFICACIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "253025",
+    "SubCuentaAuxiliarNombre": "SEGUROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "253095",
+    "SubCuentaAuxiliarNombre": "OTRAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "253201",
+    "SubCuentaAuxiliarNombre": "PENSIONES POR PAGAR"
+  },
+  {
+    "SubCuentAuxiliarNumero": "254005",
+    "SubCuentaAuxiliarNombre": "INDEMNIZACIONES LABORALES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "260505",
+    "SubCuentaAuxiliarNombre": "INTERESES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "260510",
+    "SubCuentaAuxiliarNombre": "COMISIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "260515",
+    "SubCuentaAuxiliarNombre": "HONORARIOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "260520",
+    "SubCuentaAuxiliarNombre": "SERVICIOS TECNICOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "260525",
+    "SubCuentaAuxiliarNombre": "TRANSPORTES, FLETES Y ACARREOS "
+  },
+  {
+    "SubCuentAuxiliarNumero": "260530",
+    "SubCuentaAuxiliarNombre": "GASTOS DE VIAJE"
+  },
+  {
+    "SubCuentAuxiliarNumero": "260535",
+    "SubCuentaAuxiliarNombre": "SERVICIOS PUBLICOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "260540",
+    "SubCuentaAuxiliarNombre": "REGALIAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "260545",
+    "SubCuentaAuxiliarNombre": "GARANTIAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "260550",
+    "SubCuentaAuxiliarNombre": "MATERIALES Y REPUESTOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "260595",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "261005",
+    "SubCuentaAuxiliarNombre": "CESANTIAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "261010",
+    "SubCuentaAuxiliarNombre": "INTERESES SOBRE CESANTIAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "261015",
+    "SubCuentaAuxiliarNombre": "VACACIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "261020",
+    "SubCuentaAuxiliarNombre": "PRIMA DE SERVICIOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "261025",
+    "SubCuentaAuxiliarNombre": "PRESTACIONES EXTRALEGALES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "261030",
+    "SubCuentaAuxiliarNombre": "VIATICOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "261095",
+    "SubCuentaAuxiliarNombre": "OTRAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "261505",
+    "SubCuentaAuxiliarNombre": "DE RENTA Y COMPLEMENTARIOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "261510",
+    "SubCuentaAuxiliarNombre": "DE INDUSTRIA Y COMERCIO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "261515",
+    "SubCuentaAuxiliarNombre": "TASA POR UTILIZACION DE PUERTOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "261520",
+    "SubCuentaAuxiliarNombre": "DE VEHICULOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "261595",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "263005",
+    "SubCuentaAuxiliarNombre": "TERRENOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "263010",
+    "SubCuentaAuxiliarNombre": "CONSTRUCCIONES Y EDIFICACIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "263015",
+    "SubCuentaAuxiliarNombre": "MAQUINARIA Y EQUIPO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "263020",
+    "SubCuentaAuxiliarNombre": "EQUIPO DE OFICINA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "263025",
+    "SubCuentaAuxiliarNombre": "EQUIPO DE COMPUTACION Y COMUNICACION"
+  },
+  {
+    "SubCuentAuxiliarNumero": "263040",
+    "SubCuentaAuxiliarNombre": "FLOTA Y EQUIPO DE TRANSPORTE"
+  },
+  {
+    "SubCuentAuxiliarNumero": "263095",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "270505",
+    "SubCuentaAuxiliarNombre": "INTERESES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "270510",
+    "SubCuentaAuxiliarNombre": "COMISIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "270515",
+    "SubCuentaAuxiliarNombre": "ARRENDAMIENTOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "270520",
+    "SubCuentaAuxiliarNombre": "HONORARIOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "270525",
+    "SubCuentaAuxiliarNombre": "SERVICIOS TECNICOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "270530",
+    "SubCuentaAuxiliarNombre": "DE SUSCRIPTORES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "270535",
+    "SubCuentaAuxiliarNombre": "TRANSPORTES, FLETES Y ACARREOS "
+  },
+  {
+    "SubCuentAuxiliarNumero": "270540",
+    "SubCuentaAuxiliarNombre": "MERCANCIA EN TRANSITO YA VENDIDA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "270545",
+    "SubCuentaAuxiliarNombre": "MATRICULAS Y PENSIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "270550",
+    "SubCuentaAuxiliarNombre": "CUOTAS DE ADMINISTRACION"
+  },
+  {
+    "SubCuentAuxiliarNumero": "270595",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "280505",
+    "SubCuentaAuxiliarNombre": "DE CLIENTES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "280595",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "281001",
+    "SubCuentaAuxiliarNombre": "CUENTA TRANSITORIA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "281505",
+    "SubCuentaAuxiliarNombre": "VALORES RECIBIDOS PARA TERCEROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "28150501",
+    "SubCuentaAuxiliarNombre": "SOAT"
+  },
+  {
+    "SubCuentAuxiliarNumero": "28150502",
+    "SubCuentaAuxiliarNombre": "TECNICO MECANICO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "289505",
+    "SubCuentaAuxiliarNombre": "INVENTARIO EN TRANSITO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "310505",
+    "SubCuentaAuxiliarNombre": "CAPITAL AUTORIZADO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "310510",
+    "SubCuentaAuxiliarNombre": "CAPITAL POR SUSCRIBIR (DB)"
+  },
+  {
+    "SubCuentAuxiliarNumero": "310515",
+    "SubCuentaAuxiliarNombre": "CAPITAL SUSCRITO POR COBRAR (DB)"
+  },
+  {
+    "SubCuentAuxiliarNumero": "311505",
+    "SubCuentaAuxiliarNombre": "CUOTAS O PARTES DE INTERES SOCIAL"
+  },
+  {
+    "SubCuentAuxiliarNumero": "330505",
+    "SubCuentaAuxiliarNombre": "RESERVA LEGAL"
+  },
+  {
+    "SubCuentAuxiliarNumero": "360505",
+    "SubCuentaAuxiliarNombre": "UTILIDAD DEL EJERCICIO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "361005",
+    "SubCuentaAuxiliarNombre": "PERDIDA DEL EJERCICIO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "370501",
+    "SubCuentaAuxiliarNombre": "UTILIDADES ACUMULADAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "371005",
+    "SubCuentaAuxiliarNombre": "PERDIDAS ACUMULADAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "413595",
+    "SubCuentaAuxiliarNombre": "VENTA DE OTROS PRODUCTOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "41359501",
+    "SubCuentaAuxiliarNombre": "CASCOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "41359502",
+    "SubCuentaAuxiliarNombre": "ACCESORIOS PARA MOTOCICLISTA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "41359503",
+    "SubCuentaAuxiliarNombre": "ACCESORIOS PARA MOTOCICLETA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "41359504",
+    "SubCuentaAuxiliarNombre": "LLANTAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "41359505",
+    "SubCuentaAuxiliarNombre": "REPUESTOS MENORES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "41359506",
+    "SubCuentaAuxiliarNombre": "LUJOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "41359507",
+    "SubCuentaAuxiliarNombre": "BAULES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "41359508",
+    "SubCuentaAuxiliarNombre": "DEFENSA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "41359509",
+    "SubCuentaAuxiliarNombre": "PARRILLAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "41359510",
+    "SubCuentaAuxiliarNombre": "ACEITES Y LUBRICANTES EXCLUIDOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "41359511",
+    "SubCuentaAuxiliarNombre": "INSTALACIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "41359512",
+    "SubCuentaAuxiliarNombre": "LAVADOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "41359513",
+    "SubCuentaAuxiliarNombre": "PRODUCTOS EN FIBRA DE VIDRIO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "41359514",
+    "SubCuentaAuxiliarNombre": "REPARACIONES PROD EN FIBRA DE VIDRIO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "41359515",
+    "SubCuentaAuxiliarNombre": "AUXILIAR 01"
+  },
+  {
+    "SubCuentAuxiliarNumero": "415555",
+    "SubCuentaAuxiliarNombre": "PUBLICIDAD"
+  },
+  {
+    "SubCuentAuxiliarNumero": "417501",
+    "SubCuentaAuxiliarNombre": "CASCOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "417502",
+    "SubCuentaAuxiliarNombre": "ACCESORIOS PARA MOTOCICLISTA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "417503",
+    "SubCuentaAuxiliarNombre": "ACCESORIOS PARA MOTOCICLETA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "417504",
+    "SubCuentaAuxiliarNombre": "LLANTAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "417505",
+    "SubCuentaAuxiliarNombre": "REPUESTOS MENORES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "417506",
+    "SubCuentaAuxiliarNombre": "LUJOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "417507",
+    "SubCuentaAuxiliarNombre": "BAULES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "417508",
+    "SubCuentaAuxiliarNombre": "DEFENSA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "417509",
+    "SubCuentaAuxiliarNombre": "PARRILLAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "417510",
+    "SubCuentaAuxiliarNombre": "ACEITES Y LUBRICANTES EXCLUIDOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "417511",
+    "SubCuentaAuxiliarNombre": "INSTALACIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "417512",
+    "SubCuentaAuxiliarNombre": "LAVADOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "417513",
+    "SubCuentaAuxiliarNombre": "PRODUCTOS EN FIBRA DE VIDRIO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "417514",
+    "SubCuentaAuxiliarNombre": "REPARACIONES PROD EN FIBRA DE VIDRIO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "421005",
+    "SubCuentaAuxiliarNombre": "INTERESES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "421015",
+    "SubCuentaAuxiliarNombre": "DESCUENTOS AMORTIZADOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "421020",
+    "SubCuentaAuxiliarNombre": "DIFERENCIA EN CAMBIO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "421025",
+    "SubCuentaAuxiliarNombre": "FINANCIACION VEHICULOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "421030",
+    "SubCuentaAuxiliarNombre": "FINANCIACION SISTEMAS DE VIAJES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "421035",
+    "SubCuentaAuxiliarNombre": "ACEPTACIONES BANCARIAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "421040",
+    "SubCuentaAuxiliarNombre": "DESCUENTOS COMERCIALES CONDICIONADOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "421045",
+    "SubCuentaAuxiliarNombre": "DESCUENTOS BANCARIOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "421050",
+    "SubCuentaAuxiliarNombre": "COMISIONES CHEQUES DE OTRAS PLAZAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "421055",
+    "SubCuentaAuxiliarNombre": "MULTAS Y RECARGOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "421060",
+    "SubCuentaAuxiliarNombre": "SANCIONES CHEQUES DEVUELTOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "421095",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "421505",
+    "SubCuentaAuxiliarNombre": "DE SOCIEDADES ANONIMAS Y/O ASIMILADAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "421510",
+    "SubCuentaAuxiliarNombre": "DE SOCIEDADES LIMITADAS Y/O ASIMILADAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "421805",
+    "SubCuentaAuxiliarNombre": "DE SOCIEDADES ANONIMAS Y/O ASIMILADAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "421810",
+    "SubCuentaAuxiliarNombre": "DE SOCIEDADES LIMITADAS Y/O ASIMILADAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "422005",
+    "SubCuentaAuxiliarNombre": "TERRENOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "422010",
+    "SubCuentaAuxiliarNombre": "CONSTRUCCIONES Y EDIFICIOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "422015",
+    "SubCuentaAuxiliarNombre": "MAQUINARIA Y EQUIPO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "422020",
+    "SubCuentaAuxiliarNombre": "EQUIPO DE OFICINA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "422025",
+    "SubCuentaAuxiliarNombre": "EQUIPO DE COMPUTACION Y COMUNICACION"
+  },
+  {
+    "SubCuentAuxiliarNumero": "422040",
+    "SubCuentaAuxiliarNombre": "FLOTA Y EQUIPO DE TRANSPORTE"
+  },
+  {
+    "SubCuentAuxiliarNumero": "422530",
+    "SubCuentaAuxiliarNombre": "POR INGRESOS PARA TERCEROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "422595",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "423005",
+    "SubCuentaAuxiliarNombre": "ASESORIAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "423010",
+    "SubCuentaAuxiliarNombre": "ASISTENCIA TECNICA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "423015",
+    "SubCuentaAuxiliarNombre": "AUXILIAR ADMINISTRATIVA CASA DEL GRES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "423510",
+    "SubCuentaAuxiliarNombre": "DE TRANSPORTE"
+  },
+  {
+    "SubCuentAuxiliarNumero": "423520",
+    "SubCuentaAuxiliarNombre": "ADMINISTRATIVOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "423525",
+    "SubCuentaAuxiliarNombre": "TECNICOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "423540",
+    "SubCuentaAuxiliarNombre": "TALLER DE VEHICULOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "423565",
+    "SubCuentaAuxiliarNombre": "DE MANTENIMIENTO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "423580",
+    "SubCuentaAuxiliarNombre": "FLETES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "423595",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "424504",
+    "SubCuentaAuxiliarNombre": "TERRENOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "424508",
+    "SubCuentaAuxiliarNombre": "CONSTRUCCIONES EN CURSO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "424512",
+    "SubCuentaAuxiliarNombre": "MAQUINARIA EN MONTAJE"
+  },
+  {
+    "SubCuentAuxiliarNumero": "424516",
+    "SubCuentaAuxiliarNombre": "CONSTRUCCIONES Y EDIFICACIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "424520",
+    "SubCuentaAuxiliarNombre": "MAQUINARIA Y EQUIPO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "424524",
+    "SubCuentaAuxiliarNombre": "EQUIPO DE OFICINA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "424528",
+    "SubCuentaAuxiliarNombre": "EQUIPO DE COMPUTACION Y COMUNICACION"
+  },
+  {
+    "SubCuentAuxiliarNumero": "424540",
+    "SubCuentaAuxiliarNombre": "FLOTA Y EQUIPO DE TRANSPORTE"
+  },
+  {
+    "SubCuentAuxiliarNumero": "424810",
+    "SubCuentaAuxiliarNombre": "OTROS ACTIVOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "425001",
+    "SubCuentaAuxiliarNombre": "RECUPERACION DE COSTOS Y GASTOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "425530",
+    "SubCuentaAuxiliarNombre": "POR INCUMPLIMIENTO DE CONTRATOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "427501",
+    "SubCuentaAuxiliarNombre": "DEVOLUCIONES, REBAJAS Y DESCUENTOS EN OTRAS VENTAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "42750105",
+    "SubCuentaAuxiliarNombre": "DEVOLUCIONES, REBAJAS Y DESCUENTOS EN OTRAS VENTAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "429505",
+    "SubCuentaAuxiliarNombre": "APROVECHAMIENTOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "429553",
+    "SubCuentaAuxiliarNombre": "SOBRANTES DE CAJA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "429567",
+    "SubCuentaAuxiliarNombre": "UTILES, PAPELERIA Y FOTOCOPIAS "
+  },
+  {
+    "SubCuentAuxiliarNumero": "429581",
+    "SubCuentaAuxiliarNombre": "AJUSTE AL PESO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "429595",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "429596",
+    "SubCuentaAuxiliarNombre": "ANTICIPOS SIN REDIMIR"
+  },
+  {
+    "SubCuentAuxiliarNumero": "470505",
+    "SubCuentaAuxiliarNombre": "INVERSIONES (CR)"
+  },
+  {
+    "SubCuentAuxiliarNumero": "470510",
+    "SubCuentaAuxiliarNombre": "INVENTARIOS "
+  },
+  {
+    "SubCuentAuxiliarNumero": "470515",
+    "SubCuentaAuxiliarNombre": "PROPIEDADES, PLANTA Y EQUIPO (CR) "
+  },
+  {
+    "SubCuentAuxiliarNumero": "470520",
+    "SubCuentaAuxiliarNombre": "INTANGIBLES (CR)"
+  },
+  {
+    "SubCuentAuxiliarNumero": "470524",
+    "SubCuentaAuxiliarNombre": "CORRECCION MONETARIA TEXTIL"
+  },
+  {
+    "SubCuentAuxiliarNumero": "470525",
+    "SubCuentaAuxiliarNombre": "ACTIVOS DIFERIDOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "470530",
+    "SubCuentaAuxiliarNombre": "OTROS ACTIVOS (CR)"
+  },
+  {
+    "SubCuentAuxiliarNumero": "470535",
+    "SubCuentaAuxiliarNombre": "PASIVOS SUJETOS DE AJUSTE"
+  },
+  {
+    "SubCuentAuxiliarNumero": "470540",
+    "SubCuentaAuxiliarNombre": "PATRIMONIO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "470545",
+    "SubCuentaAuxiliarNombre": "DEPRECIACION ACUMULADA (DB)"
+  },
+  {
+    "SubCuentAuxiliarNumero": "510503",
+    "SubCuentaAuxiliarNombre": "SALARIO INTEGRAL"
+  },
+  {
+    "SubCuentAuxiliarNumero": "510506",
+    "SubCuentaAuxiliarNombre": "SUELDOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "510507",
+    "SubCuentaAuxiliarNombre": "SUELDOS TELETRABAJO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "510512",
+    "SubCuentaAuxiliarNombre": "JORNALES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "510515",
+    "SubCuentaAuxiliarNombre": "HORAS EXTRAS Y RECARGOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "51051501",
+    "SubCuentaAuxiliarNombre": "HORA EXTRA DIURNA ORDINARIA 1.25"
+  },
+  {
+    "SubCuentAuxiliarNumero": "51051502",
+    "SubCuentaAuxiliarNombre": "HORA EXTRA NOCTURNA ORDINARIA 1.75"
+  },
+  {
+    "SubCuentAuxiliarNumero": "51051503",
+    "SubCuentaAuxiliarNombre": "RECARGO HORA NOCTURNA ORDINARIA 0.35"
+  },
+  {
+    "SubCuentAuxiliarNumero": "51051504",
+    "SubCuentaAuxiliarNombre": "HORA EXTRA DIURNA DOMINICAL 2"
+  },
+  {
+    "SubCuentAuxiliarNumero": "51051505",
+    "SubCuentaAuxiliarNombre": "HORA EXTRA NOCTURNA DOMINICAL 2.5"
+  },
+  {
+    "SubCuentAuxiliarNumero": "51051506",
+    "SubCuentaAuxiliarNombre": "RECARGO HORA NOCTURNA DOMINICAL O FESTIVO 2.1"
+  },
+  {
+    "SubCuentAuxiliarNumero": "51051507",
+    "SubCuentaAuxiliarNombre": "HORA ORDINARIA DOMINICAL O FESTIVA 1.75"
+  },
+  {
+    "SubCuentAuxiliarNumero": "51051508",
+    "SubCuentaAuxiliarNombre": "HORA ORDINARIA NOCTURNA DOMINICAL O FESTIVA 1.10"
+  },
+  {
+    "SubCuentAuxiliarNumero": "510518",
+    "SubCuentaAuxiliarNombre": "COMISIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "510521",
+    "SubCuentaAuxiliarNombre": "VIATICOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "510524",
+    "SubCuentaAuxiliarNombre": "INCAPACIDADES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "510527",
+    "SubCuentaAuxiliarNombre": "AUXILIO DE TRANSPORTE"
+  },
+  {
+    "SubCuentAuxiliarNumero": "510528",
+    "SubCuentaAuxiliarNombre": "OTROS AUXILIOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "51052801",
+    "SubCuentaAuxiliarNombre": "AUXILIO RODAMIENTO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "51052802",
+    "SubCuentaAuxiliarNombre": "AUXILIO ALIMENTACION"
+  },
+  {
+    "SubCuentAuxiliarNumero": "51052803",
+    "SubCuentaAuxiliarNombre": "VIATICOS SALARIAL"
+  },
+  {
+    "SubCuentAuxiliarNumero": "51052804",
+    "SubCuentaAuxiliarNombre": "VIATICOS NO SALARIAL"
+  },
+  {
+    "SubCuentAuxiliarNumero": "510530",
+    "SubCuentaAuxiliarNombre": "CESANTIAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "510533",
+    "SubCuentaAuxiliarNombre": "INTERESES SOBRE CESANTIAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "510536",
+    "SubCuentaAuxiliarNombre": "PRIMA DE SERVICIOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "510537",
+    "SubCuentaAuxiliarNombre": "PRIMA EXTRALEGAL"
+  },
+  {
+    "SubCuentAuxiliarNumero": "510539",
+    "SubCuentaAuxiliarNombre": "VACACIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "510542",
+    "SubCuentaAuxiliarNombre": "PRIMAS EXTRALEGALES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "510545",
+    "SubCuentaAuxiliarNombre": "AUXILIOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "510548",
+    "SubCuentaAuxiliarNombre": "BONIFICACIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "510551",
+    "SubCuentaAuxiliarNombre": "DOTACION Y SUMINISTRO A TRABAJADORES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "510554",
+    "SubCuentaAuxiliarNombre": "SEGUROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "510555",
+    "SubCuentaAuxiliarNombre": "LICENCIAS REMUNERADAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "510557",
+    "SubCuentaAuxiliarNombre": "CUOTAS PARTES PENSIONES DE JUBILACION"
+  },
+  {
+    "SubCuentAuxiliarNumero": "510558",
+    "SubCuentaAuxiliarNombre": "AMORTIZACION CALCULO ACTUARIAL PENSIONES DE JUBILA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "510559",
+    "SubCuentaAuxiliarNombre": "PENSIONES DE JUBILACION"
+  },
+  {
+    "SubCuentAuxiliarNumero": "510560",
+    "SubCuentaAuxiliarNombre": "INDEMNIZACIONES LABORALES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "510563",
+    "SubCuentaAuxiliarNombre": "CAPACITACION AL PERSONAL"
+  },
+  {
+    "SubCuentAuxiliarNumero": "510566",
+    "SubCuentaAuxiliarNombre": "GASTOS DEPORTIVOS Y DE RECREACION"
+  },
+  {
+    "SubCuentAuxiliarNumero": "510568",
+    "SubCuentaAuxiliarNombre": "APORTES A ASEGURADORAS DE RIESGOS PROFESIONALES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "510569",
+    "SubCuentaAuxiliarNombre": "APORTES A ENTIDADES PROMOTORAS DE SALUD EPS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "510570",
+    "SubCuentaAuxiliarNombre": "APORTES A FONDOS DE PENSIONES Y/O CESANTIAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "510572",
+    "SubCuentaAuxiliarNombre": "APORTES CAJAS DE COMPENSACION FAMILIAR"
+  },
+  {
+    "SubCuentAuxiliarNumero": "510575",
+    "SubCuentaAuxiliarNombre": "APORTES I.C.B.F."
+  },
+  {
+    "SubCuentAuxiliarNumero": "510578",
+    "SubCuentaAuxiliarNombre": "SENA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "510581",
+    "SubCuentaAuxiliarNombre": "APORTES SINDICALES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "510584",
+    "SubCuentaAuxiliarNombre": "GASTOS MEDICOS Y DROGAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "510595",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "511005",
+    "SubCuentaAuxiliarNombre": "ADMINISTRACION"
+  },
+  {
+    "SubCuentAuxiliarNumero": "511010",
+    "SubCuentaAuxiliarNombre": "REVISORÃA FISCAL"
+  },
+  {
+    "SubCuentAuxiliarNumero": "511015",
+    "SubCuentaAuxiliarNombre": "AUDITORIA EXTERNA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "511020",
+    "SubCuentaAuxiliarNombre": "AVALUOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "511025",
+    "SubCuentaAuxiliarNombre": "ASESORIA JURIDICA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "511030",
+    "SubCuentaAuxiliarNombre": "ASESORIA FINANCIERA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "511035",
+    "SubCuentaAuxiliarNombre": "ASESORIA TECNICA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "511036",
+    "SubCuentaAuxiliarNombre": "ASESORIA ADMINISTRATIVA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "511040",
+    "SubCuentaAuxiliarNombre": "ASESORIA CONTABLE"
+  },
+  {
+    "SubCuentAuxiliarNumero": "511095",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "511501",
+    "SubCuentaAuxiliarNombre": "AJUSTE AL PESO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "511505",
+    "SubCuentaAuxiliarNombre": "INDUSTRIA Y COMERCIO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "511510",
+    "SubCuentaAuxiliarNombre": "DE TIMBRES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "511515",
+    "SubCuentaAuxiliarNombre": "A LA PROPIEDAD RAIZ"
+  },
+  {
+    "SubCuentAuxiliarNumero": "511520",
+    "SubCuentaAuxiliarNombre": "DERECHOS SOBRE INSTRUMENTOS PUBLICOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "511521",
+    "SubCuentaAuxiliarNombre": "IMPUESTO PREDIAL"
+  },
+  {
+    "SubCuentAuxiliarNumero": "511525",
+    "SubCuentaAuxiliarNombre": "DE VALORIZACION"
+  },
+  {
+    "SubCuentAuxiliarNumero": "511530",
+    "SubCuentaAuxiliarNombre": "DE TURISMO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "511540",
+    "SubCuentaAuxiliarNombre": "DE VEHICULOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "511545",
+    "SubCuentaAuxiliarNombre": "ALUMBRADO PUBLICO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "511570",
+    "SubCuentaAuxiliarNombre": "IVA DESCONTABLE"
+  },
+  {
+    "SubCuentAuxiliarNumero": "511571",
+    "SubCuentaAuxiliarNombre": "IMPUESTO AL CONSUMO "
+  },
+  {
+    "SubCuentAuxiliarNumero": "511575",
+    "SubCuentaAuxiliarNombre": "IMPUESTO AL CONSUMO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "511595",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "512005",
+    "SubCuentaAuxiliarNombre": "TERRENOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "512010",
+    "SubCuentaAuxiliarNombre": "CONSTRUCCIONES Y EDIFICACIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "512015",
+    "SubCuentaAuxiliarNombre": "MAQUINARIA Y EQUIPO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "512020",
+    "SubCuentaAuxiliarNombre": "EQUIPO DE OFICINA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "512025",
+    "SubCuentaAuxiliarNombre": "EQUIPO DE COMPUTACION Y COMUNICACION"
+  },
+  {
+    "SubCuentAuxiliarNumero": "512040",
+    "SubCuentaAuxiliarNombre": "FLOTA Y EQUIPO DE TRANSPORTE"
+  },
+  {
+    "SubCuentAuxiliarNumero": "512095",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "512505",
+    "SubCuentaAuxiliarNombre": "CONTRIBUCIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "512510",
+    "SubCuentaAuxiliarNombre": "AFILIACIONES Y SOSTENIMIENTO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "513005",
+    "SubCuentaAuxiliarNombre": "MANEJO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "513010",
+    "SubCuentaAuxiliarNombre": "CUMPLIMIENTO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "513015",
+    "SubCuentaAuxiliarNombre": "CORRIENTE DEBIL"
+  },
+  {
+    "SubCuentAuxiliarNumero": "513020",
+    "SubCuentaAuxiliarNombre": "VIDA COLECTIVA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "513025",
+    "SubCuentaAuxiliarNombre": "INCENDIO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "513030",
+    "SubCuentaAuxiliarNombre": "TERREMOTO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "513035",
+    "SubCuentaAuxiliarNombre": "SUSTRACCION Y HURTO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "513040",
+    "SubCuentaAuxiliarNombre": "FLOTA Y EQUIPO DE TRANSPORTE"
+  },
+  {
+    "SubCuentAuxiliarNumero": "513060",
+    "SubCuentaAuxiliarNombre": "RESPONSABILIDAD CIVIL Y EXTRACONTRACTUAL"
+  },
+  {
+    "SubCuentAuxiliarNumero": "513065",
+    "SubCuentaAuxiliarNombre": "VUELO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "513070",
+    "SubCuentaAuxiliarNombre": "ROTURA DE MAQUINARIA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "513075",
+    "SubCuentaAuxiliarNombre": "OBLIGATORIO ACCIDENTE DE TRANSITO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "513080",
+    "SubCuentaAuxiliarNombre": "LUCRO CESANTE"
+  },
+  {
+    "SubCuentAuxiliarNumero": "513095",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "513505",
+    "SubCuentaAuxiliarNombre": "ASEO Y VIGILANCIA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "513510",
+    "SubCuentaAuxiliarNombre": "TEMPORALES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "51351001",
+    "SubCuentaAuxiliarNombre": "TEMPORALES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "51351002",
+    "SubCuentaAuxiliarNombre": "ADMINISTRACION TEMPORALES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "513515",
+    "SubCuentaAuxiliarNombre": "ASISTENCIA TECNICA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "513520",
+    "SubCuentaAuxiliarNombre": "PROCESAMIENTO ELECTRONICO DE DATOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "513525",
+    "SubCuentaAuxiliarNombre": "ACUEDUCTO Y ALCANTARILLADO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "513530",
+    "SubCuentaAuxiliarNombre": "ENERGIA ELECTRICA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "513535",
+    "SubCuentaAuxiliarNombre": "TELEFONO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "513540",
+    "SubCuentaAuxiliarNombre": "CORREO, PORTES Y TELEGRAMAS "
+  },
+  {
+    "SubCuentAuxiliarNumero": "513545",
+    "SubCuentaAuxiliarNombre": "FAX Y TELEX"
+  },
+  {
+    "SubCuentAuxiliarNumero": "513550",
+    "SubCuentaAuxiliarNombre": "TRANSPORTE, FLETES Y ACARREOS "
+  },
+  {
+    "SubCuentAuxiliarNumero": "513555",
+    "SubCuentaAuxiliarNombre": "PARQUEADERO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "513560",
+    "SubCuentaAuxiliarNombre": "INTERNET"
+  },
+  {
+    "SubCuentAuxiliarNumero": "513565",
+    "SubCuentaAuxiliarNombre": "CELULAR"
+  },
+  {
+    "SubCuentAuxiliarNumero": "513570",
+    "SubCuentaAuxiliarNombre": "DISPONIBILIDAD DE DATAFONO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "513595",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "513599",
+    "SubCuentaAuxiliarNombre": "IVA  MAYOR VALOR DEL GASTO 16%"
+  },
+  {
+    "SubCuentAuxiliarNumero": "514005",
+    "SubCuentaAuxiliarNombre": "NOTARIALES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "514010",
+    "SubCuentaAuxiliarNombre": "REGISTRO MERCANTIL"
+  },
+  {
+    "SubCuentAuxiliarNumero": "514015",
+    "SubCuentaAuxiliarNombre": "TRAMITES Y LICENCIAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "514095",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "514505",
+    "SubCuentaAuxiliarNombre": "TERRENOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "514510",
+    "SubCuentaAuxiliarNombre": "CONSTRUCCIONES Y EDIFICACIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "514515",
+    "SubCuentaAuxiliarNombre": "MAQUINARIA Y EQUIPO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "514520",
+    "SubCuentaAuxiliarNombre": "EQUIPO DE OFICINA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "514525",
+    "SubCuentaAuxiliarNombre": "EQUIPO DE COMPUTACION Y COMUNICACION"
+  },
+  {
+    "SubCuentAuxiliarNumero": "514540",
+    "SubCuentaAuxiliarNombre": "FLOTA Y EQUIPO DE TRANSPORTE"
+  },
+  {
+    "SubCuentAuxiliarNumero": "515001",
+    "SubCuentaAuxiliarNombre": "SEGURIDAD"
+  },
+  {
+    "SubCuentAuxiliarNumero": "515005",
+    "SubCuentaAuxiliarNombre": "INSTALACIONES ELECTRICAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "515010",
+    "SubCuentaAuxiliarNombre": "ARREGLOS ORNAMENTALES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "515015",
+    "SubCuentaAuxiliarNombre": "REPARACIONES LOCATIVAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "515020",
+    "SubCuentaAuxiliarNombre": "AIRE ACONDICIONADO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "515025",
+    "SubCuentaAuxiliarNombre": "TELEFONIA, INTERNET Y PBX"
+  },
+  {
+    "SubCuentAuxiliarNumero": "515095",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "515505",
+    "SubCuentaAuxiliarNombre": "ALOJAMIENTO Y MANUTENCION"
+  },
+  {
+    "SubCuentAuxiliarNumero": "515510",
+    "SubCuentaAuxiliarNombre": "PASAJES FLUVIALES Y/O MARITIMOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "515515",
+    "SubCuentaAuxiliarNombre": "PASAJES AEREOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "515520",
+    "SubCuentaAuxiliarNombre": "PASAJES TERRESTRES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "515521",
+    "SubCuentaAuxiliarNombre": "PEAJES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "515525",
+    "SubCuentaAuxiliarNombre": "PASAJES FERREOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "515595",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "516005",
+    "SubCuentaAuxiliarNombre": "CONSTRUCCIONES Y EDIFICACIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "516010",
+    "SubCuentaAuxiliarNombre": "MAQUINARIA Y EQUIPO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "516015",
+    "SubCuentaAuxiliarNombre": "EQUIPO DE OFICINA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "516020",
+    "SubCuentaAuxiliarNombre": "EQUIPO DE COMPUTACION Y COMUNICACION"
+  },
+  {
+    "SubCuentAuxiliarNumero": "516035",
+    "SubCuentaAuxiliarNombre": "FLOTA Y EQUIPO DE TRANSPORTE"
+  },
+  {
+    "SubCuentAuxiliarNumero": "516070",
+    "SubCuentaAuxiliarNombre": "MUEBLES Y ENSERES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "516505",
+    "SubCuentaAuxiliarNombre": "VIAS DE COMUNICACION"
+  },
+  {
+    "SubCuentAuxiliarNumero": "516510",
+    "SubCuentaAuxiliarNombre": "INTANGIBLES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "516515",
+    "SubCuentaAuxiliarNombre": "CARGOS DIFERIDOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "516595",
+    "SubCuentaAuxiliarNombre": "OTRAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "519505",
+    "SubCuentaAuxiliarNombre": "COMISIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "519510",
+    "SubCuentaAuxiliarNombre": "LIBROS, SUSCRIPCIONES, PERIODICOS Y REVISTAS "
+  },
+  {
+    "SubCuentAuxiliarNumero": "519515",
+    "SubCuentaAuxiliarNombre": "MUSICA AMBIENTAL"
+  },
+  {
+    "SubCuentAuxiliarNumero": "519520",
+    "SubCuentaAuxiliarNombre": "GASTOS DE REPRESENTACION Y RELACIONES PUBLICAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "519521",
+    "SubCuentaAuxiliarNombre": "ATENCIONES A EMPLEADOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "519525",
+    "SubCuentaAuxiliarNombre": "ELEMENTOS DE ASEO Y CAFETERIA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "519530",
+    "SubCuentaAuxiliarNombre": "UTILES, PAPELERIA Y FOTOCOPIAS "
+  },
+  {
+    "SubCuentAuxiliarNumero": "519531",
+    "SubCuentaAuxiliarNombre": "UTILES DE OFICINA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "519535",
+    "SubCuentaAuxiliarNombre": "COMBUSTIBLES Y LUBRICANTES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "519540",
+    "SubCuentaAuxiliarNombre": "ENVASES Y EMPAQUES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "519545",
+    "SubCuentaAuxiliarNombre": "TAXIS Y BUSES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "519550",
+    "SubCuentaAuxiliarNombre": "ESTAMPILLAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "519555",
+    "SubCuentaAuxiliarNombre": "MICROFILMACION"
+  },
+  {
+    "SubCuentAuxiliarNumero": "519560",
+    "SubCuentaAuxiliarNombre": "CASINO Y RESTAURANTE"
+  },
+  {
+    "SubCuentAuxiliarNumero": "519565",
+    "SubCuentaAuxiliarNombre": "PARQUEADEROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "519570",
+    "SubCuentaAuxiliarNombre": "INDEMNIZACION POR DAÃ?OS A TERCEROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "519575",
+    "SubCuentaAuxiliarNombre": "POLVORA Y SIMILARES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "519580",
+    "SubCuentaAuxiliarNombre": "PUBLICIDAD Y PROPAGANDA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "519595",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "519599",
+    "SubCuentaAuxiliarNombre": "IVA MAYOR VALOR DEL GASTO 16%"
+  },
+  {
+    "SubCuentAuxiliarNumero": "519905",
+    "SubCuentaAuxiliarNombre": "INVERSIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "519910",
+    "SubCuentaAuxiliarNombre": "DEUDORES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "519915",
+    "SubCuentaAuxiliarNombre": "PROPIEDADES, PLANTA Y EQUIPO "
+  },
+  {
+    "SubCuentAuxiliarNumero": "519995",
+    "SubCuentaAuxiliarNombre": "OTROS ACTIVOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "520503",
+    "SubCuentaAuxiliarNombre": "SALARIO INTEGRAL"
+  },
+  {
+    "SubCuentAuxiliarNumero": "520506",
+    "SubCuentaAuxiliarNombre": "SUELDOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "520507",
+    "SubCuentaAuxiliarNombre": "SUELDOS TELETRABAJO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "520512",
+    "SubCuentaAuxiliarNombre": "JORNALES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "520515",
+    "SubCuentaAuxiliarNombre": "HORAS EXTRAS Y RECARGOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "52051501",
+    "SubCuentaAuxiliarNombre": "HORA EXTRA DIURNA ORDINARIA 1.25"
+  },
+  {
+    "SubCuentAuxiliarNumero": "52051502",
+    "SubCuentaAuxiliarNombre": "HORA EXTRA NOCTURNA ORDINARIA 1.75"
+  },
+  {
+    "SubCuentAuxiliarNumero": "52051503",
+    "SubCuentaAuxiliarNombre": "RECARGO HORA NOCTURNA ORDINARIA 0.35"
+  },
+  {
+    "SubCuentAuxiliarNumero": "52051504",
+    "SubCuentaAuxiliarNombre": "HORA EXTRA DIURNA DOMINICAL 2"
+  },
+  {
+    "SubCuentAuxiliarNumero": "52051505",
+    "SubCuentaAuxiliarNombre": "HORA EXTRA NOCTURNA DOMINICAL 2.5"
+  },
+  {
+    "SubCuentAuxiliarNumero": "52051506",
+    "SubCuentaAuxiliarNombre": "RECARGO HORA NOCTURNA DOMINICAL O FESTIVO 2.1"
+  },
+  {
+    "SubCuentAuxiliarNumero": "52051507",
+    "SubCuentaAuxiliarNombre": "HORA ORDINARIA DOMINICAL O FESTIVA 1.75"
+  },
+  {
+    "SubCuentAuxiliarNumero": "52051508",
+    "SubCuentaAuxiliarNombre": "HORA ORDINARIA NOCTURNA DOMINICAL O FESTIVA 1.10"
+  },
+  {
+    "SubCuentAuxiliarNumero": "520518",
+    "SubCuentaAuxiliarNombre": "COMISIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "520521",
+    "SubCuentaAuxiliarNombre": "GASTOS DE VIAJES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "520524",
+    "SubCuentaAuxiliarNombre": "INCAPACIDADES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "520527",
+    "SubCuentaAuxiliarNombre": "AUXILIO DE TRANSPORTE"
+  },
+  {
+    "SubCuentAuxiliarNumero": "520530",
+    "SubCuentaAuxiliarNombre": "CESANTIAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "520533",
+    "SubCuentaAuxiliarNombre": "INTERESES SOBRE CESANTIAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "520536",
+    "SubCuentaAuxiliarNombre": "PRIMA DE SERVICIOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "520539",
+    "SubCuentaAuxiliarNombre": "VACACIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "520542",
+    "SubCuentaAuxiliarNombre": "PRIMAS EXTRALEGALES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "520545",
+    "SubCuentaAuxiliarNombre": "AUXILIOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "52054501",
+    "SubCuentaAuxiliarNombre": "AUXILIO RODAMIENTO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "52054502",
+    "SubCuentaAuxiliarNombre": "AUXILIO ALIMENTACION"
+  },
+  {
+    "SubCuentAuxiliarNumero": "52054503",
+    "SubCuentaAuxiliarNombre": "VIATICOS SALARIAL"
+  },
+  {
+    "SubCuentAuxiliarNumero": "52054504",
+    "SubCuentaAuxiliarNombre": "VIATICOS NO SALARIAL"
+  },
+  {
+    "SubCuentAuxiliarNumero": "520548",
+    "SubCuentaAuxiliarNombre": "BONIFICACIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "520551",
+    "SubCuentaAuxiliarNombre": "DOTACION Y SUMINISTRO A TRABAJADORES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "520554",
+    "SubCuentaAuxiliarNombre": "SEGUROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "520555",
+    "SubCuentaAuxiliarNombre": "LICENCIAS REMUNERADAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "520557",
+    "SubCuentaAuxiliarNombre": "CUOTAS PARTES PENSIONES DE JUBILACION"
+  },
+  {
+    "SubCuentAuxiliarNumero": "520558",
+    "SubCuentaAuxiliarNombre": "AMORTIZACION CALCULO ACTUARIAL PENSIONES DE JUBILA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "520559",
+    "SubCuentaAuxiliarNombre": "PENSIONES DE JUBILACION"
+  },
+  {
+    "SubCuentAuxiliarNumero": "520560",
+    "SubCuentaAuxiliarNombre": "INDEMNIZACIONES LABORALES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "520561",
+    "SubCuentaAuxiliarNombre": "AMORTIZACION BONOS PENSIONALES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "520562",
+    "SubCuentaAuxiliarNombre": "AMORTIZACION TITULOS PENSIONALES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "520563",
+    "SubCuentaAuxiliarNombre": "CAPACITACION AL PERSONAL"
+  },
+  {
+    "SubCuentAuxiliarNumero": "520566",
+    "SubCuentaAuxiliarNombre": "GASTOS DEPORTIVOS Y DE RECREACION"
+  },
+  {
+    "SubCuentAuxiliarNumero": "520568",
+    "SubCuentaAuxiliarNombre": "APORTES A ADMINISTRADORAS DE RIESGOS PROFESONALES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "520569",
+    "SubCuentaAuxiliarNombre": "APORTES A ENTIDADES PROMOTORAS DE SALUD EPS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "520570",
+    "SubCuentaAuxiliarNombre": "APORTES A FONDOS DE PENSIONES Y/O CESANTIAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "520572",
+    "SubCuentaAuxiliarNombre": "APORTES CAJAS DE COMPENSACION FAMILIAR"
+  },
+  {
+    "SubCuentAuxiliarNumero": "520575",
+    "SubCuentaAuxiliarNombre": "APORTES I.C.B.F."
+  },
+  {
+    "SubCuentAuxiliarNumero": "520578",
+    "SubCuentaAuxiliarNombre": "SENA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "520581",
+    "SubCuentaAuxiliarNombre": "APORTES SINDICALES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "520584",
+    "SubCuentaAuxiliarNombre": "GASTOS MEDICOS Y DROGAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "520595",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "521005",
+    "SubCuentaAuxiliarNombre": "JUNTA DIRECTIVA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "521010",
+    "SubCuentaAuxiliarNombre": "REVISORIA FISCAL"
+  },
+  {
+    "SubCuentAuxiliarNumero": "521015",
+    "SubCuentaAuxiliarNombre": "AUDITORIA EXTERNA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "521020",
+    "SubCuentaAuxiliarNombre": "AVALUOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "521025",
+    "SubCuentaAuxiliarNombre": "ASESORIA JURIDICA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "521030",
+    "SubCuentaAuxiliarNombre": "ASESORIA FINANCIERA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "521031",
+    "SubCuentaAuxiliarNombre": "ICONTEC (BONOS)"
+  },
+  {
+    "SubCuentAuxiliarNumero": "521035",
+    "SubCuentaAuxiliarNombre": "ASESORIA TECNICA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "521095",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "521505",
+    "SubCuentaAuxiliarNombre": "INDUSTRIA Y COMERCIO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "521510",
+    "SubCuentaAuxiliarNombre": "DE TIMBRES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "521515",
+    "SubCuentaAuxiliarNombre": "A LA PROPIEDAD RAIZ"
+  },
+  {
+    "SubCuentAuxiliarNumero": "521520",
+    "SubCuentaAuxiliarNombre": "DERECHOS SOBRE INSTRUMENTOS PUBLICOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "521525",
+    "SubCuentaAuxiliarNombre": "DE VALORIZACION"
+  },
+  {
+    "SubCuentAuxiliarNumero": "521530",
+    "SubCuentaAuxiliarNombre": "DE TURISMO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "521540",
+    "SubCuentaAuxiliarNombre": "DE VEHICULOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "521570",
+    "SubCuentaAuxiliarNombre": "IVA DESCONTABLE"
+  },
+  {
+    "SubCuentAuxiliarNumero": "521595",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "522005",
+    "SubCuentaAuxiliarNombre": "TERRENOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "522010",
+    "SubCuentaAuxiliarNombre": "CONSTRUCCIONES Y EDIFICACIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "522015",
+    "SubCuentaAuxiliarNombre": "MAQUINARIA Y EQUIPO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "522020",
+    "SubCuentaAuxiliarNombre": "EQUIPO DE OFICINA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "522025",
+    "SubCuentaAuxiliarNombre": "EQUIPO DE COMPUTACION Y COMUNICACION"
+  },
+  {
+    "SubCuentAuxiliarNumero": "522040",
+    "SubCuentaAuxiliarNombre": "FLOTA Y EQUIPO DE TRANSPORTE"
+  },
+  {
+    "SubCuentAuxiliarNumero": "522095",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "522505",
+    "SubCuentaAuxiliarNombre": "CONTRIBUCIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "522510",
+    "SubCuentaAuxiliarNombre": "AFILIACIONES Y SOSTENIMIENTO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "523005",
+    "SubCuentaAuxiliarNombre": "MANEJO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "523010",
+    "SubCuentaAuxiliarNombre": "CUMPLIMIENTO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "523015",
+    "SubCuentaAuxiliarNombre": "CORRIENTE DEBIL"
+  },
+  {
+    "SubCuentAuxiliarNumero": "523020",
+    "SubCuentaAuxiliarNombre": "VIDA COLECTIVA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "523025",
+    "SubCuentaAuxiliarNombre": "INCENDIO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "523030",
+    "SubCuentaAuxiliarNombre": "TERREMOTO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "523035",
+    "SubCuentaAuxiliarNombre": "SUSTRACCION Y HURTO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "523040",
+    "SubCuentaAuxiliarNombre": "FLOTA Y EQUIPO DE TRANSPORTE"
+  },
+  {
+    "SubCuentAuxiliarNumero": "523045",
+    "SubCuentaAuxiliarNombre": "MERCANCIA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "523060",
+    "SubCuentaAuxiliarNombre": "RESPONSABILIDAD CIVIL Y EXTRACONTRACTUAL"
+  },
+  {
+    "SubCuentAuxiliarNumero": "523065",
+    "SubCuentaAuxiliarNombre": "VUELO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "523070",
+    "SubCuentaAuxiliarNombre": "ROTURA DE MAQUINARIA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "523075",
+    "SubCuentaAuxiliarNombre": "OBLIGATORIO ACCIDENTE DE TRANSITO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "523080",
+    "SubCuentaAuxiliarNombre": "LUCRO CESANTE"
+  },
+  {
+    "SubCuentAuxiliarNumero": "523095",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "523505",
+    "SubCuentaAuxiliarNombre": "ASEO Y VIGILANCIA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "52350501",
+    "SubCuentaAuxiliarNombre": "VIGILANCIA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "52350502",
+    "SubCuentaAuxiliarNombre": "AIU VIGILANCIA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "523510",
+    "SubCuentaAuxiliarNombre": "TEMPORALES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "52351001",
+    "SubCuentaAuxiliarNombre": "TEMPORALES "
+  },
+  {
+    "SubCuentAuxiliarNumero": "52351002",
+    "SubCuentaAuxiliarNombre": "ADMINISTRACION TEMPORALES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "523515",
+    "SubCuentaAuxiliarNombre": "ASISTENCIA TECNICA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "523520",
+    "SubCuentaAuxiliarNombre": "PROCESAMIENTO ELECTRONICO DE DATOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "523525",
+    "SubCuentaAuxiliarNombre": "ACUEDUCTO Y ALCANTARILLADO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "523530",
+    "SubCuentaAuxiliarNombre": "ENERGIA ELECTRICA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "523535",
+    "SubCuentaAuxiliarNombre": "TELEFONO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "523540",
+    "SubCuentaAuxiliarNombre": "CORREO, PORTES Y TELEGRAMAS "
+  },
+  {
+    "SubCuentAuxiliarNumero": "523545",
+    "SubCuentaAuxiliarNombre": "FAX Y TELEX"
+  },
+  {
+    "SubCuentAuxiliarNumero": "523550",
+    "SubCuentaAuxiliarNombre": "TRANSPORTE, FLETES Y ACARREOS "
+  },
+  {
+    "SubCuentAuxiliarNumero": "523555",
+    "SubCuentaAuxiliarNombre": "GAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "523560",
+    "SubCuentaAuxiliarNombre": "PROPAGANDA Y PUBLICIDAD"
+  },
+  {
+    "SubCuentAuxiliarNumero": "523565",
+    "SubCuentaAuxiliarNombre": "CELULAR"
+  },
+  {
+    "SubCuentAuxiliarNumero": "523566",
+    "SubCuentaAuxiliarNombre": "CERTIFICADOS FIRMA ELECTRONICA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "523567",
+    "SubCuentaAuxiliarNombre": "AZURE"
+  },
+  {
+    "SubCuentAuxiliarNumero": "523568",
+    "SubCuentaAuxiliarNombre": "SERVICIOS ZOHO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "523570",
+    "SubCuentaAuxiliarNombre": "SERVICIOS CARTERA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "523575",
+    "SubCuentaAuxiliarNombre": "ESMIOPCION"
+  },
+  {
+    "SubCuentAuxiliarNumero": "523580",
+    "SubCuentaAuxiliarNombre": "ADDI"
+  },
+  {
+    "SubCuentAuxiliarNumero": "523595",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "524005",
+    "SubCuentaAuxiliarNombre": "NOTARIALES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "524010",
+    "SubCuentaAuxiliarNombre": "REGISTRO MERCANTIL"
+  },
+  {
+    "SubCuentAuxiliarNumero": "524015",
+    "SubCuentaAuxiliarNombre": "TRAMITES Y LICENCIAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "524095",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "524505",
+    "SubCuentaAuxiliarNombre": "TERRENOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "524510",
+    "SubCuentaAuxiliarNombre": "CONSTRUCCIONES Y EDIFICACIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "524515",
+    "SubCuentaAuxiliarNombre": "MAQUINARIA Y EQUIPO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "524520",
+    "SubCuentaAuxiliarNombre": "EQUIPO DE OFICINA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "524525",
+    "SubCuentaAuxiliarNombre": "EQUIPO DE COMPUTACION Y COMUNICACION"
+  },
+  {
+    "SubCuentAuxiliarNumero": "524540",
+    "SubCuentaAuxiliarNombre": "FLOTA Y EQUIPO DE TRANSPORTE"
+  },
+  {
+    "SubCuentAuxiliarNumero": "525005",
+    "SubCuentaAuxiliarNombre": "INSTALACIONES ELECTRICAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "525010",
+    "SubCuentaAuxiliarNombre": "ARREGLOS ORNAMENTALES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "525015",
+    "SubCuentaAuxiliarNombre": "REPARACIONES LOCATIVAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "525095",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "525505",
+    "SubCuentaAuxiliarNombre": "ALOJAMIENTO Y MANUTENCION"
+  },
+  {
+    "SubCuentAuxiliarNumero": "525510",
+    "SubCuentaAuxiliarNombre": "PASAJES FLUVIALES Y/O MARITIMOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "525515",
+    "SubCuentaAuxiliarNombre": "PASAJES AEREOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "525520",
+    "SubCuentaAuxiliarNombre": "PASAJES TERRESTRES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "525521",
+    "SubCuentaAuxiliarNombre": "PEAJES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "525525",
+    "SubCuentaAuxiliarNombre": "PASAJES FERREOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "525595",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "526005",
+    "SubCuentaAuxiliarNombre": "CONSTRUCCIONES Y EDIFICACIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "526010",
+    "SubCuentaAuxiliarNombre": "MAQUINARIA Y EQUIPO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "526015",
+    "SubCuentaAuxiliarNombre": "EQUIPO DE OFICINA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "526020",
+    "SubCuentaAuxiliarNombre": "EQUIPO DE COMPUTACION Y COMUNICACION"
+  },
+  {
+    "SubCuentAuxiliarNumero": "526035",
+    "SubCuentaAuxiliarNombre": "FLOTA Y EQUIPO DE TRANSPORTE"
+  },
+  {
+    "SubCuentAuxiliarNumero": "526505",
+    "SubCuentaAuxiliarNombre": "VIAS DE COMUNICACION"
+  },
+  {
+    "SubCuentAuxiliarNumero": "526510",
+    "SubCuentaAuxiliarNombre": "INTANGIBLES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "526515",
+    "SubCuentaAuxiliarNombre": "CARGOS DIFERIDOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "526595",
+    "SubCuentaAuxiliarNombre": "OTRAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "527001",
+    "SubCuentaAuxiliarNombre": "FINANCIEROS - REAJUSTE DEL SISTEMA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "527505",
+    "SubCuentaAuxiliarNombre": "DE SOCIEDADES ANONIMAS Y/O ASIMILADAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "527510",
+    "SubCuentaAuxiliarNombre": "DE SOCIEDADES LIMITADAS Y/O ASIMILADAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "529501",
+    "SubCuentaAuxiliarNombre": "DEDUCIBLES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "529502",
+    "SubCuentaAuxiliarNombre": "NO DEDUCIBLES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "529505",
+    "SubCuentaAuxiliarNombre": "COMISIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "529510",
+    "SubCuentaAuxiliarNombre": "LIBROS, SUSCRIPCIONES, PERIODICOS Y REVISTAS "
+  },
+  {
+    "SubCuentAuxiliarNumero": "529515",
+    "SubCuentaAuxiliarNombre": "MUSICA AMBIENTAL"
+  },
+  {
+    "SubCuentAuxiliarNumero": "529520",
+    "SubCuentaAuxiliarNombre": "GASTOS DE REPRESENTACION Y RELACIONES PUBLICAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "529525",
+    "SubCuentaAuxiliarNombre": "ELEMENTOS DE ASEO Y CAFETERIA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "529530",
+    "SubCuentaAuxiliarNombre": "UTILES, PAPELERIA Y FOTOCOPIAS "
+  },
+  {
+    "SubCuentAuxiliarNumero": "529535",
+    "SubCuentaAuxiliarNombre": "COMBUSTIBLES Y LUBRICANTES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "529540",
+    "SubCuentaAuxiliarNombre": "ENVASES Y EMPAQUES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "529545",
+    "SubCuentaAuxiliarNombre": "TAXIS Y BUSES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "529550",
+    "SubCuentaAuxiliarNombre": "ESTAMPILLAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "529555",
+    "SubCuentaAuxiliarNombre": "MICROFILMACION"
+  },
+  {
+    "SubCuentAuxiliarNumero": "529560",
+    "SubCuentaAuxiliarNombre": "CASINO Y RESTAURANTE"
+  },
+  {
+    "SubCuentAuxiliarNumero": "529565",
+    "SubCuentaAuxiliarNombre": "PARQUEADEROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "529570",
+    "SubCuentaAuxiliarNombre": "INDEMNIZACION POR DAÃ?OS A TERCEROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "529575",
+    "SubCuentaAuxiliarNombre": "POLVORA Y SIMILARES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "529595",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "529905",
+    "SubCuentaAuxiliarNombre": "INVERSIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "529910",
+    "SubCuentaAuxiliarNombre": "DEUDORES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "529915",
+    "SubCuentaAuxiliarNombre": "INVENTARIOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "529920",
+    "SubCuentaAuxiliarNombre": "PROPIEDADES, PLANTA Y EQUIPO "
+  },
+  {
+    "SubCuentAuxiliarNumero": "529995",
+    "SubCuentaAuxiliarNombre": "OTROS ACTIVOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "530505",
+    "SubCuentaAuxiliarNombre": "GASTOS BANCARIOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "530515",
+    "SubCuentaAuxiliarNombre": "COMISIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "530520",
+    "SubCuentaAuxiliarNombre": "INTERESES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "530521",
+    "SubCuentaAuxiliarNombre": "CUOTAS DE MANEJO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "530525",
+    "SubCuentaAuxiliarNombre": "DIFERENCIA EN CAMBIO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "530530",
+    "SubCuentaAuxiliarNombre": "GASTOS EN NEGOCIACION CERTIFICADOS DE CAMBIO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "530535",
+    "SubCuentaAuxiliarNombre": "DESCUENTOS COMERCIALES CONDICIONADOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "530536",
+    "SubCuentaAuxiliarNombre": "SEGUROS DE VIDA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "530540",
+    "SubCuentaAuxiliarNombre": "GASTOS MANEJO Y EMISION DE BONOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "530545",
+    "SubCuentaAuxiliarNombre": "PRIMA AMORTIZADA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "530550",
+    "SubCuentaAuxiliarNombre": "GMF"
+  },
+  {
+    "SubCuentAuxiliarNumero": "530555",
+    "SubCuentaAuxiliarNombre": "COMISIONES TC "
+  },
+  {
+    "SubCuentAuxiliarNumero": "530560",
+    "SubCuentaAuxiliarNombre": "SISTECREDITO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "530581",
+    "SubCuentaAuxiliarNombre": "AJUSTE AL PESO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "530595",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "531005",
+    "SubCuentaAuxiliarNombre": "VENTA DE INVERSIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "531010",
+    "SubCuentaAuxiliarNombre": "VENTA DE CARTERA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "531015",
+    "SubCuentaAuxiliarNombre": "VENTA DE PROPIEDADES PLANTA Y EQUIPO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "531020",
+    "SubCuentaAuxiliarNombre": "VENTA DE INTANGIBLES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "531025",
+    "SubCuentaAuxiliarNombre": "VENTA DE OTROS ACTIVOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "531030",
+    "SubCuentaAuxiliarNombre": "RETIRO DE PROPIEDADES PLANTA Y EQUIPO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "531035",
+    "SubCuentaAuxiliarNombre": "RETIRO DE OTROS ACTIVOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "531040",
+    "SubCuentaAuxiliarNombre": "PERDIDAS POR SINIESTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "531095",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "531505",
+    "SubCuentaAuxiliarNombre": "COSTAS Y PROCESOS JUDICIALES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "531510",
+    "SubCuentaAuxiliarNombre": "ACTIVIDADES CULTURALES Y CIVICAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "531515",
+    "SubCuentaAuxiliarNombre": "COSTOS Y GASTOS DE EJERCICIOS ANTERIORES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "531520",
+    "SubCuentaAuxiliarNombre": "IMPUESTOS ASUMIDOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "531595",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "539505",
+    "SubCuentaAuxiliarNombre": "DEMANDAS LABORALES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "539510",
+    "SubCuentaAuxiliarNombre": "DEMANDAS POR INCUMPLIMIENTO DE CONTRATOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "539515",
+    "SubCuentaAuxiliarNombre": "INDEMNIZACIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "539520",
+    "SubCuentaAuxiliarNombre": "MULTAS, SANCIONES Y LITIGIOS "
+  },
+  {
+    "SubCuentAuxiliarNumero": "539525",
+    "SubCuentaAuxiliarNombre": "GASTOS NO DEDUCIBLES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "53952501",
+    "SubCuentaAuxiliarNombre": "GASTOS NO DEDUCIBLES "
+  },
+  {
+    "SubCuentAuxiliarNumero": "539530",
+    "SubCuentaAuxiliarNombre": "CONSTITUCION DE GARANTIAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "539535",
+    "SubCuentaAuxiliarNombre": "AMORTIZACION DE BIENES ENTREGADOS EN COMODATO"
+  },
+  {
+    "SubCuentAuxiliarNumero": "539595",
+    "SubCuentaAuxiliarNombre": "OTROS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "540505",
+    "SubCuentaAuxiliarNombre": "IMPUESTO DE RENTA Y COMPLEMENTARIOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "590505",
+    "SubCuentaAuxiliarNombre": "GANANCIAS Y PERDIDAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "613501",
+    "SubCuentaAuxiliarNombre": "VENTAS 01"
+  },
+  {
+    "SubCuentAuxiliarNumero": "613595",
+    "SubCuentaAuxiliarNombre": "VENTA DE OTROS PRODUCTOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "620501",
+    "SubCuentaAuxiliarNombre": "DE MERCANCIAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "622505",
+    "SubCuentaAuxiliarNombre": "DEVOLUCIONES EN COMPRAS (CR)"
+  },
+  {
+    "SubCuentAuxiliarNumero": "720503",
+    "SubCuentaAuxiliarNombre": "SALARIO INTEGRAL"
+  },
+  {
+    "SubCuentAuxiliarNumero": "720506",
+    "SubCuentaAuxiliarNombre": "SUELDOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "720515",
+    "SubCuentaAuxiliarNombre": "HORAS EXTRAS Y RECARGOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "720518",
+    "SubCuentaAuxiliarNombre": "COMISIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "720524",
+    "SubCuentaAuxiliarNombre": "INCAPACIDADES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "720527",
+    "SubCuentaAuxiliarNombre": "AUXILIO DE TRANSPORTE"
+  },
+  {
+    "SubCuentAuxiliarNumero": "720530",
+    "SubCuentaAuxiliarNombre": "CESANTIAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "720533",
+    "SubCuentaAuxiliarNombre": "INTERESES DE CESANTIAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "720536",
+    "SubCuentaAuxiliarNombre": "PRIMA DE SERVICIOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "720539",
+    "SubCuentaAuxiliarNombre": "VACACIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "720542",
+    "SubCuentaAuxiliarNombre": "PRIMAS EXTRALEGALES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "720545",
+    "SubCuentaAuxiliarNombre": "AUXILIOS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "720548",
+    "SubCuentaAuxiliarNombre": "BONIFICACIONES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "720551",
+    "SubCuentaAuxiliarNombre": "DOTACION Y SUMINISTRO A TRABAJADORES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "720560",
+    "SubCuentaAuxiliarNombre": "INDEMNIZACIONES LABORALES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "720568",
+    "SubCuentaAuxiliarNombre": "APORTES A ADMINISTRADORAS DE RIESGOS PROFESIONALES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "720569",
+    "SubCuentaAuxiliarNombre": "APORTES A ENTIDADES PROMOTORAS DE SALUD EPS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "720570",
+    "SubCuentaAuxiliarNombre": "APORTES A FONDOS DE PENSINES Y/O CESANTIAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "720572",
+    "SubCuentaAuxiliarNombre": "APORTES CAJAS DE COMPENSACION FAMILIAR"
+  },
+  {
+    "SubCuentAuxiliarNumero": "720575",
+    "SubCuentaAuxiliarNombre": "APORTES I.C.B.F."
+  },
+  {
+    "SubCuentAuxiliarNumero": "720578",
+    "SubCuentaAuxiliarNombre": "SENA"
+  },
+  {
+    "SubCuentAuxiliarNumero": "720581",
+    "SubCuentaAuxiliarNombre": "APORTES SINDICALES"
+  },
+  {
+    "SubCuentAuxiliarNumero": "839595",
+    "SubCuentaAuxiliarNombre": "DIVERSAS"
+  },
+  {
+    "SubCuentAuxiliarNumero": "939595",
+    "SubCuentaAuxiliarNombre": "DIVERSAS"
+  }
+]

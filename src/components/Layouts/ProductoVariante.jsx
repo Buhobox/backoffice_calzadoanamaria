@@ -9,6 +9,7 @@ import { GetTokenProducto, TypeIva, TypeProduct } from "../../api/utils";
 import { productStore } from "./ProductSimple";
 import { baseurl, baseurlwc, credentials } from "../../api/api";
 import { useProductStore } from "./LayoutProducto";
+import { ContableItems } from "./ContableItems";
 
 const { Option } = Select;
 
@@ -68,7 +69,7 @@ export const ProductoVariante = ({
         });
 
         axios
-          .post(baseurl + "GuardarProducto", {
+          .post(baseurl + "GuardarProductoConContabilidad", {
             ...productotosave,
           })
           .then((res) => {
@@ -94,11 +95,11 @@ export const ProductoVariante = ({
               axios
                 .post(
                   baseurlwc +
-                    "/products/" +
-                    idproduct +
-                    "/variations" +
-                    "?" +
-                    credentials,
+                  "/products/" +
+                  idproduct +
+                  "/variations" +
+                  "?" +
+                  credentials,
                   { ...producttowc }
                 )
                 .then((res) => {
@@ -111,7 +112,7 @@ export const ProductoVariante = ({
                   } else {
                     toast.error(
                       "Ocurrio un error al guardar el producto => " +
-                        res.data.message
+                      res.data.message
                     );
                   }
                 });
@@ -150,14 +151,14 @@ export const ProductoVariante = ({
               onFinish={onFinish}
               onFinishFailed={onFinishFailed}
               autoComplete="off"
-              // initialValues={{
-              //   IdCategoria: productSimple.IdCategoria,
-              //   IdSubCategoria: productSimple.IdSubCategoria,
-              //   Descripcion: productSimple.Descripcion,
-              //   PrecioVentaConIva1: productSimple.PrecioVentaConIva1,
-              //   PrecioVentaConIva2: productSimple.PrecioVentaConIva2,
-              //   PorcentajeIva: productSimple.PorcentajeIva,
-              // }}
+            // initialValues={{
+            //   IdCategoria: productSimple.IdCategoria,
+            //   IdSubCategoria: productSimple.IdSubCategoria,
+            //   Descripcion: productSimple.Descripcion,
+            //   PrecioVentaConIva1: productSimple.PrecioVentaConIva1,
+            //   PrecioVentaConIva2: productSimple.PrecioVentaConIva2,
+            //   PorcentajeIva: productSimple.PorcentajeIva,
+            // }}
             >
               <Form.Item
                 name="productstore"
@@ -324,6 +325,9 @@ export const ProductoVariante = ({
                   </Select>
                 </Form.Item>
               )}
+
+              <ContableItems handleProductSimple={handleProductSimple} />
+
               {variation && (
                 <>
                   <Form.Item
