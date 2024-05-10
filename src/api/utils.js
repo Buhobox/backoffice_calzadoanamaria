@@ -3,6 +3,7 @@ import { toast } from "react-toastify";
 import { baseurl, baseurlwc, credentials } from "./api";
 
 const loginURL = `${baseurl}login/authenticate`;
+const URL = "https://mentaoficial.com/apidanementa/public/api/citydane/"
 
 const MedioDePago = (medioPago) => {
   switch (medioPago) {
@@ -136,9 +137,7 @@ export const GenerateFactura = (dataFactura, callback) => {
   }
 
   axios
-    .get(
-      `https://mentaoficial.com/apidanementa/public/api/citydane/${dataFactura.billing.city}`
-    )
+    .get(`${URL}${dataFactura.billing.city}`)
     .then((response) => {
       codigoCiudad = response.data[0].codigo;
       let Cliente = {};
@@ -407,5 +406,10 @@ export const TypeProduct = [
     Codigo: 2,
     Descripcion: "Accesorios",
     Valor: "Accesorios",
+  },
+  {
+    Codigo: 3,
+    Descripcion: "Prueba",
+    Valor: "Prueba",
   },
 ];

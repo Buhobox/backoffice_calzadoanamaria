@@ -8,6 +8,7 @@ import { toast } from "react-toastify";
 import { GetTokenProducto, TypeIva, TypeProduct } from "../../api/utils";
 import { productStore } from "./ProductSimple";
 import { baseurl, baseurlwc, credentials } from "../../api/api";
+import { useProductStore } from "./LayoutProducto";
 
 const { Option } = Select;
 
@@ -19,6 +20,7 @@ export const ProductoVariante = ({
   variation = false,
   controlAttT,
 }) => {
+  const producto = useProductStore()
   const onFinish = (values) => {
     if (variation) {
       addVariante(values);
@@ -413,7 +415,7 @@ export const ProductoVariante = ({
                   htmlType="submit"
                   shape="round"
                 >
-                  {variation ? "Crear variacion" : "Crear producto"}
+                  {variation ? "Crear variacion" : `Crear ${producto.type}`}
                 </Button>
               </Form.Item>
             </Form>
