@@ -22,6 +22,10 @@ export const ContableItems = ({ handleProductSimple = () => { } }) => {
   //   fetchItems();
   // }, []);
 
+  function fixEncoding(str = "") {
+    return str.replace(/Ã\?/g, 'Ñ')
+  }
+
   const Category = ({ id }) => {
     return (
       <Form.Item
@@ -53,7 +57,7 @@ export const ContableItems = ({ handleProductSimple = () => { } }) => {
         >
           {items.map((category) => (
             <Option key={category.SubCuentAuxiliarNumero} value={category.SubCuentAuxiliarNumero}>
-              {category.SubCuentaAuxiliarNombre}
+              {fixEncoding(category.SubCuentaAuxiliarNombre)}
             </Option>
           ))}
         </Select>

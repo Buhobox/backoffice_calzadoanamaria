@@ -398,14 +398,14 @@ export const TypeIva = [
 export const TypeProduct = [
   {
     Codigo: 1,
-    Descripcion: "Menta",
-    Valor: "Menta",
+    Descripcion: "Producción",
+    Valor: "Producción",
   },
-  {
-    Codigo: 2,
-    Descripcion: "Accesorios",
-    Valor: "Accesorios",
-  },
+  // {
+  //   Codigo: 2,
+  //   Descripcion: "Accesorios",
+  //   Valor: "Accesorios",
+  // },
   {
     Codigo: 3,
     Descripcion: "Prueba",

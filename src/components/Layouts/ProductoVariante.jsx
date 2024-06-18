@@ -161,6 +161,17 @@ export const ProductoVariante = ({
             // }}
             >
               <Form.Item
+                label="Código del producto"
+                name="Codigo"
+                rules={[{ required: true, message: "Digite el código del producto" }]}
+              >
+                <Input
+                  onChange={(value) =>
+                    handleProductSimple("Codigo", value.target.value)
+                  }
+                />
+              </Form.Item>
+              <Form.Item
                 name="productstore"
                 label="Tipo de tienda"
                 rules={[

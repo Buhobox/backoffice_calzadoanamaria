@@ -5,10 +5,10 @@ const fs = require('fs');
 const path = require('path');
 
 const app = express();
-const port = 3001;
+const port = 3002;
 
 app.use(cors({
-  origin: 'http://localhost:3000' // El dominio donde se ejecuta tu frontend
+  origin: 'http://localhost:3000'
 }));
 
 const sslCertPath = path.join(__dirname, 'DigiCertGlobalRootG2.crt.pem');

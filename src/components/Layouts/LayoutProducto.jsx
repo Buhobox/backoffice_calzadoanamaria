@@ -103,6 +103,7 @@ export const LayoutProducto = () => {
       });
 
       let { data } = token;
+      // TODO: verificar peticion de token
       if (data) {
         let productotosave = {
           ...productSimple,
