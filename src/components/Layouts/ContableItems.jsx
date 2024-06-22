@@ -45,19 +45,19 @@ export const ContableItems = ({ handleProductSimple = () => { } }) => {
           showSearch
           optionFilterProp="children"
           filterOption={(input, option) =>
-            option.children
+            `${option.children}`
               .toLowerCase()
               .indexOf(input.toLowerCase()) >= 0
           }
           filterSort={(optionA, optionB) =>
-            optionA.children
+            `${optionA.children}`
               .toLowerCase()
-              .localeCompare(optionB.children.toLowerCase())
+              .localeCompare(`${optionB.children}`.toLowerCase())
           }
         >
           {items.map((category) => (
             <Option key={category.SubCuentAuxiliarNumero} value={category.SubCuentAuxiliarNumero}>
-              {fixEncoding(category.SubCuentaAuxiliarNombre)}
+              {category.SubCuentAuxiliarNumero} - {fixEncoding(category.SubCuentaAuxiliarNombre)}
             </Option>
           ))}
         </Select>
