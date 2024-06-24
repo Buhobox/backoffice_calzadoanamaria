@@ -1,10 +1,9 @@
-import { DataUsageOutlined } from "@material-ui/icons";
 import { create } from "apisauce";
 import Cookies from "js-cookie";
 import { getNowDateIso, getNextDateIso } from "../utils/utils";
 
-const customerkey = "ck_2c7fed3da5c1ef10e1e206c401a60ae211713519";
-const customersecret = "cs_8e32946b91e27d33765800c5c77a85d66ade7b4c";
+const customerkey = "ck_c40d4e148e1e47777a0e5ccdbe7e8df32a59dbc4";
+const customersecret = "cs_c5923bdf49d29626d618de223b52f61b6ca1aa11";
 
 export const baseurlwc = "https://santandereanadecascos.buhobox.com.co/wp-json/wc/v3";
 export const credentials = `consumer_key=${customerkey}&consumer_secret=${customersecret}`;
