@@ -2,16 +2,14 @@ import { PlusCircleOutlined } from "@ant-design/icons";
 import { Card, Col, message, Row, Select, Space, Form, Input, Button } from "antd";
 import React from "react";
 import { TypeIva, TypeProduct } from "../../api/utils";
+import { useProductStore } from "./LayoutProducto";
 import { ContableItems } from "./ContableItems";
-export const productStore = 1; //menta oficial
+export const productStore = 1;
 const { Option } = Select;
 
-export const ProductSimple = ({
-  handleProductSimple,
-  productSimple,
-  categorys,
-  addProductSimple,
-}) => {
+export const ProductSimple = ({ addProductSimple }) => {
+  const producto = useProductStore()
+
   const onFinish = (values) => {
     console.log("::values", values)
     addProductSimple(productStore);
@@ -44,12 +42,20 @@ export const ProductSimple = ({
               onFinishFailed={onFinishFailed}
               autoComplete="off"
               initialValues={{
-                IdCategoria: productSimple.IdCategoria,
-                IdSubCategoria: productSimple.IdSubCategoria,
-                Descripcion: productSimple.Descripcion,
-                PrecioVentaConIva1: productSimple.PrecioVentaConIva1,
-                PrecioVentaConIva2: productSimple.PrecioVentaConIva2,
-                PorcentajeIva: productSimple.PorcentajeIva,
+                Codigo: producto.data.Codigo,
+                productstore: producto.data.productstore,
+                IdCategoria: producto.data.IdCategoria,
+                IdSubCategoria: producto.data.IdSubCategoria,
+                Descripcion: producto.data.Descripcion,
+                PrecioVentaConIva1: producto.data.PrecioVentaConIva1,
+                PrecioVentaConIva2: producto.data.PrecioVentaConIva2,
+                PorcentajeIva: producto.data.PorcentajeIva,
+                cat0: producto.data.ParametrizacionContableProducto[0].NumeroCuenta,
+                cat1: producto.data.ParametrizacionContableProducto[1].NumeroCuenta,
+                cat2: producto.data.ParametrizacionContableProducto[2].NumeroCuenta,
+                cat3: producto.data.ParametrizacionContableProducto[3].NumeroCuenta,
+                cat4: producto.data.ParametrizacionContableProducto[4].NumeroCuenta,
+                weight: producto.data.weight
               }}
             >
               <Form.Item
@@ -59,9 +65,7 @@ export const ProductSimple = ({
               >
                 <Input
                   maxLength={45}
-                  onChange={(value) =>
-                    handleProductSimple("Codigo", value.target.value)
-                  }
+                  onChange={(value) => producto.setData({ Codigo: value.target.value })}
                 />
               </Form.Item>
               <Form.Item
@@ -75,9 +79,7 @@ export const ProductSimple = ({
                 ]}
               >
                 <Select
-                  onChange={(value) => {
-                    handleProductSimple("productstore", value);
-                  }}
+                  onChange={(value) => producto.setData({ productstore: value })}
                   placeholder="Seleccione tipo de tienda"
                   allowClear
                   showSearch
@@ -106,12 +108,9 @@ export const ProductSimple = ({
                 rules={[{ required: true, message: "Digite el nombre" }]}
               >
                 <Input
-                  onChange={(value) =>
-                    handleProductSimple("Descripcion", value.target.value)
-                  }
+                  onChange={(value) => producto.setData({ Descripcion: value.target.value })}
                 />
               </Form.Item>
-
               <Form.Item
                 name="IdCategoria"
                 label="Categoria"
@@ -123,9 +122,10 @@ export const ProductSimple = ({
                 ]}
               >
                 <Select
-                  onChange={(value) => {
-                    handleProductSimple("IdCategoria", value);
-                  }}
+                  onChange={(value) => producto.setData({
+                    IdCategoria: value,
+                    Categoria: producto.knowName(value, producto.categorys)
+                  })}
                   placeholder="Seleccione una categoria"
                   allowClear
                   showSearch
@@ -141,14 +141,13 @@ export const ProductSimple = ({
                       .localeCompare(optionB.children.toLowerCase())
                   }
                 >
-                  {categorys.map((category) => (
+                  {producto.categorys.map((category) => (
                     <Option key={category.id} value={category.id}>
                       {category.name}
                     </Option>
                   ))}
                 </Select>
               </Form.Item>
-
               <Form.Item
                 name="IdSubCategoria"
                 label="SubCategoria"
@@ -160,9 +159,10 @@ export const ProductSimple = ({
                 ]}
               >
                 <Select
-                  onChange={(value) => {
-                    handleProductSimple("IdSubCategoria", value);
-                  }}
+                  onChange={(value) => producto.setData({
+                    IdSubCategoria: value,
+                    SubCategoria: producto.knowName(value, producto.categorys)
+                  })}
                   placeholder="Seleccione una subcategoria"
                   allowClear
                   showSearch
@@ -178,7 +178,7 @@ export const ProductSimple = ({
                       .localeCompare(optionB.children.toLowerCase())
                   }
                 >
-                  {categorys.map((category) => (
+                  {producto.categorys.map((category) => (
                     <Option key={category.id} value={category.id}>
                       {category.name}
                     </Option>
@@ -186,7 +186,7 @@ export const ProductSimple = ({
                 </Select>
               </Form.Item>
 
-              <ContableItems handleProductSimple={handleProductSimple} />
+              <ContableItems />
 
               <Form.Item
                 label="Precio de venta"
@@ -198,15 +198,11 @@ export const ProductSimple = ({
                 <Input
                   placeholder="$200000"
                   type="number"
-                  onChange={(value) =>
-                    handleProductSimple(
-                      "PrecioVentaConIva1",
-                      value.target.value
-                    )
-                  }
+                  onChange={(value) => producto.setData({
+                    PrecioVentaConIva1: parseInt(value.target.value)
+                  })}
                 />
               </Form.Item>
-
               <Form.Item
                 label="Precio Mayoreo"
                 name="PrecioVentaConIva2"
@@ -218,30 +214,28 @@ export const ProductSimple = ({
                   placeholder="$200000"
                   type="number"
                   onChange={(value) =>
-                    handleProductSimple(
-                      "PrecioVentaConIva2",
-                      value.target.value
-                    )
+                    producto.setData({
+                      PrecioVentaConIva2: parseInt(value.target.value),
+                      PrecioVentaConIva3: parseInt(value.target.value),
+                    })
                   }
                 />
               </Form.Item>
-
-              <Form.Item
-                label="Peso del producto"
-                name="weight"
-                rules={[
-                  { required: true, message: "Digite el peso del producto" },
-                ]}
-              >
-                <Input
-                  placeholder="(1): zapatos | (0.3): otros"
-                  type="text"
-                  onChange={(value) =>
-                    handleProductSimple("weight", value.target.value)
-                  }
-                />
-              </Form.Item>
-
+              {!producto.isProduct ? null :
+                <Form.Item
+                  label="Peso del producto"
+                  name="weight"
+                  rules={[
+                    { required: true, message: "Digite el peso del producto" },
+                  ]}
+                >
+                  <Input
+                    placeholder="(1): kg | (300): gr | (0.3): otros"
+                    type="text"
+                    onChange={(value) => producto.setData({ weight: value.target.value })}
+                  />
+                </Form.Item>
+              }
               <Form.Item
                 name="PorcentajeIva"
                 label="porcentaje iva"
@@ -253,9 +247,7 @@ export const ProductSimple = ({
                 ]}
               >
                 <Select
-                  onChange={(value) => {
-                    handleProductSimple("PorcentajeIva", value);
-                  }}
+                  onChange={(value) => producto.setData({ PorcentajeIva: value })}
                   placeholder="Seleccione un porcentaje iva"
                   allowClear
                 >
@@ -266,7 +258,6 @@ export const ProductSimple = ({
                   ))}
                 </Select>
               </Form.Item>
-
               <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
                 <Button
                   type="primary"
@@ -281,6 +272,6 @@ export const ProductSimple = ({
           </Card>
         </Col>
       </Space>
-    </Row>
+    </Row >
   );
 };

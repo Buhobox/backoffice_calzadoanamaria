@@ -14,9 +14,6 @@ import { ContableItems } from "./ContableItems";
 const { Option } = Select;
 
 export const ProductoVariante = ({
-  handleProductSimple,
-  productSimple,
-  categorys,
   addProductSimple,
   variation = false,
   controlAttT,
@@ -39,7 +36,7 @@ export const ProductoVariante = ({
   const [termselected, settermselected] = useState("");
 
   const addVariante = (values) => {
-    let productS = productSimple;
+    let productS = producto.data;
     productS.Descripcion = Cookies.get("productname") + "-" + termselected;
     productS.TipoProducto = 1;
     productS.weight = values.weight;
@@ -147,18 +144,25 @@ export const ProductoVariante = ({
               name="basic"
               labelCol={{ span: 8 }}
               wrapperCol={{ span: 16 }}
-              initialValues={{ remember: true }}
               onFinish={onFinish}
               onFinishFailed={onFinishFailed}
               autoComplete="off"
-            // initialValues={{
-            //   IdCategoria: productSimple.IdCategoria,
-            //   IdSubCategoria: productSimple.IdSubCategoria,
-            //   Descripcion: productSimple.Descripcion,
-            //   PrecioVentaConIva1: productSimple.PrecioVentaConIva1,
-            //   PrecioVentaConIva2: productSimple.PrecioVentaConIva2,
-            //   PorcentajeIva: productSimple.PorcentajeIva,
-            // }}
+              initialValues={{
+                Codigo: producto.data.Codigo,
+                productstore: producto.data.productstore,
+                IdCategoria: producto.data.IdCategoria,
+                IdSubCategoria: producto.data.IdSubCategoria,
+                Descripcion: producto.data.Descripcion,
+                PrecioVentaConIva1: producto.data.PrecioVentaConIva1,
+                PrecioVentaConIva2: producto.data.PrecioVentaConIva2,
+                PorcentajeIva: producto.data.PorcentajeIva,
+                cat0: producto.data.ParametrizacionContableProducto[0].NumeroCuenta,
+                cat1: producto.data.ParametrizacionContableProducto[1].NumeroCuenta,
+                cat2: producto.data.ParametrizacionContableProducto[2].NumeroCuenta,
+                cat3: producto.data.ParametrizacionContableProducto[3].NumeroCuenta,
+                cat4: producto.data.ParametrizacionContableProducto[4].NumeroCuenta,
+                weight: producto.data.weight
+              }}
             >
               <Form.Item
                 label="Código del producto"
@@ -166,9 +170,8 @@ export const ProductoVariante = ({
                 rules={[{ required: true, message: "Digite el código del producto" }]}
               >
                 <Input
-                  onChange={(value) =>
-                    handleProductSimple("Codigo", value.target.value)
-                  }
+                  maxLength={45}
+                  onChange={(value) => producto.setData({ Codigo: value.target.value })}
                 />
               </Form.Item>
               <Form.Item
@@ -182,9 +185,7 @@ export const ProductoVariante = ({
                 ]}
               >
                 <Select
-                  onChange={(value) => {
-                    handleProductSimple("productstore", value);
-                  }}
+                  onChange={(value) => producto.setData({ productstore: value })}
                   placeholder="Seleccione tipo de tienda"
                   allowClear
                   showSearch
@@ -207,6 +208,7 @@ export const ProductoVariante = ({
                   ))}
                 </Select>
               </Form.Item>
+              {variation ? <ContableItems /> : null}
               {variation && (
                 <Form.Item
                   name="termselected"
@@ -254,9 +256,7 @@ export const ProductoVariante = ({
                 >
                   <Input
                     disabled={variation}
-                    onChange={(value) =>
-                      handleProductSimple("Descripcion", value.target.value)
-                    }
+                    onChange={(value) => producto.setData({ Descripcion: value.target.value })}
                   />
                 </Form.Item>
               )}
@@ -272,9 +272,10 @@ export const ProductoVariante = ({
                   ]}
                 >
                   <Select
-                    onChange={(value) => {
-                      handleProductSimple("IdCategoria", value);
-                    }}
+                    onChange={(value) => producto.setData({
+                      IdCategoria: value,
+                      Categoria: producto.knowName(value, producto.categorys)
+                    })}
                     placeholder="Seleccione una categoria"
                     allowClear
                     showSearch
@@ -290,7 +291,7 @@ export const ProductoVariante = ({
                         .localeCompare(optionB.children.toLowerCase())
                     }
                   >
-                    {categorys.map((category) => (
+                    {producto.categorys.map((category) => (
                       <Option key={category.id} value={category.id}>
                         {category.name}
                       </Option>
@@ -310,9 +311,10 @@ export const ProductoVariante = ({
                   ]}
                 >
                   <Select
-                    onChange={(value) => {
-                      handleProductSimple("IdSubCategoria", value);
-                    }}
+                    onChange={(value) => producto.setData({
+                      IdSubCategoria: value,
+                      SubCategoria: producto.knowName(value, producto.categorys)
+                    })}
                     placeholder="Seleccione una subcategoria"
                     allowClear
                     showSearch
@@ -328,7 +330,7 @@ export const ProductoVariante = ({
                         .localeCompare(optionB.children.toLowerCase())
                     }
                   >
-                    {categorys.map((category) => (
+                    {producto.categorys.map((category) => (
                       <Option key={category.id} value={category.id}>
                         {category.name}
                       </Option>
@@ -336,9 +338,6 @@ export const ProductoVariante = ({
                   </Select>
                 </Form.Item>
               )}
-
-              <ContableItems handleProductSimple={handleProductSimple} />
-
               {variation && (
                 <>
                   <Form.Item
@@ -351,12 +350,9 @@ export const ProductoVariante = ({
                     <Input
                       placeholder="$200000"
                       type="number"
-                      onChange={(value) =>
-                        handleProductSimple(
-                          "PrecioVentaConIva1",
-                          value.target.value
-                        )
-                      }
+                      onChange={(value) => producto.setData({
+                        PrecioVentaConIva1: parseInt(value.target.value)
+                      })}
                     />
                   </Form.Item>
 
@@ -370,33 +366,30 @@ export const ProductoVariante = ({
                     <Input
                       placeholder="$200000"
                       type="number"
-                      onChange={(value) =>
-                        handleProductSimple(
-                          "PrecioVentaConIva2",
-                          value.target.value
-                        )
-                      }
+                      onChange={(value) => producto.setData({
+                        PrecioVentaConIva2: parseInt(value.target.value),
+                        PrecioVentaConIva3: parseInt(value.target.value),
+                      })}
                     />
                   </Form.Item>
-
-                  <Form.Item
-                    label="Precio del producto"
-                    name="weight"
-                    rules={[
-                      {
-                        required: true,
-                        message: "Digite el peso del producto",
-                      },
-                    ]}
-                  >
-                    <Input
-                      placeholder="(1): zapatos | (0.3): otros"
-                      type="text"
-                      onChange={(value) =>
-                        handleProductSimple("weight", value.target.value)
-                      }
-                    />
-                  </Form.Item>
+                  {!producto.isProduct ? null :
+                    <Form.Item
+                      label="Peso del producto"
+                      name="weight"
+                      rules={[
+                        {
+                          required: true,
+                          message: "Digite el peso del producto",
+                        },
+                      ]}
+                    >
+                      <Input
+                        placeholder="(1): kg | (300): gr | (0.3): otros"
+                        type="text"
+                        onChange={(value) => producto.setData({ weight: value.target.value })}
+                      />
+                    </Form.Item>
+                  }
                 </>
               )}
               <Form.Item
@@ -410,9 +403,7 @@ export const ProductoVariante = ({
                 ]}
               >
                 <Select
-                  onChange={(value) => {
-                    handleProductSimple("PorcentajeIva", value);
-                  }}
+                  onChange={(value) => producto.setData({ PorcentajeIva: value })}
                   placeholder="Seleccione un porcentaje iva"
                   allowClear
                 >

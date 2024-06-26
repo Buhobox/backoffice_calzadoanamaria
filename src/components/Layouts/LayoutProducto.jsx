@@ -1,9 +1,8 @@
 import { Card, Row, Select, Space, Tag } from "antd";
 import { Content } from "antd/lib/layout/layout";
 import { Steps, Button } from "antd";
-import React, { useState } from "react";
+import { useEffect, useState } from "react";
 import Text from "antd/lib/typography/Text";
-import { Divider } from "@material-ui/core";
 import { ProductoVariante } from "./ProductoVariante";
 import { ProductSimple } from "./ProductSimple";
 import { GetAllCategorys, baseurl, baseurlwc, credentials } from "../../api/api";
@@ -23,29 +22,66 @@ import { create } from "zustand";
 const { Step } = Steps;
 const { Option } = Select;
 
-const defProductSimple = {
+const defProductConfig = {
   TipoProducto: 1,
   IdIva: 0,
   ParametrizacionContableProducto: [
     { NumeroCuenta: "", Tipo: 0 },
-    { NumeroCuenta: "", Tipo: 0 },
-    { NumeroCuenta: "", Tipo: 0 },
-    { NumeroCuenta: "", Tipo: 0 },
-    { NumeroCuenta: "", Tipo: 0 },
+    { NumeroCuenta: "", Tipo: 1 },
+    { NumeroCuenta: "", Tipo: 2 },
+    { NumeroCuenta: "", Tipo: 4 },
+    { NumeroCuenta: "", Tipo: 5 },
+  ]
+}
+
+const defServiceConfig = {
+  TipoProducto: 0,
+  IdIva: 0,
+  ParametrizacionContableProducto: [
+    { NumeroCuenta: "", Tipo: 1 },
+    { NumeroCuenta: "", Tipo: 4 },
+    { NumeroCuenta: "", Tipo: 5 },
+    { NumeroCuenta: "", Tipo: 6 },
+    { NumeroCuenta: "", Tipo: 7 },
   ]
 }
 
 export const TYPE_PRODUCT = "Producto"
 export const TYPE_SERVICE = "Servicio"
+
 export const useProductStore = create((set) => ({
   type: "",
   isProduct: false,
   isService: false,
-  setType: (type) => set({ type, isProduct: type === TYPE_PRODUCT, isService: type === TYPE_SERVICE }),
+  categorys: [],
+  data: defProductConfig,
+  setType: (type) => set({
+    type,
+    isProduct: type === TYPE_PRODUCT,
+    isService: type === TYPE_SERVICE,
+    data: type === TYPE_PRODUCT ? defProductConfig : defServiceConfig
+  }),
+  setData: (data) => set(state => ({ data: { ...state.data, ...data } })),
+  setcategorys: (categorys) => set({ categorys }),
+  setCategory: (index, code) => set(state => {
+    const data = Object.assign({}, state.data)
+    data.ParametrizacionContableProducto[index].NumeroCuenta = code
+    return { data }
+  }),
+  reset: () => set((state) => ({ data: state.isProduct ? defProductConfig : defServiceConfig })),
+  knowName: (id, categorys) => {
+    let name = categorys.filter(category => category.id === id);
+    return name[0]?.name || "";
+  }
 }))
 
 export const LayoutProducto = () => {
   const producto = useProductStore()
+
+  useEffect(() => {
+    console.log(producto.data);
+  }, [producto.data])
+
 
   const stylecard = {
     width: "70vw",
@@ -54,7 +90,7 @@ export const LayoutProducto = () => {
     boxShadow: "1px 2px 2px 0px #cccccc",
   };
 
-  const [current, setCurrent] = React.useState(0);
+  const [current, setCurrent] = useState(0);
   const [selected, setselected] = useState(null);
   const [controlStatusGeneral, setcontrolStatusGeneral] = useState({
     nextDisabled: true,
@@ -69,20 +105,7 @@ export const LayoutProducto = () => {
     data: [],
   });
 
-  const knowName = (id) => {
-    let name = "";
-    categorys.forEach((category) => {
-      if (category.id === id) {
-        name = category.name;
-      }
-    });
-    return name;
-  };
-
-  const [productSimple, setproductSimple] = useState(defProductSimple);
-
   const addProductSimple = (productstore) => {
-    console.log(productSimple);
     const getToken = GetTokenProducto(productstore);
     setcontrolStatusGeneral({
       ...controlStatusGeneral,
@@ -106,7 +129,7 @@ export const LayoutProducto = () => {
       // TODO: verificar peticion de token
       if (data) {
         let productotosave = {
-          ...productSimple,
+          ...producto.data,
           Token: data,
         };
         if (selected === "2") {
@@ -235,52 +258,9 @@ export const LayoutProducto = () => {
     setCurrent(current + 1);
   };
 
-  const handleProductSimple = (namefield, value) => {
-    const TipoProducto = producto.isProduct ? 1 : 0;
-    if (namefield === "IdCategoria" || namefield === "IdSubCategoria") {
-      let name = namefield === "IdCategoria" ? "Categoria" : "SubCategoria";
-      setproductSimple((old) => ({
-        ...old,
-        TipoProducto,
-        [namefield]: value,
-        [name]: knowName(value),
-      }));
-    } else if (namefield === "PrecioVentaConIva2") {
-      setproductSimple((old) => ({
-        ...old,
-        TipoProducto,
-        [namefield]: value,
-        PrecioVentaConIva3: value,
-      }));
-    } else if (namefield.includes("catContable") || namefield.includes("typeCat")) {
-      setproductSimple((old) => {
-        const list = old.ParametrizacionContableProducto
-        if (namefield === "catContable1") list[0].NumeroCuenta = value;
-        if (namefield === "typeCat1") list[0].Tipo = parseInt(value);
-        if (namefield === "catContable2") list[1].NumeroCuenta = value;
-        if (namefield === "typeCat2") list[1].Tipo = parseInt(value);
-        if (namefield === "catContable3") list[2].NumeroCuenta = value;
-        if (namefield === "typeCat3") list[2].Tipo = parseInt(value);
-        if (namefield === "catContable4") list[3].NumeroCuenta = value;
-        if (namefield === "typeCat4") list[3].Tipo = parseInt(value);
-        if (namefield === "catContable5") list[4].NumeroCuenta = value;
-        if (namefield === "typeCat5") list[4].Tipo = parseInt(value);
-        return { ...productSimple, TipoProducto, ParametrizacionContableProducto: list }
-      });
-    } else {
-      setproductSimple((old) => ({
-        ...old,
-        TipoProducto,
-        [namefield]: value,
-      }));
-    }
-  };
-
-  const [categorys, setcategorys] = useState([]);
-
-  React.useEffect(() => {
+  useEffect(() => {
     GetAllCategorys().then((res) => {
-      setcategorys(res.data);
+      producto.setcategorys(res.data);
     });
   }, []);
 
@@ -379,9 +359,6 @@ export const LayoutProducto = () => {
       content: (
         <RenderTypeProduct
           selected={selected}
-          handleProductSimple={handleProductSimple}
-          productSimple={productSimple}
-          categorys={categorys}
           addProductSimple={addProductSimple}
           controlStatusGeneral={controlStatusGeneral}
         />
@@ -409,9 +386,6 @@ export const LayoutProducto = () => {
       content: (
         <RenderTypeProduct
           selected={selected}
-          handleProductSimple={handleProductSimple}
-          productSimple={productSimple}
-          categorys={categorys}
           addProductSimple={addProductSimple}
           controlStatusGeneral={controlStatusGeneral}
         />
@@ -421,7 +395,6 @@ export const LayoutProducto = () => {
       title: "Resumen",
       content: <ReviewProduct controlStatusGeneral={controlStatusGeneral} />,
     },
-
     {
       title: "Atributos",
       content: (
@@ -438,14 +411,10 @@ export const LayoutProducto = () => {
         />
       ),
     },
-
     {
       title: "Variaciones",
       content: (
         <ProductoVariante
-          productSimple={productSimple}
-          handleProductSimple={handleProductSimple}
-          categorys={categorys}
           addProductSimple={addProductSimple}
           variation={true}
           controlAttT={controlAttT}
@@ -516,7 +485,7 @@ export const LayoutProducto = () => {
                 shape="round"
                 onClick={() => {
                   setCurrent(0);
-                  setproductSimple(defProductSimple);
+                  producto.reset()
                   setselected(null);
                   setcontrolStatusGeneral({
                     nextDisabled: true,
@@ -679,29 +648,13 @@ const TipoDeProducto = (props) => {
   );
 };
 
-const RenderTypeProduct = ({
-  selected,
-  productSimple,
-  handleProductSimple,
-  categorys,
-  addProductSimple,
-}) => {
+const RenderTypeProduct = ({ selected, addProductSimple }) => {
   return (
     <>
       {selected === "1" ? (
-        <ProductSimple
-          productSimple={productSimple}
-          handleProductSimple={handleProductSimple}
-          categorys={categorys}
-          addProductSimple={addProductSimple}
-        />
+        <ProductSimple addProductSimple={addProductSimple} />
       ) : (
-        <ProductoVariante
-          productSimple={productSimple}
-          handleProductSimple={handleProductSimple}
-          categorys={categorys}
-          addProductSimple={addProductSimple}
-        />
+        <ProductoVariante addProductSimple={addProductSimple} />
       )}
     </>
   );
