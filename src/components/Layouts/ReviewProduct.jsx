@@ -14,7 +14,7 @@ export const ReviewProduct = ({ controlStatusGeneral }) => {
         <Steps direction="vertical" current={controlStatusGeneral.step}>
           <Step
             icon={
-              controlStatusGeneral.step == 1 ? (
+              controlStatusGeneral.step === 1 ? (
                 <LoadingOutlined />
               ) : (
                 <CheckCircleOutlined style={{ color: "green" }} />
@@ -25,15 +25,15 @@ export const ReviewProduct = ({ controlStatusGeneral }) => {
           />
           <Step
             icon={
-              controlStatusGeneral.step == 2 &&
-              controlStatusGeneral.status == "loading" ? (
+              controlStatusGeneral.step === 2 &&
+              controlStatusGeneral.status === "loading" ? (
                 <LoadingOutlined />
               ) : controlStatusGeneral.step !== 2 &&
-                controlStatusGeneral.status == "success" ? (
+                controlStatusGeneral.status === "success" ? (
                 <CheckCircleOutlined style={{ color: "green" }} />
               ) : (
-                controlStatusGeneral.step == 2 &&
-                controlStatusGeneral.status == "error" && (
+                controlStatusGeneral.step === 2 &&
+                controlStatusGeneral.status === "error" && (
                   <CloseCircleOutlined style={{ color: "red" }} />
                 )
               )
@@ -43,12 +43,12 @@ export const ReviewProduct = ({ controlStatusGeneral }) => {
           />
           <Step
             icon={
-              controlStatusGeneral.step == 3 &&
-              controlStatusGeneral.status == "loading" ? (
+              controlStatusGeneral.step === 3 &&
+              controlStatusGeneral.status === "loading" ? (
                 <LoadingOutlined />
               ) : (
-                controlStatusGeneral.step != 3 &&
-                controlStatusGeneral.status == "success" && (
+                controlStatusGeneral.step !== 3 &&
+                controlStatusGeneral.status === "success" && (
                   <CheckCircleOutlined style={{ color: "green" }} />
                 )
               )

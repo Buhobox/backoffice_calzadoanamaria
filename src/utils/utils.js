@@ -37,7 +37,7 @@ export function getNextDateIso() {
 
 export function TotalOrders(orders) {
   let totals = [];
-  orders.map((order) => {
+  orders.forEach((order) => {
     totals.push(parseInt(order.total));
   });
   const reducer = (accumulator, currentValue) => accumulator + currentValue;
@@ -54,7 +54,7 @@ export const Copyright = () => {
 export function AmounTotal(orders) {
   let totals = [];
   if (orders.length > 0) {
-    orders.map((order) => {
+    orders.forEach((order) => {
       totals.push(parseInt(order.total));
     });
   }

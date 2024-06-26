@@ -5,12 +5,12 @@ import { useEffect, useState } from "react";
 import Text from "antd/lib/typography/Text";
 import { ProductoVariante } from "./ProductoVariante";
 import { ProductSimple } from "./ProductSimple";
-import { GetAllCategorys, baseurl, baseurlwc, credentials } from "../../api/api";
+import { GetAllAttributes, GetAllCategorys, GetAllTermsAttributes, baseurl, baseurlwc, credentials } from "../../api/api";
 import { GetTokenProducto } from "../../api/utils";
 import { ReviewProduct } from "./ReviewProduct";
 import axios from "axios";
 import Cookies from "js-cookie";
-import { Atributes } from "./Atributes";
+import { Atributes, useAttributesStore } from "./Atributes";
 import { toast } from "react-toastify";
 import {
   ArrowLeftOutlined,
@@ -77,10 +77,23 @@ export const useProductStore = create((set) => ({
 
 export const LayoutProducto = () => {
   const producto = useProductStore()
+  const attributes = useAttributesStore()
 
   useEffect(() => {
-    console.log(producto.data);
-  }, [producto.data])
+    GetAllAttributes().then((res) => {
+      attributes.setList(res.data || []);
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
+  useEffect(() => {
+    attributes.list.forEach(item => {
+      GetAllTermsAttributes(item.id).then((res) => {
+        attributes.setGroups({ [item.id]: res.data || [] });
+      });
+    })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [attributes.list])
 
 
   const stylecard = {
@@ -95,14 +108,6 @@ export const LayoutProducto = () => {
   const [controlStatusGeneral, setcontrolStatusGeneral] = useState({
     nextDisabled: true,
     loading: false,
-  });
-  const [attributesData, setattributesData] = useState([]);
-  const [terminos, setterminos] = useState([]);
-
-  const [controlAttT, setcontrolAttT] = useState({
-    attributeSelected: null,
-    termsSelected: [],
-    data: [],
   });
 
   const addProductSimple = (productstore) => {
@@ -262,6 +267,7 @@ export const LayoutProducto = () => {
     GetAllCategorys().then((res) => {
       producto.setcategorys(res.data);
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const next = () => {
@@ -399,14 +405,8 @@ export const LayoutProducto = () => {
       title: "Atributos",
       content: (
         <Atributes
-          attributesData={attributesData}
-          setattributesData={setattributesData}
           controlStatusGeneral={controlStatusGeneral}
-          terminos={terminos}
-          setterminos={setterminos}
           next={next}
-          setcontrolAttT={setcontrolAttT}
-          controlAttT={controlAttT}
           setcontrolStatusGeneral={setcontrolStatusGeneral}
         />
       ),
@@ -414,11 +414,7 @@ export const LayoutProducto = () => {
     {
       title: "Variaciones",
       content: (
-        <ProductoVariante
-          addProductSimple={addProductSimple}
-          variation={true}
-          controlAttT={controlAttT}
-        />
+        <ProductoVariante addProductSimple={addProductSimple} variation />
       ),
     },
   ];
@@ -485,7 +481,6 @@ export const LayoutProducto = () => {
                 shape="round"
                 onClick={() => {
                   setCurrent(0);
-                  producto.reset()
                   setselected(null);
                   setcontrolStatusGeneral({
                     nextDisabled: true,
@@ -493,11 +488,8 @@ export const LayoutProducto = () => {
                   });
                   Cookies.remove("productid");
                   Cookies.remove("productname");
-                  setcontrolAttT({
-                    attributeSelected: null,
-                    data: [],
-                    terminos: [],
-                  });
+                  producto.reset()
+                  attributes.reset()
                 }}
               >
                 Finalizar
@@ -542,6 +534,7 @@ const TipoDeProducto = (props) => {
           <Space direction="vertical">
             <img
               src="https://cdn3d.iconscout.com/3d/premium/thumb/product-5806313-4863042.png"
+              alt=""
               style={{
                 width: "100px",
                 height: "100px",
@@ -616,6 +609,7 @@ const TipoDeProducto = (props) => {
             </Text>
             <img
               src="https://cdn3d.iconscout.com/3d/premium/thumb/product-5806313-4863042.png"
+              alt=""
               style={{
                 width: "100px",
                 height: "100px",

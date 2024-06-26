@@ -8,7 +8,7 @@ import {
   Route,
   Redirect,
 } from "react-router-dom";
-import { useUser, AuthCheck } from "reactfire";
+import { useUser } from "reactfire";
 
 export default function AppRouters() {
   const user = useUser();

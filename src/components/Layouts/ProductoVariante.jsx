@@ -3,22 +3,24 @@ import { Card, Col, message, Row, Select, Space } from "antd";
 import { Form, Input, Button } from "antd";
 import axios from "axios";
 import Cookies from "js-cookie";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import { GetTokenProducto, TypeIva, TypeProduct } from "../../api/utils";
 import { productStore } from "./ProductSimple";
 import { baseurl, baseurlwc, credentials } from "../../api/api";
 import { useProductStore } from "./LayoutProducto";
 import { ContableItems } from "./ContableItems";
+import { useAttributesStore } from "./Atributes";
 
 const { Option } = Select;
 
 export const ProductoVariante = ({
   addProductSimple,
   variation = false,
-  controlAttT,
 }) => {
   const producto = useProductStore()
+  const attributes = useAttributesStore()
+
   const onFinish = (values) => {
     if (variation) {
       addVariante(values);
@@ -27,17 +29,23 @@ export const ProductoVariante = ({
     }
   };
 
+  useEffect(() => {
+    if (variation) {
+      console.log(attributes.data);
+    }
+  }, [attributes.data])
+
   toast.configure();
 
   const onFinishFailed = (errorInfo) => {
     message.info("Por favor complete todos los campos");
   };
 
-  const [termselected, settermselected] = useState("");
+  const [termselected, settermselected] = useState({});
 
   const addVariante = (values) => {
     let productS = producto.data;
-    productS.Descripcion = Cookies.get("productname") + "-" + termselected;
+    productS.Descripcion = Cookies.get("productname") + "-" + Object.values(termselected).join("-");
     productS.TipoProducto = 1;
     productS.weight = values.weight;
     const getToken = GetTokenProducto(productStore);
@@ -71,6 +79,13 @@ export const ProductoVariante = ({
           })
           .then((res) => {
             if (res.data.Exito) {
+              const data = attributes.selected.map(id => {
+                const options = attributes.groups[id].filter(option =>
+                  attributes.options[id].includes(option.id)
+                ).map(option => option.name)
+                return { id, options, visible: true, variation: true }
+              })
+
               let producttowc = {
                 regular_price: productotosave.PrecioVentaConIva1,
                 price: productotosave.PrecioVentaConIva1,
@@ -80,12 +95,7 @@ export const ProductoVariante = ({
                 wholesale_price: {
                   wholesale_customer: productotosave.PrecioVentaConIva2,
                 },
-                attributes: [
-                  {
-                    id: controlAttT.attributeSelected,
-                    option: values.termselected.toString(),
-                  },
-                ],
+                attributes: data,
               };
 
               let idproduct = Cookies.get("productid");
@@ -209,10 +219,11 @@ export const ProductoVariante = ({
                 </Select>
               </Form.Item>
               {variation ? <ContableItems /> : null}
-              {variation && (
+              {!variation ? null : Object.keys(attributes.data).map(key =>
                 <Form.Item
-                  name="termselected"
-                  label="Termino del producto"
+                  key={key}
+                  name={`termselected-${key}`}
+                  label={key}
                   rules={[
                     {
                       required: true,
@@ -222,7 +233,7 @@ export const ProductoVariante = ({
                 >
                   <Select
                     onChange={(value) => {
-                      settermselected(value);
+                      settermselected(old => ({ ...old, [key]: value }));
                     }}
                     placeholder="Seleccione un termino"
                     allowClear
@@ -239,12 +250,11 @@ export const ProductoVariante = ({
                         .localeCompare(optionB.children.toLowerCase())
                     }
                   >
-                    {controlAttT.data.length > 0 &&
-                      controlAttT.data.map((termi, index) => (
-                        <Option key={index} value={termi}>
-                          {termi}
-                        </Option>
-                      ))}
+                    {attributes.data[key].map((termi, index) => (
+                      <Option key={index} value={termi}>
+                        {termi}
+                      </Option>
+                    ))}
                   </Select>
                 </Form.Item>
               )}

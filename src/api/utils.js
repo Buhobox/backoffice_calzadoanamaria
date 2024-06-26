@@ -173,7 +173,7 @@ export const GenerateFactura = (dataFactura, callback) => {
       let PromiseFundamental = new Promise(function (resolve, reject) {
         try {
           toast.info("Procesando . . .");
-          dataFactura.line_items.map((product) => {
+          dataFactura.line_items.forEach((product) => {
             let individual = {
               Referencia: product.id,
               CodigoBarras: product.sku,

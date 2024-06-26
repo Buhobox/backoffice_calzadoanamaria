@@ -1,8 +1,7 @@
-import { Layout, Row, Col, DatePicker, Space, Button, Skeleton } from "antd";
+import { Layout, Row, Col, Skeleton } from "antd";
 import { useEffect, useState } from "react";
 import { CardInfo } from "../Cards/CardInfo";
 import { reportSalesToday } from "../../api/api";
-import { SearchOutlined, RestOutlined } from "@ant-design/icons";
 import { imagesutils } from "../../utils/utils";
 const { Content } = Layout;
 
