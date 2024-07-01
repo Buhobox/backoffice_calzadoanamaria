@@ -3,7 +3,7 @@ import { toast } from "react-toastify";
 import { baseurl, baseurlwc, credentials } from "./api";
 
 const loginURL = `${baseurl}login/authenticate`;
-const URL = "https://mentaoficial.com/apidanementa/public/api/citydane/"
+const URL = "https://santandereanadecascos.buhobox.com.co/apidanementa/public/api/citydane/"
 
 const MedioDePago = (medioPago) => {
   switch (medioPago) {
@@ -139,17 +139,11 @@ export const GenerateFactura = (dataFactura, callback) => {
     .get(`${URL}${dataFactura.billing.city}`)
     .then((response) => {
       codigoCiudad = response.data[0].codigo;
-      let Cliente = {};
-
-      Cliente = {
+      const Cliente = {
         NumeroDocumento: cedula,
-        PrimerApellido: dataFactura.billing.last_name
-          ? dataFactura.billing.last_name
-          : "--- | ---",
+        PrimerApellido: dataFactura.billing.last_name || "--- | ---",
         SegundoApellido: "",
-        PrimerNombre: dataFactura.billing.first_name
-          ? dataFactura.billing.first_name
-          : "--- | ---",
+        PrimerNombre: dataFactura.billing.first_name || "--- | ---",
         SegundoNombre: "",
         Telefono: dataFactura.billing.phone,
         CodigoDaneCiudad: codigoCiudad,
@@ -160,7 +154,7 @@ export const GenerateFactura = (dataFactura, callback) => {
         Naturaleza: 0,
         RegimenFiscalCodigo: "49",
         ResponsabilidadesFiscalesCodigo: "R-99-PN",
-        TributosCodigo: "ZZ",
+        TributosCodigo: "ZZ", // TODO: Revisar ZZ (no existe), ZY - No causa
       };
 
       //obtener productos
@@ -238,6 +232,7 @@ export const GenerateFactura = (dataFactura, callback) => {
           Producto: response.accesorios,
           NumeroDocumentoEmpleado: "0",
           TipoNumeracion: 1,
+          HabilitarContabilidad: true,
         };
 
         let FacturaData = {
@@ -256,26 +251,11 @@ export const GenerateFactura = (dataFactura, callback) => {
           Producto: response.menta,
           NumeroDocumentoEmpleado: "9999999",
           TipoNumeracion: 1,
+          HabilitarContabilidad: true,
         };
 
-        // console.log("promiseFundamental", {
-        //   FacturaDataAccesorios:FacturaDataAccesorios,
-        //   FacturaData:FacturaData
-        // });
-        // return;
-
-        // console.log("FACTURA_DATA", FacturaData);
-        // console.log("FACTURA_DATA_ACCESORIOS", FacturaDataAccesorios);
-        // console.log("FacturaDataAccesorios.Producto.length", FacturaDataAccesorios.Producto.length);
-        // return;
-
         if (FacturaDataAccesorios.Producto.length > 0) {
-          // console.log("voy a tomar token accesorios");
-
-          let GenerateFacturAccesorios = new Promise(function (
-            resolve,
-            reject
-          ) {
+          let GenerateFacturAccesorios = new Promise(function (resolve, reject) {
             const getToken = GetToken("accesorios");
             toast.configure();
             toast.promise(getToken, {
@@ -322,13 +302,13 @@ export const GenerateFactura = (dataFactura, callback) => {
                 SendFactura(FacturaData).then((response) => {
                   if (response.data.Exito) {
                     toast.success(
-                      `Factura Menta Oficial #${response.data.NumeroFactura} generada  👌 `,
+                      `Factura Santandereana Oficial #${response.data.NumeroFactura} generada  👌 `,
                       {
                         autoClose: false,
                       }
                     );
                     console.log(
-                      "FACTURA GENERADA MENTA OFICIAL ===> ",
+                      "FACTURA GENERADA SANTANDEREANA OFICIAL ===> ",
                       response.data.NumeroFactura
                     );
                     FacturaToChangeStatus(dataFactura, response.data);

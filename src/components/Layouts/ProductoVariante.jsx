@@ -101,12 +101,7 @@ export const ProductoVariante = ({
               let idproduct = Cookies.get("productid");
               axios
                 .post(
-                  baseurlwc +
-                  "/products/" +
-                  idproduct +
-                  "/variations" +
-                  "?" +
-                  credentials,
+                  `${baseurlwc}/products/${idproduct}/variations?${credentials}`,
                   { ...producttowc }
                 )
                 .then((res) => {
@@ -361,7 +356,7 @@ export const ProductoVariante = ({
                       placeholder="$200000"
                       type="number"
                       onChange={(value) => producto.setData({
-                        PrecioVentaConIva1: parseInt(value.target.value)
+                        PrecioVentaConIva1: value.target.value
                       })}
                     />
                   </Form.Item>
@@ -377,8 +372,8 @@ export const ProductoVariante = ({
                       placeholder="$200000"
                       type="number"
                       onChange={(value) => producto.setData({
-                        PrecioVentaConIva2: parseInt(value.target.value),
-                        PrecioVentaConIva3: parseInt(value.target.value),
+                        PrecioVentaConIva2: value.target.value,
+                        PrecioVentaConIva3: value.target.value,
                       })}
                     />
                   </Form.Item>
