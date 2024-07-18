@@ -86,9 +86,9 @@ export default function RootLayout() {
             fontWeight: "bold",
           }}
         >
-          <Menu.Item key="1" icon={<PieChartOutlined />}>
+          {/* <Menu.Item key="1" icon={<PieChartOutlined />}>
             FACTURACION
-          </Menu.Item>
+          </Menu.Item> */}
 
           <Menu.Item key="2" icon={<RocketOutlined />}>
             GESTIÓN

@@ -34,11 +34,7 @@ export const useAttributesStore = create((set) => ({
   reset: () => set({ list: [], groups: {}, selected: [], options: {}, data: {} }),
 }))
 
-export const Atributes = ({
-  next,
-  setcontrolStatusGeneral,
-  controlStatusGeneral,
-}) => {
+export const Atributes = ({ next, setcontrolStatusGeneral, controlStatusGeneral }) => {
   const attributes = useAttributesStore()
 
   const [form] = Form.useForm();
