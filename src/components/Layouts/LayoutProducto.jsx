@@ -153,6 +153,7 @@ export const LayoutProducto = () => {
             manage_stock: selected === "2" ? false : true,
             status: "pending",
             sale_price: productotosave.PrecioVentaConIva1,
+            contable_codes: productotosave.ParametrizacionContableProducto,
             stock_quantity: 0,
             stock_status: "outofstock",
             wholesale_price: {
@@ -168,10 +169,7 @@ export const LayoutProducto = () => {
             ],
           };
 
-          axios
-            .post(baseurlwc + `/products?${credentials}`, {
-              ...producttowc,
-            })
+          axios.post(baseurlwc + `/products?${credentials}`, { ...producttowc })
             .then((res) => {
               if (res.data.id) {
                 Cookies.set("productid", res.data.id);
@@ -186,10 +184,7 @@ export const LayoutProducto = () => {
               }
             });
         } else {
-          axios
-            .post(baseurl + "GuardarProductoConContabilidad", {
-              ...productotosave,
-            })
+          axios.post(baseurl + "GuardarProductoConContabilidad", { ...productotosave })
             .then((res) => {
               setcontrolStatusGeneral({
                 ...controlStatusGeneral,
@@ -215,6 +210,7 @@ export const LayoutProducto = () => {
                   type: selected === "2" ? "variable" : "simple",
                   regular_price: productotosave.PrecioVentaConIva1,
                   manage_stock: true,
+                  contable_codes: productotosave.ParametrizacionContableProducto,
                   status: "pending",
                   sale_price: productotosave.PrecioVentaConIva1,
                   stock_quantity: 0,
@@ -233,10 +229,7 @@ export const LayoutProducto = () => {
                   ],
                 };
 
-                axios
-                  .post(baseurlwc + `/products?${credentials}`, {
-                    ...producttowc,
-                  })
+                axios.post(baseurlwc + `/products?${credentials}`, { ...producttowc })
                   .then((res) => {
                     if (res.data.id) {
                       Cookies.set("productid", res.data.id);
