@@ -255,9 +255,9 @@ export const ProductoVariante = ({
               )}
               {!variation && (
                 <Form.Item
-                  label="Nombre"
+                  label="Nombre producto"
                   name="Descripcion"
-                  rules={[{ required: true, message: "Digite el nombre" }]}
+                  rules={[{ required: true, message: "Digite el nombre del producto" }]}
                 >
                   <Input
                     disabled={variation}

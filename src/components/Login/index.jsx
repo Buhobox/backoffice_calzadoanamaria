@@ -57,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
   },
   submit: {
     margin: theme.spacing(3, 0, 2),
-    backgroundColor: "#78B0AD",
+    backgroundColor: "#01A93C",
   },
 
 }));
@@ -88,7 +88,7 @@ export default function Login() {
       <Grid item xs={12} sm={12} md={12} component={Paper} elevation={6} square>
         <div className={classes.paper}>
           <div className="container-img">
-            <img src={Logo} alt="logo" />
+          <img style={{ width: '350px', height: 'auto' }} src={Logo} alt="logo" />
           </div>
           <form className={classes.form} noValidate>
             <TextField

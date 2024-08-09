@@ -452,6 +452,8 @@ export const LayoutProducto = () => {
                 disabled={controlStatusGeneral.loading}
                 style={{
                   height: "40px",
+                  width: "130px",
+                  background: "#01A93C",
                   display: current === 4 && "none",
                 }}
                 shape="round"
@@ -469,6 +471,7 @@ export const LayoutProducto = () => {
                 style={{
                   width: "100px",
                   height: "40px",
+                  width: "130px"
                 }}
                 type="primary"
                 shape="round"
@@ -494,6 +497,7 @@ export const LayoutProducto = () => {
                 icon={<ArrowLeftOutlined />}
                 style={{
                   height: "40px",
+                  width: "130px",
                   marginLeft: "10px",
                 }}
                 danger
@@ -545,7 +549,7 @@ const TipoDeProducto = (props) => {
                 backgroundColor: "#ff6767",
                 fontFamily: "Roboto",
                 fontSize: "19px",
-                color: "grey",
+                color: "gray",
               }}
             >
               <Option style={{ fontSize: "19px" }} value="" disabled>
@@ -574,7 +578,7 @@ const TipoDeProducto = (props) => {
                   backgroundColor: "#ff6767",
                   fontFamily: "Roboto",
                   fontSize: "19px",
-                  color: "grey",
+                  color: "white",
                 }}
               >
                 <Option style={{ fontSize: "19px" }} value="1">
@@ -622,7 +626,7 @@ const TipoDeProducto = (props) => {
                 background: "#ff6767",
                 padding: "10px",
                 border: "none",
-                color: "black",
+                color: "white",
               }}
               color="blue"
             >

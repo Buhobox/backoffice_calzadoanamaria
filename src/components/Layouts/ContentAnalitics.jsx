@@ -125,14 +125,14 @@ export const ContentAnalitics = () => {
     labels: [`${formatermayor}`, `${formaterdetal}`],
     title: "Mayorista VS Detal",
     data: [sumPorMayor, sumDetal],
-    colors: ["#aa2e34", "#DCB7B1"],
+    colors: ["#01A93C", "#fff"],
   };
 
   const VentasDona = {
     labels: ["Mayorista", "Detal"],
     title: "Mayorista VS Detal",
     percent: PorcentajesTotal(sumPorMayor, sumDetal),
-    colors: ["#aa2e34", "#DCB7B1"],
+    colors: ["#01A93C", "#fff"],
   };
 
   return (
@@ -143,7 +143,7 @@ export const ContentAnalitics = () => {
         style={{ marginBottom: "20px" }}
       >
         <Col xs={24} sm={4} md={6} lg={8} xl={1} style={{ margin: 10 }}>
-          <h1 style={{color:"#aa2e34", fontSize:'20px'}}>
+          <h1 style={{color:"#01A93C", fontSize:'20px'}}>
             <strong>Filtros</strong>
           </h1>
         </Col>
@@ -184,7 +184,7 @@ export const ContentAnalitics = () => {
             type="primary"
             shape="round"
             icon={<RestOutlined />}
-            style={{backgroundColor:"#aa2e34 !important"}}
+            style={{backgroundColor:"#01A93C !important"}}
           >
             Borrar filtros
           </Button>
