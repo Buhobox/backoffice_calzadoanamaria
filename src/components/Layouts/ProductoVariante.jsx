@@ -3,7 +3,7 @@ import { Card, Col, message, Row, Select, Space } from "antd";
 import { Form, Input, Button } from "antd";
 import axios from "axios";
 import Cookies from "js-cookie";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { toast } from "react-toastify";
 import { GetTokenProducto, TypeIva, TypeProduct } from "../../api/utils";
 import { productStore } from "./ProductSimple";
@@ -28,12 +28,6 @@ export const ProductoVariante = ({
       addProductSimple(values.productstore);
     }
   };
-
-  useEffect(() => {
-    if (variation) {
-      console.log(attributes.data);
-    }
-  }, [attributes.data])
 
   toast.configure();
 
@@ -79,11 +73,11 @@ export const ProductoVariante = ({
           })
           .then((res) => {
             if (res.data.Exito) {
-              const data = attributes.selected.map(id => {
-                const options = attributes.groups[id].filter(option =>
-                  attributes.options[id].includes(option.id)
-                ).map(option => option.name)
-                return { id, options, visible: true, variation: true }
+              const filteredAttributes = attributes.selected.map(id => {
+                const name = values[`termselected-${id}`]
+                const group = attributes.list.filter(i => i.id === id)[0]
+                const att = attributes.groups[id].filter(i => i.name === name)[0]
+                return { id: group.id, option: name, name: group.name, slug: att.slug }
               })
 
               let producttowc = {
@@ -95,7 +89,7 @@ export const ProductoVariante = ({
                 wholesale_price: {
                   wholesale_customer: productotosave.PrecioVentaConIva2,
                 },
-                attributes: data,
+                attributes: filteredAttributes,
               };
 
               let idproduct = Cookies.get("productid");
@@ -105,10 +99,6 @@ export const ProductoVariante = ({
                   { ...producttowc }
                 )
                 .then((res) => {
-                  console.log(
-                    "🚀 ~ file: ProductoVariante.jsx ~ line 101 ~ .then ~ res",
-                    res
-                  );
                   if (res.data.id) {
                     toast.success("Producto guardado con exito");
                   } else {
@@ -222,7 +212,7 @@ export const ProductoVariante = ({
                   rules={[
                     {
                       required: true,
-                      message: "Seleccione un termino",
+                      message: "Seleccione un término",
                     },
                   ]}
                 >
@@ -230,7 +220,7 @@ export const ProductoVariante = ({
                     onChange={(value) => {
                       settermselected(old => ({ ...old, [key]: value }));
                     }}
-                    placeholder="Seleccione un termino"
+                    placeholder="Seleccione un término"
                     allowClear
                     showSearch
                     optionFilterProp="children"

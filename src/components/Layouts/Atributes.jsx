@@ -43,8 +43,7 @@ export const Atributes = ({ next, setcontrolStatusGeneral, controlStatusGeneral 
   const getJustOptions = () => {
     const data = {}
     attributes.selected.forEach(id => {
-      const name = attributes.list.filter(i => i.id === id)[0].name
-      data[name] = attributes.options[id].map(option => {
+      data[id] = attributes.options[id].map(option => {
         const text = attributes.groups[id].filter(i => i.id === option)[0].name
         return text
       })
