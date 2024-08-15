@@ -125,7 +125,7 @@ export const ProductoVariante = ({
             bordered
             title={
               variation
-                ? "Crear Variante (Puedes crear una o mas variantes en este formulario, escogiendo los terminos diferentes para cada producto)"
+                ? "Crear Variaciones (Selecciona términos para generar una o más variantes)"
                 : "Datos del producto"
             }
             style={{

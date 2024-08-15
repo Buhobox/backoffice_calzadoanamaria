@@ -330,7 +330,7 @@ export const LayoutProducto = () => {
 
   let steps = [
     {
-      title: `Selecciona r Tipo ${producto.type}`,
+      title: `Tipo Producto ${producto.type}`,
       content: (
         <TipoDeProducto
           handleselectproductype={handleselectproductype}
@@ -357,7 +357,7 @@ export const LayoutProducto = () => {
 
   let stepsProductVariant = [
     {
-      title: "Selecciona r Tipo Producto",
+      title: "Tipo Producto",
       content: (
         <TipoDeProducto
           handleselectproductype={handleselectproductype}
@@ -424,6 +424,7 @@ export const LayoutProducto = () => {
               minHeight: "40vh",
               marginBottom: "30px",
               background: "#F0F2F5",
+              borderRadius: "10px",
             }}
             className="steps-content"
           >

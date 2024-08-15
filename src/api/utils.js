@@ -3,7 +3,7 @@ import { toast } from "react-toastify";
 import { baseurl, baseurlwc, credentials } from "./api";
 
 const loginURL = `${baseurl}login/authenticate`;
-const URL = "https://santandereanadecascos.buhobox.com.co/apidanementa/public/api/citydane/"
+const URL = "https://calzadoanamaria.com/apidane/public/api/citydane/"
 
 const MedioDePago = (medioPago) => {
   switch (medioPago) {

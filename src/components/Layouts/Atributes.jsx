@@ -148,7 +148,7 @@ export const Atributes = ({ next, setcontrolStatusGeneral, controlStatusGeneral 
             <LoadingOutlined style={{ fontSize: "23px" }} />
           ) : (
             <Button shape="round" type="primary" htmlType="submit">
-              Selecciona r y seguir
+              Seleccionar y seguir
             </Button>
           )}
         </Form.Item>

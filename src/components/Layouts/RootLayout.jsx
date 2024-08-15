@@ -86,10 +86,6 @@ export default function RootLayout() {
             fontWeight: "bold",
           }}
         >
-          {/* <Menu.Item key="1" icon={<PieChartOutlined />}>
-            FACTURACION
-          </Menu.Item> */}
-
           <Menu.Item key="2" icon={<RocketOutlined />}>
             GESTIÓN
           </Menu.Item>
@@ -102,7 +98,7 @@ export default function RootLayout() {
       <Layout style={{ minHeight: '100vh' }}>
         <Header
           className="site-layout-background"
-          style={{ padding: 0, backgroundColor: ColorsGeneral.mentacolor }}
+          style={{ padding: "5px", backgroundColor: ColorsGeneral.mentacolor }}
         >
           <Row>
             <Col span={1} offset={2}>
@@ -139,7 +135,7 @@ export default function RootLayout() {
             visible={visibledrawer}
           >
             <div className="logo">
-              <img src={Logo} alt="Calzado Ana María" className="logo-img-dash" />
+              <img src={Logo} alt="Calzado Ana María" className="logo-img-dash"  style={{ width: '200px', height: 'auto' }}  />
             </div>
             <Menu
               onSelect={(item) => HandleChange(item)}
@@ -150,10 +146,6 @@ export default function RootLayout() {
                 fontWeight: "bold",
               }}
             >
-              <Menu.Item key="1" icon={<BarChartOutlined />}>
-                FACTURACION
-              </Menu.Item>
-
               <Menu.Item key="2" icon={<RocketOutlined />}>
                 GESTIÓN
               </Menu.Item>
