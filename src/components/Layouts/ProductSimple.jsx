@@ -67,13 +67,13 @@ export const ProductSimple = ({ addProductSimple }) => {
                 rules={[
                   {
                     required: true,
-                    message: "Seleccione un tipo de tienda",
+                    message: "Selecciona un tipo de tienda",
                   },
                 ]}
               >
                 <Select
                   onChange={(value) => producto.setData({ productstore: value })}
-                  placeholder="Seleccione tipo de tienda"
+                  placeholder="Selecciona tipo de tienda"
                   allowClear
                   showSearch
                   optionFilterProp="children"
@@ -110,7 +110,7 @@ export const ProductSimple = ({ addProductSimple }) => {
                 rules={[
                   {
                     required: true,
-                    message: "Seleccione una categoria",
+                    message: "Selecciona una categoria",
                   },
                 ]}
               >
@@ -119,7 +119,7 @@ export const ProductSimple = ({ addProductSimple }) => {
                     IdCategoria: value,
                     Categoria: producto.knowName(value, producto.categorys)
                   })}
-                  placeholder="Seleccione una categoria"
+                  placeholder="Selecciona una categoria"
                   allowClear
                   showSearch
                   optionFilterProp="children"
@@ -147,7 +147,7 @@ export const ProductSimple = ({ addProductSimple }) => {
                 rules={[
                   {
                     required: false,
-                    message: "Seleccione una subcategoria",
+                    message: "Selecciona una subcategoria",
                   },
                 ]}
               >
@@ -156,7 +156,7 @@ export const ProductSimple = ({ addProductSimple }) => {
                     IdSubCategoria: value,
                     SubCategoria: producto.knowName(value, producto.categorys)
                   })}
-                  placeholder="Seleccione una subcategoria"
+                  placeholder="Selecciona una subcategoria"
                   allowClear
                   showSearch
                   optionFilterProp="children"
@@ -232,13 +232,13 @@ export const ProductSimple = ({ addProductSimple }) => {
                 rules={[
                   {
                     required: true,
-                    message: "Seleccione un porcentaje iva",
+                    message: "Selecciona un porcentaje iva",
                   },
                 ]}
               >
                 <Select
                   onChange={(value) => producto.setData({ PorcentajeIva: value })}
-                  placeholder="Seleccione un porcentaje iva"
+                  placeholder="Selecciona un porcentaje iva"
                   allowClear
                 >
                   {TypeIva.map((typeiva) => (

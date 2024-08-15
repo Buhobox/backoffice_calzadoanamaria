@@ -330,7 +330,7 @@ export const LayoutProducto = () => {
 
   let steps = [
     {
-      title: `Seleccionar Tipo ${producto.type}`,
+      title: `Selecciona r Tipo ${producto.type}`,
       content: (
         <TipoDeProducto
           handleselectproductype={handleselectproductype}
@@ -357,7 +357,7 @@ export const LayoutProducto = () => {
 
   let stepsProductVariant = [
     {
-      title: "Seleccionar Tipo Producto",
+      title: "Selecciona r Tipo Producto",
       content: (
         <TipoDeProducto
           handleselectproductype={handleselectproductype}
@@ -524,7 +524,7 @@ const TipoDeProducto = (props) => {
               }}
             />
               <Select
-                placeholder={`Seleccione un tipo de producto ${producto.type}`}
+                placeholder={`Selecciona un tipo de producto ${producto.type}`}
                 onChange={(value) => {
                   props.handleselectproductype(value);
                   props.setcontrolStatusGeneral({

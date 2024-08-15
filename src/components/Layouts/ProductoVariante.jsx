@@ -154,59 +154,24 @@ export const ProductoVariante = ({
               }}
             >
               <Form.Item
-                label="Código del producto"
+                label="Referencia producto"
                 name="Codigo"
-                rules={[{ required: true, message: "Digite el código del producto" }]}
+                rules={[{ required: true, message: "Digite la referencia del producto" }]}
               >
                 <Input
                   maxLength={45}
                   onChange={(value) => producto.setData({ Codigo: value.target.value })}
                 />
               </Form.Item>
-              <Form.Item
-                name="productstore"
-                label="Tipo de tienda"
-                rules={[
-                  {
-                    required: true,
-                    message: "Seleccione un tipo de tienda",
-                  },
-                ]}
-              >
-                <Select
-                  onChange={(value) => producto.setData({ productstore: value })}
-                  placeholder="Seleccione tipo de tienda"
-                  allowClear
-                  showSearch
-                  optionFilterProp="children"
-                  filterOption={(input, option) =>
-                    option.children
-                      .toLowerCase()
-                      .indexOf(input.toLowerCase()) >= 0
-                  }
-                  filterSort={(optionA, optionB) =>
-                    optionA.children
-                      .toLowerCase()
-                      .localeCompare(optionB.children.toLowerCase())
-                  }
-                >
-                  {TypeProduct.map((productype) => (
-                    <Option key={productype.Codigo} value={productype.Codigo}>
-                      {productype.Descripcion}
-                    </Option>
-                  ))}
-                </Select>
-              </Form.Item>
-              {variation ? <ContableItems /> : null}
               {!variation ? null : Object.keys(attributes.data).map(key =>
                 <Form.Item
                   key={key}
                   name={`termselected-${key}`}
-                  label={key}
+                  label={"Selecciona  un término"}
                   rules={[
                     {
                       required: true,
-                      message: "Seleccione un término",
+                      message: "Selecciona un término",
                     },
                   ]}
                 >
@@ -214,7 +179,7 @@ export const ProductoVariante = ({
                     onChange={(value) => {
                       settermselected(old => ({ ...old, [key]: value }));
                     }}
-                    placeholder="Seleccione un término"
+                    placeholder="Selecciona un término"
                     allowClear
                     showSearch
                     optionFilterProp="children"
@@ -256,7 +221,7 @@ export const ProductoVariante = ({
                   rules={[
                     {
                       required: true,
-                      message: "Seleccione una categoria",
+                      message: "Selecciona una categoria",
                     },
                   ]}
                 >
@@ -265,7 +230,7 @@ export const ProductoVariante = ({
                       IdCategoria: value,
                       Categoria: producto.knowName(value, producto.categorys)
                     })}
-                    placeholder="Seleccione una categoria"
+                    placeholder="Selecciona una categoria"
                     allowClear
                     showSearch
                     optionFilterProp="children"
@@ -295,7 +260,7 @@ export const ProductoVariante = ({
                   rules={[
                     {
                       required: true,
-                      message: "Seleccione una subcategoria",
+                      message: "Selecciona una subcategoria",
                     },
                   ]}
                 >
@@ -304,7 +269,7 @@ export const ProductoVariante = ({
                       IdSubCategoria: value,
                       SubCategoria: producto.knowName(value, producto.categorys)
                     })}
-                    placeholder="Seleccione una subcategoria"
+                    placeholder="Selecciona una subcategoria"
                     allowClear
                     showSearch
                     optionFilterProp="children"
@@ -387,13 +352,13 @@ export const ProductoVariante = ({
                 rules={[
                   {
                     required: true,
-                    message: "Seleccione un porcentaje iva",
+                    message: "Selecciona un porcentaje iva",
                   },
                 ]}
               >
                 <Select
                   onChange={(value) => producto.setData({ PorcentajeIva: value })}
-                  placeholder="Seleccione un porcentaje iva"
+                  placeholder="Selecciona un porcentaje iva"
                   allowClear
                 >
                   {TypeIva.map((typeiva) => (

@@ -32,13 +32,13 @@ export const ContableItems = () => {
       rules={[
         {
           required: true,
-          message: "Seleccione una categoria contable",
+          message: "Selecciona una categoria contable",
         },
       ]}
     >
       <Select
         onChange={(value) => producto.setCategory(k, value)}
-        placeholder="Seleccione una categoria contable"
+        placeholder="Selecciona una categoria contable"
         allowClear
         showSearch
         optionFilterProp="children"

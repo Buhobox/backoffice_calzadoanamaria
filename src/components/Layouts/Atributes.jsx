@@ -105,7 +105,7 @@ export const Atributes = ({ next, setcontrolStatusGeneral, controlStatusGeneral 
           <Select
             mode="multiple"
             style={{ width: "100%" }}
-            placeholder="Seleccione uno ó varios atributos"
+            placeholder="Selecciona uno ó varios atributos"
             maxTagCount="responsive"
             allowClear
             onChange={(values) => attributes.setSelected(values)}
@@ -129,7 +129,7 @@ export const Atributes = ({ next, setcontrolStatusGeneral, controlStatusGeneral 
             <Select
               mode="multiple"
               style={{ width: "100%" }}
-              placeholder="Seleccione uno ó varios terminos"
+              placeholder="Selecciona uno ó varios terminos"
               maxTagCount="responsive"
               allowClear
               onChange={(values) => attributes.setOptions(att.id, values)}
@@ -148,7 +148,7 @@ export const Atributes = ({ next, setcontrolStatusGeneral, controlStatusGeneral 
             <LoadingOutlined style={{ fontSize: "23px" }} />
           ) : (
             <Button shape="round" type="primary" htmlType="submit">
-              Seleccionar y seguir
+              Selecciona r y seguir
             </Button>
           )}
         </Form.Item>
