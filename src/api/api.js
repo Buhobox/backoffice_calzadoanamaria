@@ -2,10 +2,10 @@ import { create } from "apisauce";
 import Cookies from "js-cookie";
 import { getNowDateIso, getNextDateIso } from "../utils/utils";
 
-const customerkey = "ck_c40d4e148e1e47777a0e5ccdbe7e8df32a59dbc4";
-const customersecret = "cs_c5923bdf49d29626d618de223b52f61b6ca1aa11";
+const customerkey = "ck_cd9b0a6408043f8ad214a1a2e1357e0cb4a10209";
+const customersecret = "cs_fdcd9152c77b3be7650ef9bea26fa7d8d43e0bed";
 
-export const baseurlwc = "https://santandereanadecascos.buhobox.com.co/wp-json/wc/v3";
+export const baseurlwc = "https://calzadoanamaria.com/wp-json/wc/v3";
 export const credentials = `consumer_key=${customerkey}&consumer_secret=${customersecret}`;
 export const baseurl = "https://integwebapimentaoficialbodega20211022.azurewebsites.net/api/";
 

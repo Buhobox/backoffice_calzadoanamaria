@@ -24,26 +24,12 @@ const { Option } = Select;
 
 const defProductConfig = {
   TipoProducto: 1,
-  IdIva: 0,
-  ParametrizacionContableProducto: [
-    { NumeroCuenta: "", Tipo: 0 },
-    { NumeroCuenta: "", Tipo: 1 },
-    { NumeroCuenta: "", Tipo: 2 },
-    { NumeroCuenta: "", Tipo: 4 },
-    { NumeroCuenta: "", Tipo: 5 },
-  ]
+  IdIva: 0
 }
 
 const defServiceConfig = {
   TipoProducto: 0,
-  IdIva: 0,
-  ParametrizacionContableProducto: [
-    { NumeroCuenta: "", Tipo: 1 },
-    { NumeroCuenta: "", Tipo: 4 },
-    { NumeroCuenta: "", Tipo: 5 },
-    { NumeroCuenta: "", Tipo: 6 },
-    { NumeroCuenta: "", Tipo: 7 },
-  ]
+  IdIva: 0
 }
 
 export const TYPE_PRODUCT = "Producto"
@@ -184,7 +170,7 @@ export const LayoutProducto = () => {
               }
             });
         } else {
-          axios.post(baseurl + "GuardarProductoConContabilidad", { ...productotosave })
+          axios.post(baseurl + "GuardarProducto", { ...productotosave })
             .then((res) => {
               setcontrolStatusGeneral({
                 ...controlStatusGeneral,
@@ -453,7 +439,7 @@ export const LayoutProducto = () => {
                 style={{
                   height: "40px",
                   width: "130px",
-                  background: "#01A93C",
+                  background: "#8F3D26",
                   display: current === 4 && "none",
                 }}
                 shape="round"
@@ -537,34 +523,8 @@ const TipoDeProducto = (props) => {
                 height: "100px",
               }}
             />
-            <Select
-              placeholder="Seleccione un producto/servicio"
-              onChange={producto.setType}
-              value={producto.type}
-              style={{
-                width: "auto",
-                minWidth: 300,
-                height: "auto",
-                borderRadius: "12px",
-                backgroundColor: "#ff6767",
-                fontFamily: "Roboto",
-                fontSize: "19px",
-                color: "gray",
-              }}
-            >
-              <Option style={{ fontSize: "19px" }} value="" disabled>
-                Seleccione un producto/servicio
-              </Option>
-              <Option style={{ fontSize: "19px" }} value={TYPE_PRODUCT}>
-                {TYPE_PRODUCT}
-              </Option>
-              <Option style={{ fontSize: "19px" }} value={TYPE_SERVICE}>
-                {TYPE_SERVICE}
-              </Option>
-            </Select>
-            {producto.type ?
               <Select
-                placeholder={`Seleccione un tipo de ${producto.type}`}
+                placeholder={`Seleccione un tipo de producto ${producto.type}`}
                 onChange={(value) => {
                   props.handleselectproductype(value);
                   props.setcontrolStatusGeneral({
@@ -575,20 +535,19 @@ const TipoDeProducto = (props) => {
                   width: "auto",
                   height: "auto",
                   borderRadius: "12px",
-                  backgroundColor: "#ff6767",
+                  backgroundColor: "#F29F05",
                   fontFamily: "Roboto",
                   fontSize: "19px",
                   color: "white",
                 }}
               >
                 <Option style={{ fontSize: "19px" }} value="1">
-                  {producto.type} simple
+                  {producto.type} Simple
                 </Option>
                 <Option style={{ fontSize: "19px" }} value="2">
-                  {producto.type} variante
+                  {producto.type} Variante
                 </Option>
               </Select>
-              : null}
           </Space>
         </Row>
       )}
@@ -623,7 +582,7 @@ const TipoDeProducto = (props) => {
               style={{
                 fontFamily: "Roboto",
                 fontSize: "19px",
-                background: "#ff6767",
+                background: "#F29F05",
                 padding: "10px",
                 border: "none",
                 color: "white",

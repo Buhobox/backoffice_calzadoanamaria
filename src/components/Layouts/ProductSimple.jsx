@@ -3,7 +3,6 @@ import { Card, Col, message, Row, Select, Space, Form, Input, Button } from "ant
 import React from "react";
 import { TypeIva, TypeProduct } from "../../api/utils";
 import { useProductStore } from "./LayoutProducto";
-import { ContableItems } from "./ContableItems";
 export const productStore = 1;
 const { Option } = Select;
 
@@ -49,26 +48,20 @@ export const ProductSimple = ({ addProductSimple }) => {
                 Descripcion: producto.data.Descripcion,
                 PrecioVentaConIva1: producto.data.PrecioVentaConIva1,
                 PrecioVentaConIva2: producto.data.PrecioVentaConIva2,
-                PorcentajeIva: producto.data.PorcentajeIva,
-                cat0: producto.data.ParametrizacionContableProducto[0].NumeroCuenta,
-                cat1: producto.data.ParametrizacionContableProducto[1].NumeroCuenta,
-                cat2: producto.data.ParametrizacionContableProducto[2].NumeroCuenta,
-                cat3: producto.data.ParametrizacionContableProducto[3].NumeroCuenta,
-                cat4: producto.data.ParametrizacionContableProducto[4].NumeroCuenta,
-                weight: producto.data.weight
+                PorcentajeIva: producto.data.PorcentajeIva
               }}
             >
               <Form.Item
-                label="Código del producto"
+                label="Referencia Producto"
                 name="Codigo"
-                rules={[{ required: true, message: "Digite el código del producto" }]}
+                rules={[{ required: true, message: "Digite la referencia del producto" }]}
               >
                 <Input
                   maxLength={45}
                   onChange={(value) => producto.setData({ Codigo: value.target.value })}
                 />
               </Form.Item>
-              <Form.Item
+              {/* <Form.Item
                 name="productstore"
                 label="Tipo de tienda"
                 rules={[
@@ -101,7 +94,7 @@ export const ProductSimple = ({ addProductSimple }) => {
                     </Option>
                   ))}
                 </Select>
-              </Form.Item>
+              </Form.Item>*/}
               <Form.Item
                 label="Nombre producto"
                 name="Descripcion"
@@ -185,9 +178,6 @@ export const ProductSimple = ({ addProductSimple }) => {
                   ))}
                 </Select>
               </Form.Item>
-
-              <ContableItems />
-
               <Form.Item
                 label="Precio de venta"
                 name="PrecioVentaConIva1"
@@ -196,7 +186,7 @@ export const ProductSimple = ({ addProductSimple }) => {
                 ]}
               >
                 <Input
-                  placeholder="$200000"
+                  placeholder="$200.000"
                   type="number"
                   onChange={(value) => producto.setData({
                     PrecioVentaConIva1: parseInt(value.target.value)
@@ -211,7 +201,7 @@ export const ProductSimple = ({ addProductSimple }) => {
                 ]}
               >
                 <Input
-                  placeholder="$200000"
+                  placeholder="$150.000"
                   type="number"
                   onChange={(value) =>
                     producto.setData({

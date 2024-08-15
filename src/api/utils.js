@@ -17,7 +17,7 @@ const MedioDePago = (medioPago) => {
 
 export const GetTokenProducto = async (TypeProduct) => {
 
-  let cadena = "fypoY3mulJAruo2oYS3P6/7ICmrzWAdHIutWvnn9cl8MDKrYtm4XlePe9cpgXwwh";
+  let cadena = "iwZPYyuHZ5kSACKnkF/pigrtbWSO0gk3ylN4Vip6zXsZMr6KO5doF5pNvmZnC7sb";
   // if (TypeProduct === 2) {
   //   cadena = "znSbP63R5Lp2Bfmh81pATZ25qCpQENHAvPZBPIdqeJL4P+1S+Lm0n0Lgg7ccRsYs8orad9dC4BD40mxuKBw/6Q==";
   // }
@@ -37,7 +37,7 @@ export const GetTokenProducto = async (TypeProduct) => {
 };
 
 export const GetToken = async (type) => {
-  let cadena = "fypoY3mulJAruo2oYS3P6/7ICmrzWAdHIutWvnn9cl8MDKrYtm4XlePe9cpgXwwh";
+  let cadena = "iwZPYyuHZ5kSACKnkF/pigrtbWSO0gk3ylN4Vip6zXsZMr6KO5doF5pNvmZnC7sb";
   // if (type === "accesorios") {
   //   cadena = "znSbP63R5Lp2Bfmh81pATZ25qCpQENHAvPZBPIdqeJL4P+1S+Lm0n0Lgg7ccRsYs8orad9dC4BD40mxuKBw/6Q==";
   // }
@@ -380,15 +380,5 @@ export const TypeProduct = [
     Codigo: 1,
     Descripcion: "Producción",
     Valor: "Producción",
-  },
-  // {
-  //   Codigo: 2,
-  //   Descripcion: "Accesorios",
-  //   Valor: "Accesorios",
-  // },
-  {
-    Codigo: 3,
-    Descripcion: "Prueba",
-    Valor: "Prueba",
   },
 ];

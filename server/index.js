@@ -17,7 +17,7 @@ const dbConfig = {
   host: 'sotosoftflex.mysql.database.azure.com',
   user: 'paginaweb',
   password: 'Xytwe$689RS!',
-  database: 'servidor ari4.0.ama',
+  database: 'servidor ari4.0.ama',
   ssl: {
     ca: fs.readFileSync(sslCertPath),
   },

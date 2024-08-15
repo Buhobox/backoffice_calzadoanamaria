@@ -44,11 +44,11 @@ export function TotalOrders(orders) {
   return totals.reduce(reducer);
 }
 
-export const ColorsGeneral = { mentacolor: "#ff6767" };
+export const ColorsGeneral = { mentacolor: "#F29F05" };
 
 export const Copyright = () => {
   let date = new Date();
-  return `Santandereana de cascos  ${date.getFullYear()}`;
+  return `Calzado Ana María  ${date.getFullYear()}`;
 };
 
 export function AmounTotal(orders) {

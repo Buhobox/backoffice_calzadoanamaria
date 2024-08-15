@@ -68,7 +68,7 @@ export const ProductoVariante = ({
         });
 
         axios
-          .post(baseurl + "GuardarProductoConContabilidad", {
+          .post(baseurl + "GuardarProducto", {
             ...productotosave,
           })
           .then((res) => {
@@ -150,13 +150,7 @@ export const ProductoVariante = ({
                 Descripcion: producto.data.Descripcion,
                 PrecioVentaConIva1: producto.data.PrecioVentaConIva1,
                 PrecioVentaConIva2: producto.data.PrecioVentaConIva2,
-                PorcentajeIva: producto.data.PorcentajeIva,
-                cat0: producto.data.ParametrizacionContableProducto[0].NumeroCuenta,
-                cat1: producto.data.ParametrizacionContableProducto[1].NumeroCuenta,
-                cat2: producto.data.ParametrizacionContableProducto[2].NumeroCuenta,
-                cat3: producto.data.ParametrizacionContableProducto[3].NumeroCuenta,
-                cat4: producto.data.ParametrizacionContableProducto[4].NumeroCuenta,
-                weight: producto.data.weight
+                PorcentajeIva: producto.data.PorcentajeIva
               }}
             >
               <Form.Item

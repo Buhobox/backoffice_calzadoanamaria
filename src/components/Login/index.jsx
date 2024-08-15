@@ -18,7 +18,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {"Copyright © "}
       <Link color="inherit" href="https://material-ui.com/">
-        Santandereana de cascos
+        Calzado Ana María
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}
@@ -57,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
   },
   submit: {
     margin: theme.spacing(3, 0, 2),
-    backgroundColor: "#01A93C",
+    backgroundColor: "#8F3D26",
   },
 
 }));
