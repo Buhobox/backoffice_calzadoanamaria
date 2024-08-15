@@ -7,13 +7,12 @@ import {
   FirebaseAppProvider,
 } from "reactfire";
 const firebaseConfig = {
-  apiKey: "AIzaSyDSQf3q8JMMa2UcrymsseuMPaVknhZ_ahg",
-  authDomain: "santandereana-6d1fd.firebaseapp.com",
-  projectId: "santandereana-6d1fd",
-  storageBucket: "santandereana-6d1fd.appspot.com",
-  messagingSenderId: "989521974661",
-  appId: "1:989521974661:web:5de63284915a9b615460ec",
-  measurementId: "G-64V8ZFPJEX"
+  apiKey: "AIzaSyAG0iagA400uFuk90KLAa0Uc77nWHoJPaU",
+  authDomain: "websitecalzadoana.firebaseapp.com",
+  projectId: "websitecalzadoana",
+  storageBucket: "websitecalzadoana.appspot.com",
+  messagingSenderId: "760365724158",
+  appId: "1:760365724158:web:c1918f6051b211916950af"
 }
 
 ReactDOM.render(

@@ -14,10 +14,10 @@ app.use(cors({
 const sslCertPath = path.join(__dirname, 'DigiCertGlobalRootG2.crt.pem');
 
 const dbConfig = {
-  host: 'sotosoft.mysql.database.azure.com',
-  user: 'paginaweb@sotosoft',
+  host: 'sotosoftflex.mysql.database.azure.com',
+  user: 'paginaweb',
   password: 'Xytwe$689RS!',
-  database: 'servidor ari4.0.cascos.prueba',
+  database: 'servidor ari4.0.ama',
   ssl: {
     ca: fs.readFileSync(sslCertPath),
   },
