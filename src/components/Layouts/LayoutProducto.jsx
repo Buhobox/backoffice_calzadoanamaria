@@ -131,7 +131,6 @@ export const LayoutProducto = () => {
             step: 3,
             status: "loading",
           });
-
           let producttowc = {
             name: productotosave.Descripcion,
             type: selected === "2" ? "variable" : "simple",
@@ -139,21 +138,27 @@ export const LayoutProducto = () => {
             manage_stock: selected === "2" ? false : true,
             status: "pending",
             sale_price: productotosave.PrecioVentaConIva1,
-            contable_codes: productotosave.ParametrizacionContableProducto,
             stock_quantity: 0,
             stock_status: "outofstock",
             wholesale_price: {
-              wholesale_customer: productotosave.PrecioVentaConIva2,
+                wholesale_customer: productotosave.PrecioVentaConIva2,
             },
             categories: [
-              {
-                id: productotosave.IdCategoria,
-              },
-              {
-                id: productotosave.IdSubCategoria,
-              },
+                {
+                    id: productotosave.IdCategoria,
+                },
+                {
+                    id: productotosave.IdSubCategoria,
+                },
             ],
-          };
+            meta_data: [
+                {
+                    key: '_codigo_de_barras',
+                    value: productotosave.Codigo
+                }
+            ]
+        };
+        
 
           axios.post(baseurlwc + `/products?${credentials}`, { ...producttowc })
             .then((res) => {
@@ -192,28 +197,34 @@ export const LayoutProducto = () => {
 
                 let producttowc = {
                   name: productotosave.Descripcion,
+                  codigo_de_barras: productotosave.Codigo,  // Campo directo en el objeto
                   sku: res.data.CodigoBarras,
                   type: selected === "2" ? "variable" : "simple",
-                  regular_price: productotosave.PrecioVentaConIva1,
+                  regular_price: productotosave.PrecioVentaConIva1.toString(),
                   manage_stock: true,
-                  contable_codes: productotosave.ParametrizacionContableProducto,
                   status: "pending",
-                  sale_price: productotosave.PrecioVentaConIva1,
+                  sale_price: productotosave.PrecioVentaConIva1.toString(),
                   stock_quantity: 0,
                   weight: productotosave.weight,
                   stock_status: "outofstock",
                   wholesale_price: {
-                    wholesale_customer: productotosave.PrecioVentaConIva2,
+                      wholesale_customer: productotosave.PrecioVentaConIva2.toString(),
                   },
                   categories: [
-                    {
-                      id: productotosave.IdCategoria,
-                    },
-                    {
-                      id: productotosave.IdSubCategoria,
-                    },
+                      {
+                          id: productotosave.IdCategoria,
+                      },
+                      {
+                          id: productotosave.IdSubCategoria,
+                      },
                   ],
-                };
+                  meta_data: [
+                      {
+                          key: '_codigo_de_barras',
+                          value: productotosave.Codigo  // Incluido en la metadata
+                      }
+                  ]
+              };
 
                 axios.post(baseurlwc + `/products?${credentials}`, { ...producttowc })
                   .then((res) => {

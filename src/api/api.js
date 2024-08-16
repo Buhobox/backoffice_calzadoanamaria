@@ -2,8 +2,8 @@ import { create } from "apisauce";
 import Cookies from "js-cookie";
 import { getNowDateIso, getNextDateIso } from "../utils/utils";
 
-const customerkey = "ck_cd9b0a6408043f8ad214a1a2e1357e0cb4a10209";
-const customersecret = "cs_fdcd9152c77b3be7650ef9bea26fa7d8d43e0bed";
+const customerkey = "ck_6b294cbcd6a0ec0e95fb38c0c68bbc54276df65f";
+const customersecret = "cs_0aaf6bc2b633be4e84737a715c37fa3c8c9cd844";
 
 export const baseurlwc = "https://calzadoanamaria.com/wp-json/wc/v3";
 export const credentials = `consumer_key=${customerkey}&consumer_secret=${customersecret}`;
@@ -44,7 +44,7 @@ export const getCustomerOrderssendwholesaler = () =>
 export const GetAllCategorys = () =>
   api.get(`/products/categories?${credentials}&per_page=100`);
 
-export const AddProductWC = (data) => api.post(`/products?${credentials}`, { data });
+export const AddProductWC = (data) => api.put(`/products?${credentials}`, { data });
 
 export const GetAllAttributes = () =>
   api.get(`/products/attributes?${credentials}&per_page=100`);

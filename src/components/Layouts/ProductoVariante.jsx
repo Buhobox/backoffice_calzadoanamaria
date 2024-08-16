@@ -81,16 +81,22 @@ export const ProductoVariante = ({
               })
 
               let producttowc = {
-                regular_price: productotosave.PrecioVentaConIva1,
-                price: productotosave.PrecioVentaConIva1,
+                regular_price: productotosave.PrecioVentaConIva1.toString(),
+                price: productotosave.PrecioVentaConIva1.toString(),
                 manage_stock: true,
                 weight: productotosave.weight,
                 sku: res.data.CodigoBarras,
                 wholesale_price: {
-                  wholesale_customer: productotosave.PrecioVentaConIva2,
+                    wholesale_customer: productotosave.PrecioVentaConIva2.toString(),
                 },
                 attributes: filteredAttributes,
-              };
+                meta_data: [
+                    {
+                        key: '_codigo_de_barras',
+                        value: productotosave.Codigo
+                    }
+                ]
+            };
 
               let idproduct = Cookies.get("productid");
               axios
@@ -326,7 +332,6 @@ export const ProductoVariante = ({
                       })}
                     />
                   </Form.Item>
-                  {!producto.isProduct ? null :
                     <Form.Item
                       label="Peso del producto"
                       name="weight"
@@ -343,7 +348,6 @@ export const ProductoVariante = ({
                         onChange={(value) => producto.setData({ weight: value.target.value })}
                       />
                     </Form.Item>
-                  }
                 </>
               )}
               <Form.Item

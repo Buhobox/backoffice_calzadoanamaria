@@ -211,7 +211,6 @@ export const ProductSimple = ({ addProductSimple }) => {
                   }
                 />
               </Form.Item>
-              {!producto.isProduct ? null :
                 <Form.Item
                   label="Peso del producto"
                   name="weight"
@@ -225,7 +224,6 @@ export const ProductSimple = ({ addProductSimple }) => {
                     onChange={(value) => producto.setData({ weight: value.target.value })}
                   />
                 </Form.Item>
-              }
               <Form.Item
                 name="PorcentajeIva"
                 label="porcentaje iva"
