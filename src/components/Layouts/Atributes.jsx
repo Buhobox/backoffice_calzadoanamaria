@@ -5,6 +5,7 @@ import { toast } from "react-toastify";
 import { AddAttributes } from "../../api/api";
 import { create } from "zustand";
 const { Option } = Select;
+
 const layout = {
   labelCol: {
     span: 6,
@@ -13,6 +14,7 @@ const layout = {
     span: 16,
   },
 };
+
 const tailLayout = {
   wrapperCol: {
     offset: 6,
@@ -35,38 +37,37 @@ export const useAttributesStore = create((set) => ({
 }))
 
 export const Atributes = ({ next, setcontrolStatusGeneral, controlStatusGeneral }) => {
-  const attributes = useAttributesStore()
-
+  const attributes = useAttributesStore();
   const [form] = Form.useForm();
   const [loading, setloading] = useState(false);
 
   const getJustOptions = () => {
-    const data = {}
+    const data = {};
     attributes.selected.forEach(id => {
       data[id] = attributes.options[id].map(option => {
-        const text = attributes.groups[id].filter(i => i.id === option)[0].name
-        return text
-      })
-    })
-    attributes.setData(data)
-  }
+        const text = attributes.groups[id].find(i => i.id === option)?.name;
+        return text;
+      });
+    });
+    attributes.setData(data);
+  };
 
   const onFinish = (values) => {
     setloading(true);
 
     const data = attributes.selected.map(id => {
-      const options = attributes.groups[id].filter(option =>
-        attributes.options[id].includes(option.id)
-      ).map(option => option.name)
-      return { id, options, visible: true, variation: true }
-    })
-    getJustOptions()
-    //  Añade data a woo/products
+      const options = attributes.groups[id]
+        .filter(option => attributes.options[id].includes(option.id))
+        .map(option => option.name);
+      return { id, options, visible: true, variation: true };
+    });
+    getJustOptions();
+
     AddAttributes({ attributes: data }).then((res) => {
       if (res.data.id) {
         toast.success(data.length === 1
-          ? "Se agrego correctamente el atributo"
-          : "Se agregaron correctamente los atributo"
+          ? "Se agregó correctamente el atributo"
+          : "Se agregaron correctamente los atributos"
         );
         next();
         setcontrolStatusGeneral({
@@ -81,7 +82,7 @@ export const Atributes = ({ next, setcontrolStatusGeneral, controlStatusGeneral 
 
   return (
     <Card
-      title="Atributos y terminos a utilizar"
+      title="Atributos y términos a utilizar"
       hoverable
       bordered
       style={{
@@ -105,7 +106,7 @@ export const Atributes = ({ next, setcontrolStatusGeneral, controlStatusGeneral 
           <Select
             mode="multiple"
             style={{ width: "100%" }}
-            placeholder="Selecciona uno ó varios atributos"
+            placeholder="Selecciona uno o varios atributos"
             maxTagCount="responsive"
             allowClear
             onChange={(values) => attributes.setSelected(values)}
@@ -129,9 +130,12 @@ export const Atributes = ({ next, setcontrolStatusGeneral, controlStatusGeneral 
             <Select
               mode="multiple"
               style={{ width: "100%" }}
-              placeholder="Selecciona uno ó varios terminos"
+              placeholder="Selecciona uno o varios términos"
               maxTagCount="responsive"
               allowClear
+              filterOption={(input, option) =>
+                option.children.toLowerCase().includes(input.toLowerCase())
+              }
               onChange={(values) => attributes.setOptions(att.id, values)}
             >
               {attributes.groups[att.id].map((term) => (
