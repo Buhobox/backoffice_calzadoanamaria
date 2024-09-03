@@ -49,8 +49,8 @@ export const AddProductWC = (data) => api.put(`/products?${credentials}`, { data
 export const GetAllAttributes = () =>
   api.get(`/products/attributes?${credentials}&per_page=100`);
 
-export const GetAllTermsAttributes = (id) =>
-  api.get(`/products/attributes/${id}/terms?${credentials}&per_page=100`);
+export const GetAllTermsAttributes = (id, page = 1) =>
+  api.get(`/products/attributes/${id}/terms?${credentials}&per_page=100&page=${page}`);
 
 
 export const AddAttributes = (data) =>
