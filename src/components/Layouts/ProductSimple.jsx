@@ -48,6 +48,7 @@ export const ProductSimple = ({ addProductSimple }) => {
                 Descripcion: producto.data.Descripcion,
                 PrecioVentaConIva1: producto.data.PrecioVentaConIva1,
                 PrecioVentaConIva2: producto.data.PrecioVentaConIva2,
+                PrecioVentaConIva3: producto.data.PrecioVentaConIva3,
                 PorcentajeIva: producto.data.PorcentajeIva
               }}
             >
@@ -194,10 +195,10 @@ export const ProductSimple = ({ addProductSimple }) => {
                 />
               </Form.Item>
               <Form.Item
-                label="Precio Mayoreo"
+                label="Precio Minorista"
                 name="PrecioVentaConIva2"
                 rules={[
-                  { required: true, message: "Digite el precio Mayorista" },
+                  { required: true, message: "Digite el precio Minorista" },
                 ]}
               >
                 <Input
@@ -206,6 +207,22 @@ export const ProductSimple = ({ addProductSimple }) => {
                   onChange={(value) =>
                     producto.setData({
                       PrecioVentaConIva2: parseInt(value.target.value),
+                    })
+                  }
+                />
+              </Form.Item>
+              <Form.Item
+                label="Precio Mayoreo"
+                name="PrecioVentaConIva3"
+                rules={[
+                  { required: true, message: "Digite el precio Mayorista" },
+                ]}
+              >
+                <Input
+                  placeholder="$100.000"
+                  type="number"
+                  onChange={(value) =>
+                    producto.setData({
                       PrecioVentaConIva3: parseInt(value.target.value),
                     })
                   }

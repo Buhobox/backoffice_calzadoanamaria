@@ -141,7 +141,7 @@ export const LayoutProducto = () => {
             stock_quantity: 0,
             stock_status: "outofstock",
             wholesale_price: {
-                wholesale_customer: productotosave.PrecioVentaConIva2,
+                wholesale_customer: productotosave.PrecioVentaConIva3,
             },
             categories: [
                 {
@@ -175,7 +175,7 @@ export const LayoutProducto = () => {
               }
             });
         } else {
-          axios.post(baseurl + "GuardarProducto", { ...productotosave })
+          axios.post(baseurl + "GuardarProductoSinContabilidad", { ...productotosave })
             .then((res) => {
               setcontrolStatusGeneral({
                 ...controlStatusGeneral,
@@ -208,7 +208,7 @@ export const LayoutProducto = () => {
                   weight: productotosave.weight,
                   stock_status: "outofstock",
                   wholesale_price: {
-                      wholesale_customer: productotosave.PrecioVentaConIva2.toString(),
+                      wholesale_customer: productotosave.PrecioVentaConIva3.toString(),
                   },
                   categories: [
                       {
