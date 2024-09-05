@@ -68,7 +68,7 @@ export const ProductoVariante = ({
         });
 
         axios
-          .post(baseurl + "GuardarProducto", {
+          .post(baseurl + "GuardarProductoSinContabilidad", {
             ...productotosave,
           })
           .then((res) => {
@@ -87,7 +87,7 @@ export const ProductoVariante = ({
                 weight: productotosave.weight,
                 sku: res.data.CodigoBarras,
                 wholesale_price: {
-                    wholesale_customer: productotosave.PrecioVentaConIva2.toString(),
+                    wholesale_customer: productotosave.PrecioVentaConIva3.toString(),
                 },
                 attributes: filteredAttributes,
                 meta_data: [
@@ -156,6 +156,7 @@ export const ProductoVariante = ({
                 Descripcion: producto.data.Descripcion,
                 PrecioVentaConIva1: producto.data.PrecioVentaConIva1,
                 PrecioVentaConIva2: producto.data.PrecioVentaConIva2,
+                PrecioVentaConIva3: producto.data.PrecioVentaConIva3,
                 PorcentajeIva: producto.data.PorcentajeIva
               }}
             >
@@ -315,19 +316,33 @@ export const ProductoVariante = ({
                       })}
                     />
                   </Form.Item>
+                  <Form.Item
+                    label="Precio Minorista"
+                    name="PrecioVentaConIva2"
+                    rules={[
+                      { required: true, message: "Digite el precio Minorista" },
+                    ]}
+                  >
+                    <Input
+                      placeholder="$150000"
+                      type="number"
+                      onChange={(value) => producto.setData({
+                        PrecioVentaConIva2: value.target.value,
+                      })}
+                    />
+                  </Form.Item>
 
                   <Form.Item
                     label="Precio Mayoreo"
-                    name="PrecioVentaConIva2"
+                    name="PrecioVentaConIva3"
                     rules={[
                       { required: true, message: "Digite el precio Mayorista" },
                     ]}
                   >
                     <Input
-                      placeholder="$200000"
+                      placeholder="$90000"
                       type="number"
                       onChange={(value) => producto.setData({
-                        PrecioVentaConIva2: value.target.value,
                         PrecioVentaConIva3: value.target.value,
                       })}
                     />
